@@ -6,8 +6,8 @@ using UnityEngine;
 [CreateAssetMenu]
 public class VideoClip : ScriptableObject
 {
-    [SerializeField]
-    VideoClip m_ArcheryClip;
+    
+    public VideoClip m_ArcheryClip;
     [SerializeField]
     string m_Name;
 }
