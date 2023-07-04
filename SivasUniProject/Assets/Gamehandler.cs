@@ -15,4 +15,15 @@ public class Gamehandler : MonoBehaviour
     {
         
     }
+
+
+
+    private string m_GameName = "okçuluk";
+
+    public void ChangeSelectedGame(string GameName)
+    {
+       this.m_GameName = GameName;
+    }
+
+
 }
