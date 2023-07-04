@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 601bb29387ff2284ca67fe2ccec24425, type: 3}
   m_Name: Basketbol
   m_EditorClassIdentifier: 
-  m_ArcheryClip: {fileID: 0}
-  m_Name: 
+  m_VideoClip: {fileID: 32900000, guid: ab4937678fcde0649b3e4e6733bb6bc3, type: 3}
+  m_Name: Basketbol

@@ -7,10 +7,12 @@ using UnityEngine.Video;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField]
+    Gamehandler gameHandler;
+
+    private void Awake()
     {
-        
+        gameHandler = GetComponent<Gamehandler>();
     }
 
     // Update is called once per frame
@@ -19,7 +21,7 @@ public class GameManager : MonoBehaviour
 
     }
 
-    private string m_GameName = "okçuluk";
+    private string m_GameName = "Okçuluk";
 
 
 
@@ -32,6 +34,9 @@ public class GameManager : MonoBehaviour
     [SerializeField, Tooltip("Target text mesh pro")]
     TMP_Dropdown m_DropDown;
 
+    [SerializeField, Tooltip("Target Label text")]
+    TMP_Text m_ClipText;
+
     [SerializeField, Tooltip("Target video player to change on game change")]
     VideoPlayer m_Player;
 
@@ -39,9 +44,11 @@ public class GameManager : MonoBehaviour
     {
         if (m_DropDown != null && m_Player != null)
         {
-            m_GameName = m_DropDown.itemText.text;
+            m_GameName = m_ClipText.text;
+            Debug.Log("Find = " + m_GameName);
+            m_GameClip = gameHandler.GetVideoClip(m_GameName);
 
-            
+            ChangeItemValues();
 
 
         }
@@ -50,14 +57,6 @@ public class GameManager : MonoBehaviour
 
     private void ChangeItemValues()
     {
-        switch (m_GameName)
-        {
-            case "Okçuluk":
-
-                break;
-            default:
-                break;
-
-        }
+        m_Player.clip = m_GameClip;
     }
 }
