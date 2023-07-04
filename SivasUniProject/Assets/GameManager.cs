@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,13 +15,19 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private string m_GameName = "okçuluk";
 
-    public void ChangeSelectedGame(string GameName)
+
+
+    [SerializeField, Tooltip("Target text mesh pro")]
+    TMP_Dropdown m_DropDown;
+
+    public void ChangeSelectedGame()
     {
-        this.m_GameName = GameName;
+
+        m_GameName = m_DropDown.itemText.text;
     }
 }
