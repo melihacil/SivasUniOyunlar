@@ -9,7 +9,7 @@ public class MainSceneScript : MonoBehaviour
     public void PlayGame()
     {
         //Debug.Log("OYUN BAÞLIYOR");
-        SceneManager.LoadScene(1);
+        //SceneManager.LoadScene(1);
 
 
         SceneManager.LoadScene("Archery_LevelGame");
