@@ -5,6 +5,18 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Video;
 
+
+enum Scenes
+{
+    Archery,
+    Basketball,
+    Bowling,
+    Shooting,
+    Dart,
+    FruitNinja
+}
+
+
 public class GameManager : MonoBehaviour
 {
     [SerializeField]
@@ -25,6 +37,8 @@ public class GameManager : MonoBehaviour
 
 
 
+
+    Scenes m_SceneToLoad = Scenes.Archery;
 
 
 
@@ -54,6 +68,24 @@ public class GameManager : MonoBehaviour
         }
     }
 
+
+
+    public void LoadGameScene()
+    {
+        switch (m_SceneToLoad)
+        {
+            case Scenes.Archery:
+
+                break;
+            case Scenes.FruitNinja:
+
+                break;
+
+            default:
+
+                break;
+        }
+    }
 
     private void ChangeItemValues()
     {
