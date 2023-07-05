@@ -8,12 +8,15 @@ public class MainSceneScript : MonoBehaviour
     // Start is called before the first frame update
     public void PlayGame()
     {
-        Debug.Log("OYUN BAÞLIYOR");
+        //Debug.Log("OYUN BAÞLIYOR");
         SceneManager.LoadScene(1);
+
+
+        SceneManager.LoadScene("Archery_LevelGame");
     }
     public void QuitGame()
     {
-        Debug.Log("OYUNDAN ÇIKIIYOR");
+        //Debug.Log("OYUNDAN ÇIKIIYOR");
        Application.Quit();
     }
 }
