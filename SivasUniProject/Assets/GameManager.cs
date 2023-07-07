@@ -61,7 +61,7 @@ public class GameManager : MonoBehaviour
             m_GameName = m_ClipText.text;
             Debug.Log("Find = " + m_GameName);
             m_GameClip = gameHandler.GetVideoClip(m_GameName);
-
+            m_SceneToLoad = gameHandler.GetSceneType(m_GameName);
             ChangeItemValues();
 
 

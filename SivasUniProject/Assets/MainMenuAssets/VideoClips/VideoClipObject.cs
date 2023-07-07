@@ -11,6 +11,6 @@ public class VideoClipObject : ScriptableObject
     [SerializeField]
     public string m_Name;
 
-    public Scenes gameScene;
+    public Scenes sceneType = Scenes.Archery;
 
 }

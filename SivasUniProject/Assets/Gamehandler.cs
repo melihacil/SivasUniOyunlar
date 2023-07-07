@@ -28,4 +28,24 @@ public class Gamehandler : MonoBehaviour
         return videoClip;
     }
 
+
+    public Scenes GetSceneType (string GameName)
+    {
+
+        Scenes sceneToLoad = Scenes.Archery;
+        try
+        {
+            sceneToLoad = m_videoClipObjects.Find(x => x.m_Name == GameName).sceneType;
+        }
+        catch (System.Exception e)
+        {
+            Debug.Log(e.ToString() + " Not FOUND! Defaulting to main game scene");
+        }
+        finally
+        {
+            Debug.Log("Found Scene Type = " + sceneToLoad.ToString());
+        }
+        return sceneToLoad;
+    }
+
 }
