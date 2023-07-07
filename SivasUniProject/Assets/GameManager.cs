@@ -75,14 +75,16 @@ public class GameManager : MonoBehaviour
         switch (m_SceneToLoad)
         {
             case Scenes.Archery:
-
+                SceneManager.LoadScene("Archery_MainMenu");
                 break;
             case Scenes.FruitNinja:
-
+                SceneManager.LoadScene("Archery_MainMenu");
                 break;
-
+            case Scenes.Bowling:
+                SceneManager.LoadScene("Archery_MainMenu");
+                break;
             default:
-
+                Debug.LogError("Not Found SCENE TYPE!");
                 break;
         }
     }
