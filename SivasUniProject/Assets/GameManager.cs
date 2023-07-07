@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine.Video;
 using UnityEngine.SceneManagement;
 
-enum Scenes
+public enum Scenes
 {
     Archery,
     Basketball,

@@ -10,4 +10,7 @@ public class VideoClipObject : ScriptableObject
     public VideoClip m_VideoClip;
     [SerializeField]
     public string m_Name;
+
+    public Scenes gameScene;
+
 }
