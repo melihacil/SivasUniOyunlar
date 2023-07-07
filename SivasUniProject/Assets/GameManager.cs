@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Video;
-
+using UnityEngine.SceneManagement;
 
 enum Scenes
 {
@@ -85,6 +85,13 @@ public class GameManager : MonoBehaviour
 
                 break;
         }
+    }
+
+
+
+    public void TestLoadScene()
+    {
+        SceneManager.LoadScene(1);
     }
 
     private void ChangeItemValues()

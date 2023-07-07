@@ -17,6 +17,7 @@ public class MainSceneScript : MonoBehaviour
     public void QuitGame()
     {
         //Debug.Log("OYUNDAN ÇIKIIYOR");
-       Application.Quit();
+        //Application.Quit();
+        SceneManager.LoadScene(0);
     }
 }
