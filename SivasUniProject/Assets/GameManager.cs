@@ -96,6 +96,8 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+
+    // Redundant function change it to normal lines
     private void ChangeItemValues()
     {
         m_Player.clip = m_GameClip;

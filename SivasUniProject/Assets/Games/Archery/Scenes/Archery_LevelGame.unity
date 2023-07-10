@@ -764,7 +764,7 @@ GameObject:
   - component: {fileID: 455244923}
   - component: {fileID: 455244922}
   - component: {fileID: 455244921}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1069,7 +1069,7 @@ GameObject:
   - component: {fileID: 537622347}
   - component: {fileID: 537622349}
   - component: {fileID: 537622348}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1252,6 +1252,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1261738448, guid: e60c0115a4803e44db4fd8743a58f8b7, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 2193529143886018177, guid: e60c0115a4803e44db4fd8743a58f8b7, type: 3}
       propertyPath: m_Layer
       value: 11
@@ -1404,9 +1408,21 @@ PrefabInstance:
       propertyPath: pinchAnimationAction.m_Reference
       value: 
       objectReference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    - target: {fileID: 2302519653958405125, guid: e60c0115a4803e44db4fd8743a58f8b7, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2302519654067238102, guid: e60c0115a4803e44db4fd8743a58f8b7, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 2302519654346926900, guid: e60c0115a4803e44db4fd8743a58f8b7, type: 3}
       propertyPath: m_Name
       value: XR Origin
+      objectReference: {fileID: 0}
+    - target: {fileID: 2302519654346926900, guid: e60c0115a4803e44db4fd8743a58f8b7, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2302519654346926900, guid: e60c0115a4803e44db4fd8743a58f8b7, type: 3}
       propertyPath: m_TagString
@@ -1511,6 +1527,30 @@ PrefabInstance:
     - target: {fileID: 2302519654399794108, guid: e60c0115a4803e44db4fd8743a58f8b7, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2302519654513451182, guid: e60c0115a4803e44db4fd8743a58f8b7, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2302519654635849712, guid: e60c0115a4803e44db4fd8743a58f8b7, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2302519654695548607, guid: e60c0115a4803e44db4fd8743a58f8b7, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2302519655081522667, guid: e60c0115a4803e44db4fd8743a58f8b7, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2302519655251020784, guid: e60c0115a4803e44db4fd8743a58f8b7, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2302519655278277231, guid: e60c0115a4803e44db4fd8743a58f8b7, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2302519655836359366, guid: e60c0115a4803e44db4fd8743a58f8b7, type: 3}
       propertyPath: m_Radius
@@ -1908,7 +1948,7 @@ GameObject:
   - component: {fileID: 671570636}
   - component: {fileID: 671570635}
   - component: {fileID: 671570637}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4277,7 +4317,7 @@ GameObject:
   - component: {fileID: 1849971112}
   - component: {fileID: 1849971114}
   - component: {fileID: 1849971113}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4789,7 +4829,7 @@ GameObject:
   - component: {fileID: 2071048281}
   - component: {fileID: 2071048283}
   - component: {fileID: 2071048282}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
