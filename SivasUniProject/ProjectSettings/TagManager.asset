@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ScoreHolderObj
+  - 25Puan
+  - 50Puan
+  - 100Puan
+  - Arrow
+  - AttachPointTag
+  - Left Hand
+  - Right Hand
   layers:
   - Default
   - TransparentFX
@@ -13,9 +21,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - ArcheryBow
+  - Body
+  - Arrow
   - 
   - 
   - 
