@@ -98,8 +98,8 @@ public class GameManager : MonoBehaviour
 
 
     // Redundant function change it to normal lines
-    private void ChangeItemValues()
-    {
-        m_Player.clip = m_GameClip;
-    }
+    //private void ChangeItemValues()
+    //{
+    //    m_Player.clip = m_GameClip;
+    //}
 }
