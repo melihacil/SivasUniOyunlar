@@ -45,7 +45,7 @@ remainingDuration= second;
     {
         if(remainingDuration<=0)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene("Archery_LevelScoreScene");
         }
     }
     private void OnEnd()
