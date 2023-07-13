@@ -1,0 +1,9 @@
+Menu Scene'indeki "ReturnToGameMenu()" Metodunu tamamlaman icin sana bıraktım. Dosyalar gayet duzenli ve hazir sekilde birakildi.
+Import etmen için ekleme yapmis olduğum XRI Input action dosyamı da gönderiyorum. Onu almak istemiyorsan oyunuma input action eklemen gerekiyor
+Eklemek için:
+
+Action Maps kısmından XRI LeftHand Interaction kısmından "MenuButton" Adında bir action ekle ve Path olarak menuButton [LeftHand XR Controller]
+olarak seç. Daha sonra eklemiş olduğun input action'u Level 1 ve Level 2 scene'indeki "GameMenu" objesinin "Game Menu Manager" scriptine
+referans olarak ver. Bundan sonra bir sorun çıkmayacaktır.
+
+Ayrıca XR Origin'deki boy ayarlamasını tam olarak yapmadım. Bir sorun varsa eğer Kafanın konumunu kalibre eder misin ?
