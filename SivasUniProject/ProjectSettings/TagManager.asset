@@ -12,6 +12,15 @@ TagManager:
   - AttachPointTag
   - Left Hand
   - Right Hand
+  - door
+  - Pin
+  - dropped
+  - zemin
+  - cube
+  - checkVoice
+  - ballTrigger
+  - Ball
+  - Button
   layers:
   - Default
   - TransparentFX
@@ -25,7 +34,7 @@ TagManager:
   - Body
   - Arrow
   - Hand
-  - 
+  - Bowling_Balls
   - 
   - 
   - 
