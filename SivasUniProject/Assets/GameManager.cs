@@ -13,6 +13,7 @@ public enum Scenes
     Bowling,
     Shooting,
     Dart,
+    Golf,
     FruitNinja
 }
 
@@ -81,7 +82,10 @@ public class GameManager : MonoBehaviour
                 SceneManager.LoadScene("Archery_MainMenu");
                 break;
             case Scenes.Bowling:
-                SceneManager.LoadScene("Archery_MainMenu");
+                SceneManager.LoadScene("Bowling_MainGame");
+                break;
+            case Scenes.Golf:
+                SceneManager.LoadScene("Golf_Menu");
                 break;
             default:
                 Debug.LogError("Not Found SCENE TYPE!");

@@ -29,6 +29,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Games/Bowling/Assets/Scenes/Bowling_MainGame.unity
     guid: ed7041bc8b3e2a7448092f2080cccf97
+  - enabled: 1
+    path: Assets/Games/FruitNinja/Scenes/FN_MainMenu.unity
+    guid: 6142ad4795d87754da755164467bee83
+  - enabled: 1
+    path: Assets/Games/FruitNinja/Scenes/FN_CakeNinja.unity
+    guid: c85357798405f184b8e21a71d918bc26
+  - enabled: 1
+    path: Assets/Games/FruitNinja/Scenes/FN_FruitNinja.unity
+    guid: a338ae2c37c75fa4393e3ef8a114bf36
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}

@@ -21,14 +21,20 @@ public class Gamehandler : MonoBehaviour
     public VideoClip GetVideoClip(string GameName)
     {
 
+        foreach (VideoClipObject obj in m_videoClipObjects)
+        {
+            Debug.Log( obj.sceneType +" "+obj.m_GameName);
+        }
+
+
         VideoClip videoClip = null;
         try
         {
-            videoClip = m_videoClipObjects.Find(x => x.m_Name == GameName).m_VideoClip;
+            videoClip = m_videoClipObjects.Find(x => x.m_GameName == GameName).m_VideoClip;
         }
         catch (System.Exception e)
         {
-            Debug.Log(e.ToString() + " Not FOUND! Defaulting to main game scene");
+            Debug.Log(e.ToString() + " Not FOUND! Defaulting to main video");
             
         }
         finally
@@ -45,7 +51,7 @@ public class Gamehandler : MonoBehaviour
         Scenes sceneToLoad = Scenes.Archery;
         try
         {
-            sceneToLoad = m_videoClipObjects.Find(x => x.m_Name == GameName).sceneType;
+            sceneToLoad = m_videoClipObjects.Find(x => x.m_GameName == GameName).sceneType;
         }
         catch (System.Exception e)
         {
