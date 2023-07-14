@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_VideoClip: {fileID: 32900000, guid: ab4937678fcde0649b3e4e6733bb6bc3, type: 3}
   m_Name: 
+  m_GameName: Golf
   sceneType: 5
