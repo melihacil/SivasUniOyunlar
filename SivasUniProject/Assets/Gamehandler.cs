@@ -22,9 +22,19 @@ public class Gamehandler : MonoBehaviour
     {
 
         VideoClip videoClip = null;
-        
-        videoClip = m_videoClipObjects.Find(x => x.m_Name == GameName).m_VideoClip;
-        Debug.Log("Found = " + videoClip.name);
+        try
+        {
+            videoClip = m_videoClipObjects.Find(x => x.m_Name == GameName).m_VideoClip;
+        }
+        catch (System.Exception e)
+        {
+            Debug.Log(e.ToString() + " Not FOUND! Defaulting to main game scene");
+            
+        }
+        finally
+        {
+            Debug.Log("Found = " + videoClip);
+        }
         return videoClip;
     }
 
