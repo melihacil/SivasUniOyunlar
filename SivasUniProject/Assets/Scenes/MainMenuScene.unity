@@ -20636,6 +20636,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a1949a078f2e14f49a84a3cf16b6192e, type: 2}
   - {fileID: 11400000, guid: 34c0100dba794434fa66e13211fa4939, type: 2}
   - {fileID: 11400000, guid: 921586e027e87e343871265f9e672aa3, type: 2}
+  - {fileID: 11400000, guid: 3ad2b7f6a09c60e478d97152dfdf9987, type: 2}
 --- !u!1 &1683995448
 GameObject:
   m_ObjectHideFlags: 0
@@ -41332,7 +41333,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 6e-44, y: 3e-45, z: 1.8595e-41, w: 1.6607458e-28}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 4e-45, z: 1.019e-41, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
