@@ -13,8 +13,9 @@ public enum Scenes
     Bowling,
     Shooting,
     Dart,
-    Golf,
-    FruitNinja
+    FruitNinja,
+    Golf
+    
 }
 
 
@@ -79,7 +80,7 @@ public class GameManager : MonoBehaviour
                 SceneManager.LoadScene("Archery_MainMenu");
                 break;
             case Scenes.FruitNinja:
-                SceneManager.LoadScene("Archery_MainMenu");
+                SceneManager.LoadScene("FN_MainMenu");
                 break;
             case Scenes.Bowling:
                 SceneManager.LoadScene("Bowling_MainGame");
@@ -92,8 +93,6 @@ public class GameManager : MonoBehaviour
                 break;
         }
     }
-
-
 
     public void TestLoadScene()
     {
