@@ -3807,6 +3807,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SwitchGolfSticks
       objectReference: {fileID: 0}
+    - target: {fileID: 1159326912643395509, guid: 073c04a729e528a43841bee264893e75, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1159326912654794240, guid: 073c04a729e528a43841bee264893e75, type: 3}
       propertyPath: m_Name
       value: GameMenu
