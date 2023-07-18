@@ -1884,7 +1884,7 @@ GameObject:
   - component: {fileID: 1635758951088118664}
   - component: {fileID: 1635758951088118667}
   - component: {fileID: 1635758951088118677}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: XR Origin(Golf)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1905,7 +1905,7 @@ Transform:
   m_Children:
   - {fileID: 1635758949334942416}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1635758951088118670
 MonoBehaviour:
@@ -1922,7 +1922,7 @@ MonoBehaviour:
   m_Camera: {fileID: 1635758951256608786}
   m_OriginBaseGameObject: {fileID: 1635758951088118668}
   m_CameraFloorOffsetObject: {fileID: 1635758949334942423}
-  m_RequestedTrackingOriginMode: 2
+  m_RequestedTrackingOriginMode: 1
   m_CameraYOffset: 1.1176
 --- !u!114 &1635758951088118669
 MonoBehaviour:
@@ -2217,10 +2217,18 @@ MonoBehaviour:
       m_Name: Tracking State
       m_Type: 0
       m_ExpectedControlType: Integer
-      m_Id: ef43d5d1-ea25-4d94-922d-cfb2a6b3d042
+      m_Id: 468e7eda-cd15-4d2c-b6ba-1528809b8e58
       m_Processors: 
       m_Interactions: 
-      m_SingletonActionBindings: []
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: e46408ca-1731-4bf8-b25f-4a1468857797
+        m_Path: <XRHMD>/trackingState
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Tracking State
+        m_Flags: 0
       m_Flags: 0
     m_Reference: {fileID: 0}
   m_PositionAction:
