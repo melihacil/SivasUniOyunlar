@@ -131,7 +131,7 @@ public class GameManagerGolf : MonoBehaviour
 
     public void ReturnTheMenu()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("Golf_Menu");
     }
 
     public void RestartGame()
