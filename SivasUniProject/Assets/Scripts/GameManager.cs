@@ -89,7 +89,7 @@ public class GameManager : MonoBehaviour
                 SceneManager.LoadScene("Golf_Menu");
                 break;
             case Scenes.Basketball:
-                SceneManager.LoadScene("Basketball_MainScene");
+                SceneManager.LoadScene("Basketball_MainGame");
                 break;
             default:
                 Debug.LogError("Not Found SCENE TYPE!");
