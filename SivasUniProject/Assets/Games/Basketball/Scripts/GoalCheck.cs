@@ -6,7 +6,7 @@ public class GoalCheck : MonoBehaviour
 {
 
 
-    [SerializeField] UIManager uýManager;
+    [SerializeField] UIManagerBasket uiManager;
     [SerializeField] AudioClip goalSound;
     [SerializeField] AudioSource audioSource;
 
@@ -20,7 +20,7 @@ public class GoalCheck : MonoBehaviour
                 audioSource.PlayOneShot(goalSound);
                 //  GameObject ball = other.gameObject;
                 //  other.gameObject.transform.position = ballPosition.position;
-                uýManager.IncreaseScore();
+                uiManager.IncreaseScore();
             
             
         }

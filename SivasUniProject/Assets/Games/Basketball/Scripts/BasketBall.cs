@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.XR;
 using UnityEngine.SceneManagement;
 
-public class Ball : MonoBehaviour
+public class BasketBall : MonoBehaviour
 {
     Vector3 ballPosition;
     CountDown ct;
