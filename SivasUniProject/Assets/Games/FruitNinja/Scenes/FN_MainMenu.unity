@@ -752,7 +752,7 @@ MonoBehaviour:
   m_CheckFor3DOcclusion: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 2147483647
+    m_Bits: 4294967295
   m_RaycastTriggerInteraction: 1
 --- !u!114 &158667637
 MonoBehaviour:
@@ -1991,7 +1991,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: FruitNinja
+          m_StringArgument: FN_FruitNinja
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1248613069
@@ -2185,7 +2185,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: CakeNinja
+          m_StringArgument: FN_CakeNinja
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1444321345
