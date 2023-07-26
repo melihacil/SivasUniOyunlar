@@ -170,7 +170,6 @@ GameObject:
   - component: {fileID: 382209764940473572}
   - component: {fileID: 4256940425697687633}
   - component: {fileID: 2710141745549200028}
-  - component: {fileID: 774852006042770695}
   m_Layer: 15
   m_Name: Katana
   m_TagString: Player
@@ -244,23 +243,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &774852006042770695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5976176328301209085}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd196016463762048b8359bebb94c259, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SwordVelocity: 0
-  direct: {x: 0, y: 0, z: 0}
-  xRController: {fileID: 0}
-  canSlice: 0
-  slicePanel: {fileID: 2655425836841104384}
 --- !u!1 &7968027882740504271
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,7 +308,7 @@ GameObject:
   - component: {fileID: 461720814181033672}
   m_Layer: 15
   m_Name: DirectionRef
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -358,7 +340,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8328554668015491281}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd196016463762048b8359bebb94c259, type: 3}
   m_Name: 
