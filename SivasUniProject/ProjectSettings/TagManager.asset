@@ -21,6 +21,10 @@ TagManager:
   - ballTrigger
   - Ball
   - Button
+  - Your Score
+  - fruit
+  - ground
+  - button
   layers:
   - Default
   - TransparentFX
@@ -36,8 +40,8 @@ TagManager:
   - Hand
   - Bowling_Balls
   - 
-  - 
-  - 
+  - FN_Fruit
+  - FN_Sword
   - 
   - 
   - 
