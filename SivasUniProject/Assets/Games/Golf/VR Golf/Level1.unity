@@ -60023,21 +60023,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Origin(Golf)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635758951088118670, guid: 8528b0d6e402ed341beeb5533f13ab27, type: 3}
+      propertyPath: m_CameraYOffset
+      value: 1.5176
+      objectReference: {fileID: 0}
+    - target: {fileID: 1635758951088118670, guid: 8528b0d6e402ed341beeb5533f13ab27, type: 3}
+      propertyPath: m_RequestedTrackingOriginMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1635758951088118671, guid: 8528b0d6e402ed341beeb5533f13ab27, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1635758951088118671, guid: 8528b0d6e402ed341beeb5533f13ab27, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -5.77
       objectReference: {fileID: 0}
     - target: {fileID: 1635758951088118671, guid: 8528b0d6e402ed341beeb5533f13ab27, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 1635758951088118671, guid: 8528b0d6e402ed341beeb5533f13ab27, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -4.026
       objectReference: {fileID: 0}
     - target: {fileID: 1635758951088118671, guid: 8528b0d6e402ed341beeb5533f13ab27, type: 3}
       propertyPath: m_LocalRotation.w
