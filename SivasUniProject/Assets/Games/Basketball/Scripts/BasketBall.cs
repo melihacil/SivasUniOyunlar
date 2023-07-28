@@ -38,7 +38,7 @@ public class BasketBall : MonoBehaviour
     {
         if (_resetBall.action.IsPressed())
         {
-             ResetBall();
+                ResetBall();
             
         }
         if (_reloadBall.action.IsPressed())
@@ -62,24 +62,22 @@ public class BasketBall : MonoBehaviour
 
 
 
-      public void Reload()
-      {
-        SceneManager.LoadScene(0);
-      }
+    public void Reload()
+    {
+        SceneManager.LoadScene("Basketball_MainGame");
+    }
 
-        
-
-
-        void ResetBallInput(InputAction.CallbackContext context)
-        {
+    void ResetBallInput(InputAction.CallbackContext context)
+    {
 
         var ball = GameObject.FindGameObjectWithTag("Basketball");
         ball.GetComponent<Rigidbody>().velocity = Vector3.zero;
         ball.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
         ball.transform.position = ballPosition;
-        }
+    }
+
     void ReloadInput(InputAction.CallbackContext context)
     {
-        SceneManager.LoadScene(0); 
+        SceneManager.LoadScene("Basketball_MainGame"); 
     }
 }

@@ -648,6 +648,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "BasketBallPrimaryButton",
+                    "type": "Button",
+                    "id": "bc1c3b65-6f77-4656-a03d-8c417c1d09dd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "BasketballSecondaryButton",
+                    "type": "Button",
+                    "id": "d12cdffa-0c12-4a1c-81f2-39167de04d03",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -791,6 +809,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "MenuButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2448fc33-80f1-49ee-a841-ed4f9c7cdff7",
+                    "path": "<XRController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "BasketBallPrimaryButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1e57330e-9575-4b5b-93fc-c5d42b285b43",
+                    "path": "<XRController>{LeftHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "BasketballSecondaryButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

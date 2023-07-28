@@ -6,7 +6,7 @@ public class MenuManager2 : MonoBehaviour
 {
     void Restart()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("");
     }
 
     private void OnTriggerEnter(Collider other)
