@@ -10,11 +10,17 @@ public class MenuManager : MonoBehaviour
         Application.Quit();
    }
 
+
+    void ExitToMainMenu()
+    {
+        SceneManager.LoadScene("");
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Hand")
         {
-            ExitGame();
+            //ExitGame();
         }
     }
 }
