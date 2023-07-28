@@ -6096,7 +6096,7 @@ GameObject:
   - component: {fileID: 227374601}
   - component: {fileID: 227374600}
   - component: {fileID: 227374599}
-  m_Layer: 7
+  m_Layer: 16
   m_Name: Ball_Deneme (9)
   m_TagString: Basketball
   m_Icon: {fileID: 0}
@@ -6479,7 +6479,7 @@ GameObject:
   - component: {fileID: 246635696}
   - component: {fileID: 246635695}
   - component: {fileID: 246635694}
-  m_Layer: 7
+  m_Layer: 16
   m_Name: Ball_Deneme (10)
   m_TagString: Basketball
   m_Icon: {fileID: 0}
@@ -7448,7 +7448,7 @@ GameObject:
   - component: {fileID: 274276135}
   - component: {fileID: 274276134}
   - component: {fileID: 274276140}
-  m_Layer: 7
+  m_Layer: 16
   m_Name: Ball_Deneme (6)
   m_TagString: Basketball
   m_Icon: {fileID: 0}
@@ -7831,7 +7831,7 @@ GameObject:
   - component: {fileID: 274857199}
   - component: {fileID: 274857198}
   - component: {fileID: 274857204}
-  m_Layer: 7
+  m_Layer: 16
   m_Name: Ball_Deneme (4)
   m_TagString: Basketball
   m_Icon: {fileID: 0}
@@ -8196,8 +8196,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c107fc61ccc70514ca8eac737a9c1c63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _resetBall: {fileID: 7056414416515315458, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  _reloadBall: {fileID: 3177807503636571482, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  _resetBall: {fileID: 6858057790039367337, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  _reloadBall: {fileID: -8163460862585359035, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &331039408
 GameObject:
   m_ObjectHideFlags: 0
@@ -11124,7 +11124,7 @@ GameObject:
   - component: {fileID: 954573359}
   - component: {fileID: 954573358}
   - component: {fileID: 954573364}
-  m_Layer: 7
+  m_Layer: 16
   m_Name: Ball_Deneme (7)
   m_TagString: Basketball
   m_Icon: {fileID: 0}
@@ -12227,7 +12227,7 @@ GameObject:
   - component: {fileID: 1032383045}
   - component: {fileID: 1032383044}
   - component: {fileID: 1032383043}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: LeftHand Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13994,7 +13994,7 @@ GameObject:
   - component: {fileID: 1347532385}
   - component: {fileID: 1347532384}
   - component: {fileID: 1347532383}
-  m_Layer: 7
+  m_Layer: 16
   m_Name: Ball_Deneme (12)
   m_TagString: Basketball
   m_Icon: {fileID: 0}
@@ -14532,7 +14532,6 @@ GameObject:
   - component: {fileID: 1406759170}
   - component: {fileID: 1406759169}
   - component: {fileID: 1406759168}
-  - component: {fileID: 1406759171}
   - component: {fileID: 1406759172}
   - component: {fileID: 1406759174}
   - component: {fileID: 1406759173}
@@ -14541,7 +14540,7 @@ GameObject:
   - component: {fileID: 1406759177}
   - component: {fileID: 1406759178}
   - component: {fileID: 914334477}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14596,20 +14595,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -65.053, z: 0}
---- !u!114 &1406759171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1406759167}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 017c5e3933235514c9520e1dace2a4b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ActionAssets:
-  - {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!114 &1406759172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15069,7 +15054,7 @@ GameObject:
   - component: {fileID: 1470572359}
   - component: {fileID: 1470572358}
   - component: {fileID: 1470572357}
-  m_Layer: 7
+  m_Layer: 16
   m_Name: Ball_Deneme (11)
   m_TagString: Basketball
   m_Icon: {fileID: 0}
@@ -16113,7 +16098,7 @@ GameObject:
   - component: {fileID: 1668303970}
   - component: {fileID: 1668303969}
   - component: {fileID: 1668303968}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: RightHand Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16777,7 +16762,7 @@ GameObject:
   - component: {fileID: 1701473084}
   - component: {fileID: 1701473083}
   - component: {fileID: 1701473082}
-  m_Layer: 7
+  m_Layer: 16
   m_Name: Ball_Deneme (8)
   m_TagString: Basketball
   m_Icon: {fileID: 0}
@@ -18705,7 +18690,7 @@ GameObject:
   - component: {fileID: 2130283660}
   - component: {fileID: 2130283659}
   - component: {fileID: 2130283665}
-  m_Layer: 7
+  m_Layer: 16
   m_Name: Ball_Deneme (5)
   m_TagString: Basketball
   m_Icon: {fileID: 0}

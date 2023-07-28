@@ -25,6 +25,9 @@ TagManager:
   - fruit
   - ground
   - button
+  - Basketball
+  - target
+  - Hand
   layers:
   - Default
   - TransparentFX
@@ -42,8 +45,8 @@ TagManager:
   - 
   - FN_Fruit
   - FN_Sword
-  - 
-  - 
+  - Basketball
+  - Basket_Hand
   - 
   - 
   - 
