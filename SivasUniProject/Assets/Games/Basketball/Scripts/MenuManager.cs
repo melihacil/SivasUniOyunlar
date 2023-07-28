@@ -20,7 +20,10 @@ public class MenuManager : MonoBehaviour
         Application.Quit();
    }
 
-
+    void Restart()
+    {
+        SceneManager.LoadScene("");
+    }
     void ExitToMainMenu()
     {
         SceneManager.LoadScene("MainMenuScene");
@@ -31,7 +34,20 @@ public class MenuManager : MonoBehaviour
         if (other.gameObject.tag == "Hand")
         {
             //ExitGame();
-            ExitToMainMenu();
+
+            switch (menuType)
+            {
+                case MenuType.ExitButton:
+                    ExitToMainMenu();
+                    break;
+                case MenuType.ResetButton:
+                    Restart();
+                    break;
+                default:
+                    Debug.LogError("NO TYPE HAS FOUND!");
+                    break;
+            }
+            
         }
     }
 }
