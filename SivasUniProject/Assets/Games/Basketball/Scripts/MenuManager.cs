@@ -11,8 +11,6 @@ public enum MenuType
 public class MenuManager : MonoBehaviour
 {
 
-   
-
    public MenuType menuType = MenuType.ExitButton;
 
    void ExitGame()
@@ -22,7 +20,7 @@ public class MenuManager : MonoBehaviour
 
     void Restart()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("Basketball_MainGame");
     }
     void ExitToMainMenu()
     {
