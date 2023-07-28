@@ -13,7 +13,7 @@ public class MenuManager : MonoBehaviour
 
     void ExitToMainMenu()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("MainMenuScene");
     }
 
     private void OnTriggerEnter(Collider other)
@@ -21,6 +21,7 @@ public class MenuManager : MonoBehaviour
         if (other.gameObject.tag == "Hand")
         {
             //ExitGame();
+            ExitToMainMenu();
         }
     }
 }
