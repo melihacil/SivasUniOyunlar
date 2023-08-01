@@ -21,12 +21,12 @@ public class MainMenu : MonoBehaviour
 
     public void Level1()
     {
-        SceneManager.LoadScene("Golf_Level1");
+        SceneManager.LoadScene("Level1");
     }
 
     public void Level2()
     {
-        SceneManager.LoadScene("Golf_Level2");
+        SceneManager.LoadScene("Level2");
     }
 
     public void QuitTheGame()
