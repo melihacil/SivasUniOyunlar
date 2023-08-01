@@ -12,39 +12,47 @@ public class SceneController : MonoBehaviour
     XRController rightHand;
 
 
+    private void Start()
+    {
+        m_LeftKatana = leftHand.modelParent.gameObject;
+        m_RightKatana = rightHand.modelParent.gameObject;
+    }
+
+
     public void LoadThisScene(string _sceneName)
     {
         SceneManager.LoadScene(_sceneName);
 
     }
-
     [SerializeField]
-    GameObject m_LightSaber;
+    GameObject m_RightKatana;
     [SerializeField]
-    GameObject m_Katana;
+    GameObject m_LeftKatana;
+    [SerializeField]
+    GameObject m_LeftLightSaber;
+    [SerializeField]
+    GameObject m_RightLightSaber;
 
     bool m_ChangeModelType = true;
     [ContextMenu("Test")]
     public void ChangeModel()
-    {
-
-        GameObject obj1 = leftHand.modelPrefab.gameObject;
-        GameObject obj2 = rightHand.modelPrefab.gameObject;
-
-        obj1.SetActive(false);
-        obj2.SetActive(false);
-        //if (m_ChangeModelType)
-        //{
-        //    m_ChangeModelType = !m_ChangeModelType;
-        //    leftHand.modelPrefab = m_LightSaber.transform;
-        //    rightHand.modelPrefab = m_LightSaber.transform;
-        //}
-        //else
-        //{
-        //    m_ChangeModelType = !m_ChangeModelType;
-        //    leftHand.modelPrefab = m_Katana.transform;
-        //    rightHand.modelPrefab = m_Katana.transform;
-        //}
+    {      
+        if (m_ChangeModelType)
+        {
+            m_ChangeModelType = !m_ChangeModelType;
+            m_LeftLightSaber.SetActive(true);
+            m_RightLightSaber.SetActive(true);
+            m_LeftKatana.SetActive(false);
+            m_RightKatana.SetActive(false);
+        }
+        else
+        {
+            m_ChangeModelType = !m_ChangeModelType;
+            m_LeftLightSaber.SetActive(false);
+            m_RightLightSaber.SetActive(false);
+            m_LeftKatana.SetActive(true);
+            m_RightKatana.SetActive(true);
+        }
     }
 
 
