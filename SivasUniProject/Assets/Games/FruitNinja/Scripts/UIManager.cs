@@ -118,7 +118,7 @@ public class UIManager : MonoBehaviour
     {
         pooler.ResetPool();
         canCount = false;
-        sceneController.LoadThisScene("FN_MainMenu");
+        sceneController.LoadThisScene("MainMenuScene");
     }
 
     //for close all buttons

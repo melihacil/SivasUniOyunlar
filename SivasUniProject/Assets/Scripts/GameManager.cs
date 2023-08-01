@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
                 SceneManager.LoadScene("Archery_MainMenu");
                 break;
             case Scenes.FruitNinja:
-                SceneManager.LoadScene("FN_MainMenu");
+                SceneManager.LoadScene("FN_FruitNinja");
                 break;
             case Scenes.Bowling:
                 SceneManager.LoadScene("Bowling_MainGame");
