@@ -5040,7 +5040,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 94.1925
+  m_Radius: 97
   m_Center: {x: 2.6644168, y: 204.50021, z: -29.799995}
 --- !u!114 &4731512954434509217
 MonoBehaviour:
