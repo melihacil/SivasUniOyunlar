@@ -33,12 +33,21 @@ public class SceneController : MonoBehaviour
     [SerializeField]
     GameObject m_RightLightSaber;
 
+
+
+    [SerializeField]
+    MeshRenderer m_KatanaRenderer;
+    [SerializeField]
+    GameObject m_LightsaberRenderer;
+
     bool m_ChangeModelType = true;
     [ContextMenu("Test")]
     public void ChangeModel()
     {      
         if (m_ChangeModelType)
         {
+            m_LightsaberRenderer.SetActive(false);
+            m_KatanaRenderer.gameObject.SetActive(true);
             m_ChangeModelType = !m_ChangeModelType;
             m_LeftLightSaber.SetActive(true);
             m_RightLightSaber.SetActive(true);
@@ -47,6 +56,8 @@ public class SceneController : MonoBehaviour
         }
         else
         {
+            m_LightsaberRenderer.SetActive(true);
+            m_KatanaRenderer.gameObject.SetActive(false);
             m_ChangeModelType = !m_ChangeModelType;
             m_LeftLightSaber.SetActive(false);
             m_RightLightSaber.SetActive(false);
