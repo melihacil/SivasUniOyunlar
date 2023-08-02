@@ -14,13 +14,6 @@ public class GolfBall : MonoBehaviour
     [SerializeField] private Quaternion ballQuaternion;
     
 
-    // Start is called before the first frame update
-
-    private void Start()
-    {
-        
-    }
-
     public void PlayWinSound()
     {
         winSound.Play();

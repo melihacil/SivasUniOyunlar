@@ -677,6 +677,7 @@ MonoBehaviour:
   xRController: {fileID: 0}
   canSlice: 0
   slicePanel: {fileID: 2655425836841104384}
+  m_WeaponType: 1
 --- !u!1 &9050409458828973914
 GameObject:
   m_ObjectHideFlags: 0

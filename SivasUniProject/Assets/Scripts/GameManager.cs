@@ -29,17 +29,8 @@ public class GameManager : MonoBehaviour
         gameHandler = GetComponent<Gamehandler>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     private string m_GameName = "Okçuluk";
-
-
-
-
     Scenes m_SceneToLoad = Scenes.Archery;
 
 
@@ -56,6 +47,8 @@ public class GameManager : MonoBehaviour
     [SerializeField, Tooltip("Target video player to change on game change")]
     VideoPlayer m_Player;
 
+    [SerializeField]
+    GameObject m_CreditsPanel;
     public void ChangeSelectedGame()
     {
         if (m_DropDown != null && m_Player != null)
@@ -69,8 +62,6 @@ public class GameManager : MonoBehaviour
 
         }
     }
-
-
 
     public void LoadGameScene()
     {
@@ -102,6 +93,19 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+
+    // Toggles credits panel
+    [ContextMenu("Test Credit Panel")]
+    public void CreditsButton()
+    {
+        m_CreditsPanel.SetActive(!m_CreditsPanel.activeSelf);
+    }
+
+
+    public void ExitFunc()
+    {
+        Application.Quit();
+    }
 
     // Redundant function change it to normal lines
     //private void ChangeItemValues()
