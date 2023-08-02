@@ -47,6 +47,11 @@ public class AddSpeedOnTouch : MonoBehaviour
         {
             Debug.Log("Colliding...");
             //clubCollider.enabled = false;
+
+            // Vector improvements can be made, rather than choosing the closestpoint vector line should be calculated
+            // and force should be added on that vector line
+            // With this change code readability improves 
+
             Vector3 collisionPos = clubCollider.ClosestPoint(other.transform.position);
             Vector3 collisionNorm = other.transform.position - collisionPos;
             Vector3 projectedVelocity = Vector3.Project(velocity, collisionNorm);
