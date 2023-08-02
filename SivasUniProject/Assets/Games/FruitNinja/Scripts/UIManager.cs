@@ -144,9 +144,13 @@ public class UIManager : MonoBehaviour
             case "MainMenu":
                 StartMainMenu();
                 break;
+            case "Weapon":
+                sceneController.ChangeModel();
+                break;
             default:
                 Debug.Log("Please Check your Button's name!");
                 break;
+
         }
     }
 }

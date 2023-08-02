@@ -44,7 +44,7 @@ public class GameController : MonoBehaviour
     {
   
         string parentName =  _Fruit.transform.parent.name;
-        if (parentName != "MainMenu")
+        if (parentName != "MainMenu" || parentName != "Weapon")
         {
             CountdownText.gameObject.SetActive(true);
             for (int i = 0; i < CountdownElements.Count; i++)
