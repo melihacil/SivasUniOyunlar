@@ -13,21 +13,13 @@ public class AddSpeedOnTouch : MonoBehaviour
 
     // Start is called before the first frame update
 
+    /// Assignments or assign functions should be used in awake rather than start
+    /// In awake process components ara initialized and can be assigned or used
+    /// In start process gameobjects are initialized and can be assigned or used (also accessed for both these processes)
 
     private void Awake()
     {
         clubCollider = GetComponent<Collider>();
-    }
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //velocity = (transform.position - prevPos) / Time.deltaTime;
-        //prevPos = transform.position;
     }
 
     private void FixedUpdate()
@@ -43,14 +35,15 @@ public class AddSpeedOnTouch : MonoBehaviour
     private float m_ResetSpeed = 0.1f;
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag(targetTag))
+        if (other.CompareTag(targetTag))
         {
             Debug.Log("Colliding...");
             //clubCollider.enabled = false;
 
-            // Vector improvements can be made, rather than choosing the closestpoint vector line should be calculated
-            // and force should be added on that vector line
-            // With this change code readability improves 
+            /// Vector improvements can be made, rather than choosing the closestpoint vector line should be calculated
+            /// and force should be added on that vector line
+            /// With this change code readability improves 
+
 
             Vector3 collisionPos = clubCollider.ClosestPoint(other.transform.position);
             Vector3 collisionNorm = other.transform.position - collisionPos;
@@ -69,11 +62,11 @@ public class AddSpeedOnTouch : MonoBehaviour
         }
     }
 
-
-    private void OpenCollider()
-    {
-        clubCollider.enabled = true;
-    }
+    // Redundant test code
+    //private void OpenCollider()
+    //{
+    //    clubCollider.enabled = true;
+    //}
 
 
 }
