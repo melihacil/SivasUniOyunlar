@@ -14,6 +14,21 @@ public class Weapon : MonoBehaviour
     public XRController xRController;
     public bool canSlice = false;
     public GameObject slicePanel;
+
+
+
+
+    private enum WepType
+    {
+        Katana,
+        LightSaber
+    }
+
+
+    [SerializeField]
+    WepType m_WeaponType = WepType.Katana;
+
+
     private void Start()
     {
         xRController = transform.GetComponentInParent<XRController>();
@@ -30,13 +45,23 @@ public class Weapon : MonoBehaviour
         SwordVelocity = direct.magnitude / Time.deltaTime;
 
         direct = direct.normalized;
-        if (Vector3.Angle(direct, transform.forward) <= 60)
+
+
+        switch (m_WeaponType)
         {
-            canSlice = true;
-        }
-        else
-        {
-            canSlice = false;
+            case WepType.Katana:
+                if (Vector3.Angle(direct, transform.forward) <= 60)
+                {
+                    canSlice = true;
+                }
+                else
+                {
+                    canSlice = false;
+                }
+                break;
+            case WepType.LightSaber:
+                canSlice = true;
+                break;
         }
     }
 }
