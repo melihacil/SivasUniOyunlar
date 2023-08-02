@@ -46,17 +46,21 @@ public class AddSpeedOnTouch : MonoBehaviour
         if(other.CompareTag(targetTag))
         {
             Debug.Log("Colliding...");
-            clubCollider.enabled = false;
+            //clubCollider.enabled = false;
             Vector3 collisionPos = clubCollider.ClosestPoint(other.transform.position);
             Vector3 collisionNorm = other.transform.position - collisionPos;
             Vector3 projectedVelocity = Vector3.Project(velocity, collisionNorm);
             other.GetComponent<GolfBall>().PlayHitSound();
 
             Rigidbody rb = other.attachedRigidbody;
-            rb.velocity = projectedVelocity;
+
+            rb.AddForce(projectedVelocity, ForceMode.Impulse);
+
+            // Gerekmediði sürece Velocity eriþilerek deðiþtirilmemeli
+            //rb.velocity = projectedVelocity;
             gameManager.currentHitNumber++;
 
-            Invoke(nameof(OpenCollider), m_ResetSpeed);
+            //Invoke(nameof(OpenCollider), m_ResetSpeed);
         }
     }
 
