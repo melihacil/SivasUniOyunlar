@@ -11,12 +11,12 @@ public enum MenuType
 public class MenuManager : MonoBehaviour
 {
 
-   public MenuType menuType = MenuType.ExitButton;
+    public MenuType menuType = MenuType.ExitButton;
 
-   void ExitGame()
-   {
+    void ExitGame()
+    {
         Application.Quit();
-   }
+    }
 
     void Restart()
     {
