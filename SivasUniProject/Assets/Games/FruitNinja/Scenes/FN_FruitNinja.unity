@@ -2165,7 +2165,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &501970866
 Transform:
   m_ObjectHideFlags: 0
@@ -4392,6 +4392,7 @@ MonoBehaviour:
   StartArcadeModeButton: {fileID: 7482846012267340597}
   MainMenuButton: {fileID: 7482846010959860609}
   WeaponButton: {fileID: 1158300127}
+  WeaponCollider: {fileID: 0}
 --- !u!4 &1263143415
 Transform:
   m_ObjectHideFlags: 0
@@ -8168,7 +8169,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &3049334310039790227
 GameObject:
   m_ObjectHideFlags: 0
@@ -8218,7 +8219,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &3209592648077698368
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9130,7 +9131,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7482846010959860609}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.852, y: 1.039, z: 1.118}
+  m_LocalPosition: {x: 0.852, y: 1.039, z: 1.139}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9168,7 +9169,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7482846012267340597}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.517, y: 1.07, z: 0.9}
+  m_LocalPosition: {x: -0.517, y: 1.07, z: 1.194}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9410,8 +9411,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8171312819326358097}
-  m_LocalRotation: {x: 0.0879209, y: -0.47724146, z: 0.7180902, w: 0.4988558}
-  m_LocalPosition: {x: 0, y: -0.10100001, z: 0}
+  m_LocalRotation: {x: -0.23425113, y: -0.19845556, z: 0.6636158, w: 0.68217}
+  m_LocalPosition: {x: 0, y: -0.1508, z: 0}
   m_LocalScale: {x: 0.008000001, y: 0.008, z: 0.008000001}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -9421,7 +9422,7 @@ Transform:
   - {fileID: 6030160856245237932}
   m_Father: {fileID: 1645973484}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 50.635, y: 5.893, z: 94.229}
+  m_LocalEulerAnglesHint: {x: -3.222, y: -35.633, z: 89.456}
 --- !u!33 &8827496529239956199
 MeshFilter:
   m_ObjectHideFlags: 0

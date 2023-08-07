@@ -43,9 +43,13 @@ public class UIManager : MonoBehaviour
     //public GameObject StartSurvivorModeButton;
     public GameObject MainMenuButton;
     public GameObject WeaponButton;
-
+    [SerializeField]
+    SphereCollider WeaponCollider;
     private void Start()
     {
+
+        WeaponCollider = WeaponButton.GetComponentInChildren<SphereCollider>();
+
         gameController = GameController.instance;
         pooler = Pooler.instance;
         GameplayPanel.alpha = 0;
@@ -153,6 +157,8 @@ public class UIManager : MonoBehaviour
                 Debug.Log("ChangeModel");
                 sceneController.ChangeModel();
                 Finish();
+                WeaponCollider.enabled = false;
+                Invoke(nameof(ChangeWeapon), 0.4f);
                 break;
             default:
                 Debug.Log("Please Check your Button's name!");
@@ -161,9 +167,10 @@ public class UIManager : MonoBehaviour
         }
     }
 
+
     private void ChangeWeapon()
     {
-        
+        WeaponCollider.enabled = true;
     }
 }
 
