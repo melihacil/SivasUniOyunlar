@@ -456,7 +456,7 @@ MonoBehaviour:
   xRController: {fileID: 0}
   canSlice: 0
   slicePanel: {fileID: 1741703146}
-  m_WeaponType: 0
+  m_WeaponType: 1
 --- !u!1 &102808847
 GameObject:
   m_ObjectHideFlags: 0
@@ -8649,7 +8649,7 @@ MonoBehaviour:
   xRController: {fileID: 0}
   canSlice: 0
   slicePanel: {fileID: 8148168209903093177}
-  m_WeaponType: 0
+  m_WeaponType: 1
 --- !u!4 &6030160856245237932
 Transform:
   m_ObjectHideFlags: 0
