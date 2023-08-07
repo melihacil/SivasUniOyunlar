@@ -42,9 +42,14 @@ public class UIManager : MonoBehaviour
     public GameObject StartArcadeModeButton;
     //public GameObject StartSurvivorModeButton;
     public GameObject MainMenuButton;
-
+    public GameObject WeaponButton;
+    [SerializeField]
+    SphereCollider WeaponCollider;
     private void Start()
     {
+
+        WeaponCollider = WeaponButton.GetComponentInChildren<SphereCollider>();
+
         gameController = GameController.instance;
         pooler = Pooler.instance;
         GameplayPanel.alpha = 0;
@@ -73,6 +78,7 @@ public class UIManager : MonoBehaviour
     {
         StartArcadeModeButton.SetActive(false);
         MainMenuButton.SetActive(false);
+        WeaponButton.SetActive(false);
         GameplayPanel.alpha = 1;
         FinishPanel.alpha = 0;
         score = 0;
@@ -97,6 +103,7 @@ public class UIManager : MonoBehaviour
 
         StartArcadeModeButton.SetActive(true);
         MainMenuButton.SetActive(true);
+        WeaponButton.SetActive(true);
 
         canCount = false;
         timeText.text = "0 : 00";
@@ -136,22 +143,34 @@ public class UIManager : MonoBehaviour
         switch (_fruitParentButton)
         {
             case "Arcade":
+                Debug.Log("Arcade Start");
                 StartArcadeMode();
                 break;
             /*             case "Survivor":
                             StartSurviorMode();
                             break; */
             case "MainMenu":
+                Debug.Log("Return to main menu");
                 StartMainMenu();
                 break;
             case "Weapon":
+                Debug.Log("ChangeModel");
                 sceneController.ChangeModel();
+                Finish();
+                WeaponCollider.enabled = false;
+                Invoke(nameof(ChangeWeapon), 0.4f);
                 break;
             default:
                 Debug.Log("Please Check your Button's name!");
                 break;
 
         }
+    }
+
+
+    private void ChangeWeapon()
+    {
+        WeaponCollider.enabled = true;
     }
 }
 

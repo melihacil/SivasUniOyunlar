@@ -37,7 +37,11 @@ public class Fruit : MonoBehaviour
             Weapon weapon = other.transform.GetComponentInParent<Weapon>();
             if (weapon.canSlice)
             {
-                if (weapon.SwordVelocity > 3f || particleTyp == particleType.Explosion)
+                if ( (weapon.m_WeaponType == WepType.Katana && weapon.SwordVelocity > 3f ) || particleTyp == particleType.Explosion)
+                {
+                    gameController.Slice(gameObject, weapon);
+                }
+                else if (weapon.m_WeaponType ==WepType.LightSaber)
                 {
                     gameController.Slice(gameObject, weapon);
                 }

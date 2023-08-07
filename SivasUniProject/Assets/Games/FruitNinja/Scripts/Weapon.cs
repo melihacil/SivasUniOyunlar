@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
+
+
+public enum WepType
+{
+    Katana,
+    LightSaber
+}
+
 public class Weapon : MonoBehaviour
 {
     //there isn't a velocity in our sword beacuse , all the velocity is in our XR controller 
@@ -18,15 +26,11 @@ public class Weapon : MonoBehaviour
 
 
 
-    private enum WepType
-    {
-        Katana,
-        LightSaber
-    }
 
 
     [SerializeField]
-    WepType m_WeaponType = WepType.Katana;
+    public WepType m_WeaponType = WepType.Katana;
+
 
 
     private void Start()
