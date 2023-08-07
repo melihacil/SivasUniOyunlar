@@ -139,23 +139,31 @@ public class UIManager : MonoBehaviour
         switch (_fruitParentButton)
         {
             case "Arcade":
+                Debug.Log("Arcade Start");
                 StartArcadeMode();
                 break;
             /*             case "Survivor":
                             StartSurviorMode();
                             break; */
             case "MainMenu":
+                Debug.Log("Return to main menu");
                 StartMainMenu();
                 break;
             case "Weapon":
                 Debug.Log("ChangeModel");
                 sceneController.ChangeModel();
+                Finish();
                 break;
             default:
                 Debug.Log("Please Check your Button's name!");
                 break;
 
         }
+    }
+
+    private void ChangeWeapon()
+    {
+        
     }
 }
 

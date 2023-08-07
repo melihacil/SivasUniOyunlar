@@ -9219,7 +9219,7 @@ MonoBehaviour:
   FinishScore: {fileID: 1292167385}
   StartArcadeModeButton: {fileID: 7482846012267340597}
   MainMenuButton: {fileID: 7482846010959860609}
-  WeaponButton: {fileID: 0}
+  WeaponButton: {fileID: 1158300127}
 --- !u!4 &1263143415
 Transform:
   m_ObjectHideFlags: 0

@@ -104,6 +104,10 @@ public class GameController : MonoBehaviour
         else
         {
             Debug.Log("null");
+            if (_Fruit.CompareTag("button"))
+            {
+                StartCoroutine(Countdown(_Fruit));
+            }
         }
     }
 
