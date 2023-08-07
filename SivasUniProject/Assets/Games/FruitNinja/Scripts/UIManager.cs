@@ -42,6 +42,7 @@ public class UIManager : MonoBehaviour
     public GameObject StartArcadeModeButton;
     //public GameObject StartSurvivorModeButton;
     public GameObject MainMenuButton;
+    public GameObject WeaponButton;
 
     private void Start()
     {
@@ -73,6 +74,7 @@ public class UIManager : MonoBehaviour
     {
         StartArcadeModeButton.SetActive(false);
         MainMenuButton.SetActive(false);
+        WeaponButton.SetActive(false);
         GameplayPanel.alpha = 1;
         FinishPanel.alpha = 0;
         score = 0;
@@ -97,6 +99,7 @@ public class UIManager : MonoBehaviour
 
         StartArcadeModeButton.SetActive(true);
         MainMenuButton.SetActive(true);
+        WeaponButton.SetActive(true);
 
         canCount = false;
         timeText.text = "0 : 00";
@@ -145,6 +148,7 @@ public class UIManager : MonoBehaviour
                 StartMainMenu();
                 break;
             case "Weapon":
+                Debug.Log("ChangeModel");
                 sceneController.ChangeModel();
                 break;
             default:
