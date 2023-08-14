@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 601bb29387ff2284ca67fe2ccec24425, type: 3}
   m_Name: Fruit Ninja
   m_EditorClassIdentifier: 
-  m_VideoClip: {fileID: 32900000, guid: e0dac52acf4a75a45ae3a31aa87bae08, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 4c95536ceb08cbd4fa3bfea73981f8cc, type: 3}
   m_Name: "Ok\xE7uluk"
   m_GameName: Fruit Ninja
   sceneType: 5
