@@ -35496,7 +35496,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -35516,6 +35516,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetTag: Ball
   gameManager: {fileID: 419389513}
+  m_GolfClubRedundant: {fileID: 0}
+  m_ResetSpeed: 0.1
 --- !u!1001 &1251496676
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60078,6 +60080,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetTag: Ball
   gameManager: {fileID: 419389513}
+  m_GolfClubRedundant: {fileID: 0}
+  m_ResetSpeed: 0.1
 --- !u!4 &310560785220221550
 Transform:
   m_ObjectHideFlags: 0
