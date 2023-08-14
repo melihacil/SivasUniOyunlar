@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 601bb29387ff2284ca67fe2ccec24425, type: 3}
   m_Name: Bowling
   m_EditorClassIdentifier: 
-  m_VideoClip: {fileID: 32900000, guid: ab4937678fcde0649b3e4e6733bb6bc3, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: b4ff028d8a29c814983edcb25af31d2a, type: 3}
   m_Name: 
   m_GameName: Bowling
   sceneType: 2
