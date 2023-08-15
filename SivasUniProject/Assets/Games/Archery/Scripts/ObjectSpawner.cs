@@ -49,6 +49,8 @@ public class ObjectSpawner : MonoBehaviour
             return null;
         }
     }
+
+    // From a circle to a cone shaped area
     private void SpawnObject()
     {
         // Rastgele bir nokta seçme
