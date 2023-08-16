@@ -56,11 +56,11 @@ public class ObjectSpawner : MonoBehaviour
     private void SpawnObject()
     {
 
-        float angleInRad = Random.Range(0.0f, m_SpawnAngle) * Mathf.Deg2Rad;
+        //float angleInRad = Random.Range(0.0f, m_SpawnAngle) * Mathf.Deg2Rad;
         // Rastgele bir nokta seçme
-        Vector2 randomPoint = Random.insideUnitCircle.normalized * Mathf.Sin(angleInRad);
+        //Vector2 randomPoint = Random.insideUnitCircle.normalized * Mathf.Sin(angleInRad);
         // This will give you a circle
-        Vector3 spawnPosition = new Vector3(randomPoint.x, 0f, randomPoint.y) * Random.Range(innerRadius, outerRadius);
+        Vector3 spawnPosition = GetPointOnUnitSphereCap(centerPoint.position, m_SpawnAngle) * Random.Range(innerRadius, outerRadius);
 
         // Nesneyi oluþturma
         Instantiate(RandomTarget(Random.Range(1,4)), centerPoint.position + spawnPosition, Quaternion.identity);
