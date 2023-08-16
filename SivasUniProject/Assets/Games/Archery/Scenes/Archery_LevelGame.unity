@@ -190,6 +190,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  m_TestStrength: 1.36
 --- !u!1001 &17147069
 PrefabInstance:
   m_ObjectHideFlags: 0
