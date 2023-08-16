@@ -27,6 +27,10 @@ public class BowController : MonoBehaviour
     [SerializeField]
     private AudioSource audioSource;
 
+    [SerializeField]
+    private TrajectoryLine m_TrajectoryLine;
+
+
     public UnityEvent OnBowPulled;
     public UnityEvent<float> OnBowReleased;
 
@@ -61,7 +65,8 @@ public class BowController : MonoBehaviour
         interactor = arg0.interactorObject.transform;
         OnBowPulled?.Invoke();
     }
-
+    [SerializeField, Range(0.0f, 10f)]
+    private float m_TestStrength;
     private void Update()
     {
         //GameObject arrow = GameObject.FindGameObjectWithTag("Arrow");
@@ -84,7 +89,12 @@ public class BowController : MonoBehaviour
             HandlePullingString(midPointLocalXAbs, midPointLocalSpace);
 
             bowStringRenderer.CreateString(midPointVisualObject.position);
+
+            
+            m_TrajectoryLine.ShowTrajectoryLine(midPointVisualObject.position, midPointVisualObject.transform.forward * strength * 10f);
         }
+        if (m_TestStrength > 0.2f)
+            m_TrajectoryLine.ShowTrajectoryLine(midPointVisualObject.position, midPointVisualObject.transform.forward * (m_TestStrength * 10f) / 0.3f);
     }
 
     private void HandlePullingString(float midPointLocalXAbs, Vector3 midPointLocalSpace)

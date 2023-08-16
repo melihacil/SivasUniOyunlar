@@ -11,9 +11,9 @@ public class ObjectSpawner : MonoBehaviour
     [SerializeField]
     private Transform centerPoint; // Çemberlerin merkez noktasý
     [SerializeField]
-    private float innerRadius; // Ýç çemberin yarýçapý
+    private float innerRadiusRedundant; // Ýç çemberin yarýçapý
     [SerializeField]
-    private float outerRadius; // Dýþ çemberin yarýçapý
+    private float outerRadiusRedundant; // Dýþ çemberin yarýçapý
     [SerializeField]
     private float spawnInterval; // Nesne oluþturma aralýðý (saniye)
 
@@ -32,32 +32,53 @@ public class ObjectSpawner : MonoBehaviour
     }
     private GameObject RandomTarget(float value)
     {
-        if (value == 3f)
+        switch (value)
         {
-            return oneHundredPointstarget;
-        }
-        else if (value == 2f)
-        {
-            return fiftyPointstarget;
-        }
-        else if(value==1f)
-        {
-            return twentyFivePointstarget;
-        }
-        else
-        {
-            return null;
+            case 1f:
+                return twentyFivePointstarget;
+            case 2f:
+                return fiftyPointstarget;
+            case 3f:
+                return oneHundredPointstarget;
+            default:
+                return null;
         }
     }
 
+
+    [SerializeField] float m_SpawnAngleRedundant;
+    [SerializeField] Vector2 m_xAxis;
+    [SerializeField] Vector2 m_zAxis;
     // From a circle to a cone shaped area
     private void SpawnObject()
     {
+
+
         // Rastgele bir nokta seçme
-        Vector2 randomPoint = Random.insideUnitCircle.normalized;
-        Vector3 spawnPosition = new Vector3(randomPoint.x, 0f, randomPoint.y) * Random.Range(innerRadius, outerRadius);
+        //Vector2 randomPoint = Random.insideUnitCircle.normalized;
+        // This will give you a circle
+        //Vector3 spawnPosition = new Vector3(randomPoint.x, 0f, randomPoint.y) * Random.Range(innerRadius, outerRadius);
+
+        Vector3 clampedSpawnPosition = new Vector3(Random.Range(m_xAxis.x,m_xAxis.y), 0f, Random.Range(m_zAxis.x,m_zAxis.y));
+
 
         // Nesneyi oluþturma
-        Instantiate(RandomTarget(Random.Range(1,4)), centerPoint.position + spawnPosition, Quaternion.identity);
+        Instantiate(RandomTarget(Random.Range(1, 4)), clampedSpawnPosition, Quaternion.identity);
     }
+
+
+    private void SpawnObjectOld()
+    {
+
+
+        // Rastgele bir nokta seçme
+        Vector2 randomPoint = Random.insideUnitCircle.normalized;
+        // This will give you a circle
+        //Vector3 spawnPosition = new Vector3(randomPoint.x, 0f, randomPoint.y) * Random.Range(innerRadius, outerRadius);
+
+        // Nesneyi oluþturma
+        //Instantiate(RandomTarget(Random.Range(1, 4)), centerPoint.position + spawnPosition, Quaternion.identity);
+    }
+
+
 }
