@@ -2439,7 +2439,8 @@ MonoBehaviour:
   centerPoint: {fileID: 2302519653746507821}
   innerRadius: 10
   outerRadius: 15
-  spawnInterval: 3
+  spawnInterval: 1
+  m_SpawnAngle: 45
 --- !u!4 &1160493163
 Transform:
   m_ObjectHideFlags: 0
