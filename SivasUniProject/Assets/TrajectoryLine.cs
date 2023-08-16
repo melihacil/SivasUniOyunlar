@@ -14,6 +14,12 @@ public class TrajectoryLine : MonoBehaviour
     private float m_timeOfTheFlight = 5f;
 
 
+    private void Awake()
+    {
+        m_lineRenderer = GetComponent<LineRenderer>();
+    }
+
+
     public void ShowTrajectoryLine(Vector3 startPoint, Vector3 startVelocity)
     {
 
