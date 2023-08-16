@@ -1574,7 +1574,7 @@ GameObject:
   - component: {fileID: 561403778}
   - component: {fileID: 561403777}
   m_Layer: 12
-  m_Name: Cube (3)
+  m_Name: Blocking Cube-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
