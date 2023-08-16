@@ -159,6 +159,7 @@ MonoBehaviour:
   bowStringStretchLimit: 0.3
   stringSoundThreshold: 0.001
   audioSource: {fileID: 2470388152337561439}
+  m_TrajectoryLine: {fileID: 156761679}
   OnBowPulled:
     m_PersistentCalls:
       m_Calls:
@@ -361,6 +362,7 @@ GameObject:
   m_Component:
   - component: {fileID: 156761678}
   - component: {fileID: 156761677}
+  - component: {fileID: 156761679}
   m_Layer: 0
   m_Name: Line
   m_TagString: Untagged
@@ -487,6 +489,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &156761679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156761676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7073a8c34acea64f83911105367db26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_lineRenderer: {fileID: 0}
+  m_lineCount: 60
+  m_timeOfTheFlight: 5
 --- !u!4 &163884829 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6846240180997506890, guid: 021cac7915726eb4c849c3c16ebe90bb, type: 3}
@@ -2583,10 +2600,10 @@ MonoBehaviour:
   fiftyPointstarget: {fileID: 301597707168136501, guid: ab426e65839f0cc4689f787958838047, type: 3}
   twentyFivePointstarget: {fileID: 9150144676449896107, guid: 5634dc88f767c404b88530b573ffd327, type: 3}
   centerPoint: {fileID: 2302519653746507821}
-  innerRadius: 10
-  outerRadius: 15
+  innerRadiusRedundant: 0
+  outerRadiusRedundant: 0
   spawnInterval: 3
-  m_SpawnAngle: 45
+  m_SpawnAngleRedundant: 0
   m_xAxis: {x: -11.5, y: 10.5}
   m_zAxis: {x: -5, y: 10.5}
 --- !u!4 &1160493163
