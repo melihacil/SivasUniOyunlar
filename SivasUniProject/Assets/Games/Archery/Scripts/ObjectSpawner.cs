@@ -11,9 +11,9 @@ public class ObjectSpawner : MonoBehaviour
     [SerializeField]
     private Transform centerPoint; // Çemberlerin merkez noktasý
     [SerializeField]
-    private float innerRadius; // Ýç çemberin yarýçapý
+    private float innerRadiusRedundant; // Ýç çemberin yarýçapý
     [SerializeField]
-    private float outerRadius; // Dýþ çemberin yarýçapý
+    private float outerRadiusRedundant; // Dýþ çemberin yarýçapý
     [SerializeField]
     private float spawnInterval; // Nesne oluþturma aralýðý (saniye)
 
@@ -46,7 +46,7 @@ public class ObjectSpawner : MonoBehaviour
     }
 
 
-    [SerializeField] float m_SpawnAngle;
+    [SerializeField] float m_SpawnAngleRedundant;
     [SerializeField] Vector2 m_xAxis;
     [SerializeField] Vector2 m_zAxis;
     // From a circle to a cone shaped area
