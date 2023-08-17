@@ -59,7 +59,7 @@ public class ObjectSpawner : MonoBehaviour
         // This will give you a circle
         //Vector3 spawnPosition = new Vector3(randomPoint.x, 0f, randomPoint.y) * Random.Range(innerRadius, outerRadius);
 
-        Vector3 clampedSpawnPosition = new Vector3(Random.Range(m_xAxis.x,m_xAxis.y), 1f, Random.Range(m_zAxis.x,m_zAxis.y));
+        Vector3 clampedSpawnPosition = new Vector3(Random.Range(m_xAxis.x,m_xAxis.y), 0.2f, Random.Range(m_zAxis.x,m_zAxis.y));
 
 
         // Nesneyi oluþturma
