@@ -55,9 +55,9 @@ public class ObjectSpawner : MonoBehaviour
 
 
         // Rastgele bir nokta seçme
-        //Vector2 randomPoint = Random.insideUnitCircle.normalized;
+        Vector2 randomPoint = Random.insideUnitCircle.normalized;
         // This will give you a circle
-        //Vector3 spawnPosition = new Vector3(randomPoint.x, 0f, randomPoint.y) * Random.Range(innerRadius, outerRadius);
+        Vector3 spawnPosition = new Vector3(randomPoint.x, 0f, randomPoint.y) * Random.Range(innerRadius, outerRadius);
 
         Vector3 clampedSpawnPosition = new Vector3(Random.Range(m_xAxis.x,m_xAxis.y), 0f, Random.Range(m_zAxis.x,m_zAxis.y));
 
@@ -74,10 +74,10 @@ public class ObjectSpawner : MonoBehaviour
         // Rastgele bir nokta seçme
         Vector2 randomPoint = Random.insideUnitCircle.normalized;
         // This will give you a circle
-        //Vector3 spawnPosition = new Vector3(randomPoint.x, 0f, randomPoint.y) * Random.Range(innerRadius, outerRadius);
+        Vector3 spawnPosition = new Vector3(randomPoint.x, 0f, randomPoint.y) * Random.Range(innerRadius, outerRadius);
 
         // Nesneyi oluþturma
-        //Instantiate(RandomTarget(Random.Range(1, 4)), centerPoint.position + spawnPosition, Quaternion.identity);
+        Instantiate(RandomTarget(Random.Range(1, 4)), centerPoint.position + spawnPosition, Quaternion.identity);
     }
 
 
