@@ -91,7 +91,7 @@ public class BowController : MonoBehaviour
             HandlePullingString(midPointLocalXAbs, midPointLocalSpace);
 
             bowStringRenderer.CreateString(midPointVisualObject.position);
-            m_TrajectoryLine.ShowTrajectoryLine(midPointVisualObject.position, midPointVisualObject.transform.forward * (strength * 100f) / 0.3f);
+            m_TrajectoryLine.ShowTrajectoryLine(midPointVisualObject.position, midPointVisualObject.transform.forward * (strength * 105f) / 0.3f);
             // 0.3F should be changed with the m_ArrowMass =>  Force / Mass
             
         }
