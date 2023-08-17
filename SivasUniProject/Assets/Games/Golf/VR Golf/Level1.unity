@@ -10788,7 +10788,7 @@ GameObject:
   - component: {fileID: 427360744}
   - component: {fileID: 427360747}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: "Men\xFCMEte"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22479,11 +22479,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b711ab4134ef3fe4fbff31141b3d7682, type: 3}
   m_PrefabInstance: {fileID: 833005222}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &833255148 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2576012975173713671, guid: b7efd7744a638d0478340ef6b028d91b, type: 3}
-  m_PrefabInstance: {fileID: 2576012975469808107}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &835431048
 PrefabInstance:
@@ -61076,7 +61071,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &310560785862222332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61128,7 +61123,7 @@ MonoBehaviour:
       m_Name: Is Tracked
       m_Type: 1
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: 4315604e-5378-4db2-b7e0-2969427a481b
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -61224,7 +61219,7 @@ MonoBehaviour:
       m_Name: UI Scroll
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: 
+      m_Id: b41f0618-eac0-4ae5-857c-63d110ad45b6
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -61596,8 +61591,8 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   m_InvalidColorGradient:
     serializedVersion: 2
-    key0: {r: 1, g: 0, b: 0, a: 1}
-    key1: {r: 1, g: 0, b: 0, a: 1}
+    key0: {r: 1, g: 0, b: 0, a: 0}
+    key1: {r: 1, g: 0, b: 0, a: 0}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -61621,7 +61616,7 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
-    m_ColorSpace: -1
+    m_ColorSpace: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   m_BlockedColorGradient:
@@ -61718,7 +61713,7 @@ MonoBehaviour:
       m_Name: Is Tracked
       m_Type: 1
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: fbd5a788-2771-4b15-b4a6-90835022c3e7
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -61814,7 +61809,7 @@ MonoBehaviour:
       m_Name: UI Scroll
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: 
+      m_Id: 4df357b6-a5ec-4598-b83a-8e04edb9f1b9
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -62186,8 +62181,8 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   m_InvalidColorGradient:
     serializedVersion: 2
-    key0: {r: 1, g: 0, b: 0, a: 1}
-    key1: {r: 1, g: 0, b: 0, a: 1}
+    key0: {r: 1, g: 0, b: 0, a: 0}
+    key1: {r: 1, g: 0, b: 0, a: 0}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -62211,7 +62206,7 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
-    m_ColorSpace: -1
+    m_ColorSpace: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   m_BlockedColorGradient:
@@ -62304,7 +62299,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &543450652034290323 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2993095696099182597, guid: 115f74012c844374bbc39475eda5ddc3, type: 3}
@@ -64207,7 +64202,7 @@ MonoBehaviour:
       m_Name: Is Tracked
       m_Type: 1
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: 1d2e65ab-b4a6-409d-a5fa-8a58cc269a12
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -64303,7 +64298,7 @@ MonoBehaviour:
       m_Name: UI Scroll
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: 
+      m_Id: ad43ac92-ae04-418a-b564-7cfda66415c0
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -65123,7 +65118,7 @@ MonoBehaviour:
       m_Name: Is Tracked
       m_Type: 1
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: 9d8ad2a0-7b33-40d2-9fa9-1fcead527679
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -65219,7 +65214,7 @@ MonoBehaviour:
       m_Name: UI Scroll
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: 
+      m_Id: 249a3c70-0c3f-44ca-8536-c41ab4f8b985
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -65361,71 +65356,6 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 6558622148059887818, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   handAnimator: {fileID: 2193529142072108336}
---- !u!1001 &2576012975469808107
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2576012975173713671, guid: b7efd7744a638d0478340ef6b028d91b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2576012976029983443, guid: b7efd7744a638d0478340ef6b028d91b, type: 3}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 2576012976029983443, guid: b7efd7744a638d0478340ef6b028d91b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.89
-      objectReference: {fileID: 0}
-    - target: {fileID: 2576012976029983443, guid: b7efd7744a638d0478340ef6b028d91b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.76
-      objectReference: {fileID: 0}
-    - target: {fileID: 2576012976029983443, guid: b7efd7744a638d0478340ef6b028d91b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.403
-      objectReference: {fileID: 0}
-    - target: {fileID: 2576012976029983443, guid: b7efd7744a638d0478340ef6b028d91b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2576012976029983443, guid: b7efd7744a638d0478340ef6b028d91b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2576012976029983443, guid: b7efd7744a638d0478340ef6b028d91b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2576012976029983443, guid: b7efd7744a638d0478340ef6b028d91b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2576012976029983443, guid: b7efd7744a638d0478340ef6b028d91b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2576012976029983443, guid: b7efd7744a638d0478340ef6b028d91b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2576012976029983443, guid: b7efd7744a638d0478340ef6b028d91b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2576012976029983452, guid: b7efd7744a638d0478340ef6b028d91b, type: 3}
-      propertyPath: m_Name
-      value: EndingCanvas
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b7efd7744a638d0478340ef6b028d91b, type: 3}
 --- !u!1001 &3315535327766731414
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65575,7 +65505,7 @@ PrefabInstance:
     - target: {fileID: 4445698080498940786, guid: f7f6cdac965872141ba1823101dec319, type: 3}
       propertyPath: endCanvas
       value: 
-      objectReference: {fileID: 833255148}
+      objectReference: {fileID: 427360742}
     - target: {fileID: 4445698080498940786, guid: f7f6cdac965872141ba1823101dec319, type: 3}
       propertyPath: leftXRray
       value: 
@@ -67023,7 +66953,6 @@ SceneRoots:
   - {fileID: 203821286}
   - {fileID: 8794062778543629132}
   - {fileID: 411512917}
-  - {fileID: 2576012975469808107}
   - {fileID: 910582040}
   - {fileID: 1471520299}
   - {fileID: 429506879}
