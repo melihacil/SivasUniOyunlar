@@ -92,11 +92,13 @@ public class BowController : MonoBehaviour
             bowStringRenderer.CreateString(midPointVisualObject.position);
             m_TrajectoryLine.ShowTrajectoryLine(midPointVisualObject.position, midPointVisualObject.transform.forward * (strength * 100f) / 0.3f);
             // 0.3F should be changed with the m_ArrowMass =>  Force / Mass
-            if (strength > 0.2f)               
-                m_TrajectoryLine.gameObject.SetActive(true);
-            else
-                m_TrajectoryLine.gameObject.SetActive(false);
+            
         }
+        Debug.Log(strength);
+        if (strength > 0.001f)
+            m_TrajectoryLine.gameObject.SetActive(true);
+        else
+            m_TrajectoryLine.gameObject.SetActive(false);
         // Redundant on release
         //if (m_TestStrength > 0.2f)
         //    m_TrajectoryLine.ShowTrajectoryLine(midPointVisualObject.position, midPointVisualObject.transform.forward * (m_TestStrength * 10f) / 0.3f);
