@@ -70,6 +70,7 @@ public class BowController : MonoBehaviour
     private void Update()
     {
         //GameObject arrow = GameObject.FindGameObjectWithTag("Arrow");
+
         //arrow.gameObject.transform.localScale = new Vector3(6f, 6f, 6f);
         if (interactor != null)
         {
