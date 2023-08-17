@@ -47,6 +47,7 @@ public class BowController : MonoBehaviour
 
     private void ResetBowString(SelectExitEventArgs arg0)
     {
+        //m_TrajectoryLine.gameObject.SetActive(false);
         OnBowReleased?.Invoke(strength);
         strength = 0;
         previousStrength= 0;
@@ -70,6 +71,7 @@ public class BowController : MonoBehaviour
     private void Update()
     {
         //GameObject arrow = GameObject.FindGameObjectWithTag("Arrow");
+
         //arrow.gameObject.transform.localScale = new Vector3(6f, 6f, 6f);
         if (interactor != null)
         {
@@ -89,12 +91,18 @@ public class BowController : MonoBehaviour
             HandlePullingString(midPointLocalXAbs, midPointLocalSpace);
 
             bowStringRenderer.CreateString(midPointVisualObject.position);
-
+            m_TrajectoryLine.ShowTrajectoryLine(midPointVisualObject.position, midPointVisualObject.transform.forward * (strength * 100f) / 0.3f);
+            // 0.3F should be changed with the m_ArrowMass =>  Force / Mass
             
-            m_TrajectoryLine.ShowTrajectoryLine(midPointVisualObject.position, midPointVisualObject.transform.forward * strength * 10f);
         }
-        if (m_TestStrength > 0.2f)
-            m_TrajectoryLine.ShowTrajectoryLine(midPointVisualObject.position, midPointVisualObject.transform.forward * (m_TestStrength * 10f) / 0.3f);
+        Debug.Log(strength);
+        if (strength > 0.001f)
+            m_TrajectoryLine.gameObject.SetActive(true);
+        else
+            m_TrajectoryLine.gameObject.SetActive(false);
+        // Redundant on release
+        //if (m_TestStrength > 0.2f)
+        //    m_TrajectoryLine.ShowTrajectoryLine(midPointVisualObject.position, midPointVisualObject.transform.forward * (m_TestStrength * 10f) / 0.3f);
     }
 
     private void HandlePullingString(float midPointLocalXAbs, Vector3 midPointLocalSpace)
