@@ -95,7 +95,6 @@ public class BowController : MonoBehaviour
             // 0.3F should be changed with the m_ArrowMass =>  Force / Mass
             
         }
-        Debug.Log(strength);
         if (strength > 0.001f)
             m_TrajectoryLine.gameObject.SetActive(true);
         else
