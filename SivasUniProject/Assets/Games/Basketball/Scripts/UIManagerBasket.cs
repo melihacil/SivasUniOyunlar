@@ -14,8 +14,12 @@ public class UIManagerBasket : MonoBehaviour
         score++;
         scoreText.text = "Score: " + score;
     }
-
-   public void Score()
+    public void IncreaseScore(int points)
+    {
+        score = score + points;  // score += points;
+        scoreText.text = "Score: " + score;
+    }
+    public void Score()
     {
         scoreText.text = "Score: " + score;
     }
