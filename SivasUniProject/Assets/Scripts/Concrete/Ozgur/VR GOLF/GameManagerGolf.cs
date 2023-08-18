@@ -107,8 +107,8 @@ public class GameManagerGolf : MonoBehaviour
 
         endCanvas.transform.LookAt(new Vector3(headTransform.position.x, endCanvas.transform.position.y, headTransform.position.z));
         endCanvas.transform.forward *= -1;
-        leftXrRay.SetActive(true);
-        rightXrRay.SetActive(true);
+        //leftXrRay.SetActive(true);
+       // rightXrRay.SetActive(true);
         
     }
 
