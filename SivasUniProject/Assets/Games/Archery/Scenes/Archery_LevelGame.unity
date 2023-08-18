@@ -4002,7 +4002,7 @@ MonoBehaviour:
   centerPoint: {fileID: 2302519653746507821}
   innerRadiusRedundant: 0
   outerRadiusRedundant: 0
-  spawnInterval: 3
+  spawnInterval: 2.5
   m_SpawnAngleRedundant: 0
   m_xAxis: {x: -11.5, y: 10.5}
   m_zAxis: {x: -5, y: 10.5}
