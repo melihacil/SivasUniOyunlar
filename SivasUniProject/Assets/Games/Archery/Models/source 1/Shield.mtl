@@ -1,0 +1,10 @@
+newmtl blinn1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.38 0.38 0.38
+Tf 1.00 1.00 1.00
+map_Kd Sheild_Texture.png
+bump Sheild_Bump.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks Sheild_Spec.png
