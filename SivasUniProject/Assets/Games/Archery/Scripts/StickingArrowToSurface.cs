@@ -28,8 +28,11 @@ public class StickingArrowToSurface : MonoBehaviour
         }
 
         collision.collider.GetComponent<IHittable>()?.GetHit();
-
-        Destroy(gameObject);
-
+        this.gameObject.SetActive(false);
+        Destroy(arrow,1f);
+        Destroy(gameObject,1.1f);
+        
+        Debug.Log("Testing = Arrow Hit, " + collision.gameObject.name);
     }
+
 }

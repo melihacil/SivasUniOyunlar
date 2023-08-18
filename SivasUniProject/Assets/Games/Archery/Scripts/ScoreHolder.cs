@@ -26,9 +26,7 @@ public class ScoreHolder : MonoBehaviour
     }
     private void Update()
     {
-
-        
-        scoreUI.text = $"Your Score:{score}";
+        scoreUI.text = "Your Score:" + GetScore();
     }
 
 

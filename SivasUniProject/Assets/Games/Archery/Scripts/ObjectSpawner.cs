@@ -55,7 +55,7 @@ public class ObjectSpawner : MonoBehaviour
 
 
         // Rastgele bir nokta seçme
-        //Vector2 randomPoint = Random.insideUnitCircle.normalized;
+        Vector2 randomPoint = Random.insideUnitCircle.normalized;
         // This will give you a circle
         //Vector3 spawnPosition = new Vector3(randomPoint.x, 0f, randomPoint.y) * Random.Range(innerRadius, outerRadius);
 
