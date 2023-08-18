@@ -28,7 +28,7 @@ public class ScoreHolder : MonoBehaviour
     {
 
         
-        scoreUI.text = $"Your Score:{score}";
+        scoreUI.text = $"Your Score:{GetScore()}";
     }
 
 
