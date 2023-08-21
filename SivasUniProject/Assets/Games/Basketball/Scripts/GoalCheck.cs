@@ -13,6 +13,9 @@ public class GoalCheck : MonoBehaviour
 
 
     [SerializeField]
+    private Animator m_Animator;
+
+    [SerializeField]
     private HoopType type = HoopType.lowScore;
 
     [SerializeField] UIManagerBasket uiManager;
@@ -40,6 +43,9 @@ public class GoalCheck : MonoBehaviour
                 break;
                 
         }
+
+        m_Animator = transform.parent.GetComponentInChildren<Animator>();
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -47,21 +53,24 @@ public class GoalCheck : MonoBehaviour
         if (other.gameObject.tag == "Basketball")
         {
             
-                Debug.Log("GOOOOOL");
-                audioSource.PlayOneShot(goalSound);
-                //  GameObject ball = other.gameObject;
-                //  other.gameObject.transform.position = ballPosition.position;
-                uiManager.IncreaseScore();
-            
-            
+            Debug.Log("GOOOOOL");
+            audioSource.PlayOneShot(goalSound);
+            //  GameObject ball = other.gameObject;
+            //  other.gameObject.transform.position = ballPosition.position;
+            uiManager.IncreaseScore();
+
+            m_Animator.SetTrigger("BasketScore");
         }
 
     }
 
-    public void DisableCanvas()
+    [ContextMenu("TestAnimation")]
+    public void TestAnimFunc()
     {
-       
+        m_Animator.SetTrigger("BasketScore");
     }
+
+
 
 
 }

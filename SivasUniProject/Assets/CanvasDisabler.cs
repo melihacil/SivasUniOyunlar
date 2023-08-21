@@ -15,9 +15,7 @@ public class CanvasDisablerManager : MonoBehaviour {
     [ContextMenu("TestDisable")]
     public void CanvasDisable()
     {
-        Debug.Log("Test 1");
         m_Canvas.enabled = false;
-        Debug.Log("Test 2");
     }
     [ContextMenu("TestEnable")]
     public void CanvasEnabler()
