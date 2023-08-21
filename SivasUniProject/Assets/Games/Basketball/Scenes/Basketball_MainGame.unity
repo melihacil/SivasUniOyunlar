@@ -21161,8 +21161,9 @@ GameObject:
   - component: {fileID: 1995784474}
   - component: {fileID: 1995784473}
   - component: {fileID: 1995784472}
+  - component: {fileID: 1995784475}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: LowCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21251,6 +21252,21 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!111 &1995784475
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995784470}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &2025311092
 GameObject:
   m_ObjectHideFlags: 0
