@@ -58,6 +58,10 @@ public class GoalCheck : MonoBehaviour
 
     }
 
+    public void DisableCanvas()
+    {
+       
+    }
 
 
 }
