@@ -12780,7 +12780,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Score : 0'
+  m_Text: 'Skor : 0'
 --- !u!222 &934975187
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16106,7 +16106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5ccf684e78fed754ba85397332ab6626, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.293
+      value: -19.786
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5ccf684e78fed754ba85397332ab6626, type: 3}
       propertyPath: m_LocalPosition.y
@@ -16118,7 +16118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5ccf684e78fed754ba85397332ab6626, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9501397
+      value: 0.966341
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5ccf684e78fed754ba85397332ab6626, type: 3}
       propertyPath: m_LocalRotation.x
@@ -16126,7 +16126,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5ccf684e78fed754ba85397332ab6626, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.3118247
+      value: 0.25726473
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5ccf684e78fed754ba85397332ab6626, type: 3}
       propertyPath: m_LocalRotation.z
@@ -16138,7 +16138,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5ccf684e78fed754ba85397332ab6626, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 36.338
+      value: 29.816
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5ccf684e78fed754ba85397332ab6626, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
