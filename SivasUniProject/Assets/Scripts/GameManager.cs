@@ -77,7 +77,7 @@ public class GameManager : MonoBehaviour
                 SceneManager.LoadScene("Bowling_MainGame");
                 break;
             case Scenes.Golf:
-                SceneManager.LoadScene("Golf_Menu");
+                SceneManager.LoadScene("Level1");
                 break;
             case Scenes.Basketball:
                 SceneManager.LoadScene("Basketball_MainGame");
