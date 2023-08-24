@@ -1,0 +1,90 @@
+Ana Menü 	- Tamamlandı
+Golf 	 	- Tamamlandı
+Bowling  	- Tamamlandı (Test Edilecek)
+Okçulun  	- Tamamlandı (Ek özellik eklenecek)
+Fruit Ninja     - Tamamlandı (Test Edilmeli) 
+Basketbol       - Tamamlandı (Test Edilecek)
+Panayır Oyunu   - Eklenecek
+
+Videolar - Tamamlandı
+
+
+
+
+
+
+Okçuluk
+- Trajectory line bir tık öne alınacak
+ (Veya line renderer kısımlarında ilk ışın atlanılacak)
+Basketbol 
+	-test edilecek
+Golf (Mete)
+	-test edilecek
+Fruit Ninja (Mete)
+
+
+
+
+Bowling - Top ağırlığı ve butonlar
+Basketbol - top ağırlığı
+golf - collision
+Golf Kısmi düzeltme - Collision hataları 
+
+
+-- Bowling 
+
+- Oyun butonları değiştirilecek
+
+Düzeltildi - Kontrol çubuğu buton hataları
+Düzeltildi - Işıklandırma hataları çözülmeli
+		- Spot lightlar düzenlenerek yeniden eklendi
+Düzeltildi - Bar önü pempe texture hatası
+Düzeltildi - Layer çarpışma hataları
+	 Düzeltildi - Bowling topu ve player
+	 Düzeltildi - bowling topu ve görünmeyen duvar collision'ı
+
+-- Basketbol
+ 
+Düzeltildi - Ana menü dönme hatası
+Düzeltildi - Menü buton hataları Hatalar 
+Düzeltildi - Yanlış layer collisionları (basketbol toplarının layerı player layerı ile çarpışmamalı)
+Düzeltildi - Input hataları
+
+
+- Ana Menü
+Düzeltildi - Kamera hataları
+Düzeltildi - Dropdown menü seçenekler hatası ( s_Selectables bug)
+Düzeltildi - Kontrol yönerge rotasyonları 
+
+--- Tamamlandı ---
+
+-- Golf -- 
+
+-- Çoklu audiosource kullanımı yerine scriptable objects kullanılarak audio clip değiştirilmeli-
+
+Düzeltildi - Kamera hataları ( Tracked pose driver values bug)
+---- Tamamlandı ----
+
+-- Okçuluk --
+
+Düzeltildi - Ok collision hataları (öner hoca)
+Düzeltildi - El rengi siyah
+Düzeltildi - Aydınlığa çevrilecek (skybox)
+Düzeltildi - Okçuluk skor sahnesi düzeltildi
+
+Düzeltildi - Ana sahne ray ışını düzeltilecek- 
+Düzeltildi - Menü fontu keskinleştirildi
+Düzeltildi - Ana sahne skybox ve düzen değiştirildi
+
+Eklenecek -- Object Pool for arrows or object disabler after hitting
+Eklenecek -- Ok gidişat ışını yapılacak
+
+-- Fruit Ninja 
+
+- Kılıç Rotasyonu
+Fruit Ninja - ışın kılıcı eklenecek
+Düzeltildi - Ana Menü Kamera hatası
+Düzeltildi - El (Kılıçlar) collisionlarının çalışmaması
+Düzeltildi - Yanlış rigidbody atamaları
+
+-- Tamamlandı Test Edilmeli -----
