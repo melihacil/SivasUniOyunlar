@@ -38,7 +38,7 @@ public class BasketBall : MonoBehaviour
     {
         if (_resetBall.action.IsPressed())
         {
-                ResetBall();
+            ResetBall();
             
         }
         if (_reloadBall.action.IsPressed())
