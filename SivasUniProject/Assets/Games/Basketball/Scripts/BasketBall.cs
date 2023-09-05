@@ -13,6 +13,8 @@ public class BasketBall : MonoBehaviour
     [SerializeField]
     private InputActionReference _resetBall;
     [SerializeField]
+    private InputActionReference _resetBall1;
+    [SerializeField]
     private InputActionReference _reloadBall;
 
     bool secondaryValue;
@@ -36,9 +38,9 @@ public class BasketBall : MonoBehaviour
 
     private void Update()
     {
-        if (_resetBall.action.IsPressed())
+        if (_resetBall.action.IsPressed() || _resetBall1.action.IsPressed())
         {
-                ResetBall();
+            ResetBall();
             
         }
         if (_reloadBall.action.IsPressed())

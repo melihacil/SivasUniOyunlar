@@ -33,6 +33,29 @@ public class TrajectoryLine : MonoBehaviour
 
     }
 
+    // Test Code
+    //private Vector3[] CalculateTrajectoryLine(Vector3 startPoint, Vector3 startVelocity, float timeStep)
+    //{
+    //    Vector3[] lineRendererPoints = new Vector3[m_lineCount];
+    //    lineRendererPoints[1] = startPoint;
+
+    //    for (int i = 2; i < m_lineCount; i++)
+    //    {
+    //        float timeOffSet = timeStep * i;
+
+    //        Vector3 progressBeforeGravity = startVelocity * timeOffSet;
+    //        Vector3 gravityOffSet = Vector3.up * -0.5f * Physics.gravity.y * Mathf.Pow(timeOffSet, 2f);
+    //        Vector3 newPosition = startPoint + progressBeforeGravity - gravityOffSet;
+    //        lineRendererPoints[i] = newPosition;
+
+    //    }
+
+
+    //    return lineRendererPoints;
+    //}
+
+
+    // Working code
     private Vector3[] CalculateTrajectoryLine(Vector3 startPoint, Vector3 startVelocity, float timeStep)
     {
         Vector3[] lineRendererPoints = new Vector3[m_lineCount];
@@ -46,14 +69,12 @@ public class TrajectoryLine : MonoBehaviour
             Vector3 gravityOffSet = Vector3.up * -0.5f * Physics.gravity.y * Mathf.Pow(timeOffSet, 2f);
             Vector3 newPosition = startPoint + progressBeforeGravity - gravityOffSet;
             lineRendererPoints[i] = newPosition;
-        
+
         }
 
 
         return lineRendererPoints;
     }
-
-
 
 
 }
