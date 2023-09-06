@@ -3042,12 +3042,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe931fc599117134dacd113bde26c098, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIfill: {fileID: 537622348}
-  UItext: {fileID: 2071048282}
-  duration: 5
+  duration: 90
   remainingDuration: 0
   m_TimerWarning: {fileID: 729364363}
   m_UGUI: {fileID: 963764745}
+  UIfill: {fileID: 537622348}
+  UItext: {fileID: 2071048282}
+  m_UITransparent: {fileID: 0}
+  m_scoreText: {fileID: 1849971111}
 --- !u!1001 &699254678
 PrefabInstance:
   m_ObjectHideFlags: 0
