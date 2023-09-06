@@ -10,22 +10,28 @@ public class GameStopper : MonoBehaviour, IPointerClickHandler
     {
         pause = !pause;
     }
-    [SerializeField] private Image UIfill;
-    [SerializeField] private Text UItext;
+
     [SerializeField] private int duration;
     private bool pause;
     [SerializeField] private int remainingDuration;
     [SerializeField] private GameObject m_TimerWarning;
     [SerializeField] private TextMeshProUGUI m_UGUI;
+
+    [SerializeField] private Image UIfill;
+    [SerializeField] private Text UItext;
+    [SerializeField] private Image m_UITransparent;
+    [SerializeField] private GameObject m_scoreText;
     private void Start()
     {
         Being(duration);
     }
+
     private void Being(int second)
     {
-remainingDuration= second;
+        remainingDuration= second;
         StartCoroutine(UpdateTimer()); 
     }
+
     IEnumerator UpdateTimer()
     {
 
@@ -59,6 +65,8 @@ remainingDuration= second;
     {
         UIfill.enabled = false;
         UItext.enabled = false;
+        m_UITransparent.enabled = false;
+        m_scoreText.SetActive(false);
         m_UGUI.text = "Oyun Bitti!";
         Debug.Log("Ending Function");
     }
