@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 85996628fe1d7da4e8fd269028506c8b, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -3048,7 +3048,7 @@ MonoBehaviour:
   m_UGUI: {fileID: 963764745}
   UIfill: {fileID: 537622348}
   UItext: {fileID: 2071048282}
-  m_UITransparent: {fileID: 0}
+  m_UITransparent: {fileID: 671570635}
   m_scoreText: {fileID: 1849971111}
 --- !u!1001 &699254678
 PrefabInstance:
