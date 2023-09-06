@@ -46,7 +46,7 @@ public class CountDown : MonoBehaviour
     {
         if (currentTime == 0)
         {
-            confetti.SetActive(true);
+            //confetti.SetActive(true);
             TimeEndText.SetActive(true);
             
         }
