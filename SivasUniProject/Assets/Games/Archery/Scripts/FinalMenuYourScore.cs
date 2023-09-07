@@ -21,6 +21,8 @@ public class FinalMenuYourScore : MonoBehaviour
         Debug.Log(scoreHolderComp.name);
         Debug.Log(scoreHolderComp.GetScore());
         yourScore.SetText($"Your Score:{scoreHolderComp.GetScore()}");
+
+        Destroy(scoreHolderComp.gameObject);
     }
 
    

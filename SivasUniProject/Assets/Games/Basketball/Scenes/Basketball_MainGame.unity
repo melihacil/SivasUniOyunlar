@@ -152,8 +152,8 @@ Transform:
   m_GameObject: {fileID: 777419}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.0275811, y: 1.0317609, z: 0.013061953}
-  m_LocalScale: {x: 0.28, y: 0.008596, z: 0.28}
+  m_LocalPosition: {x: 1.062, y: 1.026, z: 0.014}
+  m_LocalScale: {x: 0.32, y: 0.008596, z: 0.32}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 827208422}
@@ -6698,8 +6698,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: -0.008777618
-      value: 0.1663208
+      time: -0.011405945
+      value: 0.21820068
       inSlope: 2
       outSlope: 2
       tangentMode: 0
@@ -6718,8 +6718,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 0
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 4
-  m_ThrowAngularVelocityScale: 3
+  m_ThrowVelocityScale: 6
+  m_ThrowAngularVelocityScale: 7
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
@@ -7274,8 +7274,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: -0.008777618
-      value: 0.1663208
+      time: -0.011405945
+      value: 0.21820068
       inSlope: 2
       outSlope: 2
       tangentMode: 0
@@ -7294,8 +7294,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 0
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 4
-  m_ThrowAngularVelocityScale: 3
+  m_ThrowVelocityScale: 6
+  m_ThrowAngularVelocityScale: 7
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
@@ -8298,8 +8298,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: -0.008777618
-      value: 0.1663208
+      time: -0.011405945
+      value: 0.21820068
       inSlope: 2
       outSlope: 2
       tangentMode: 0
@@ -8318,8 +8318,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 0
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 4
-  m_ThrowAngularVelocityScale: 3
+  m_ThrowVelocityScale: 6
+  m_ThrowAngularVelocityScale: 7
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
@@ -8708,8 +8708,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: -0.008777618
-      value: 0.1663208
+      time: -0.011405945
+      value: 0.21820068
       inSlope: 2
       outSlope: 2
       tangentMode: 0
@@ -8728,8 +8728,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 0
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 4
-  m_ThrowAngularVelocityScale: 3
+  m_ThrowVelocityScale: 6
+  m_ThrowAngularVelocityScale: 7
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
@@ -24286,9 +24286,9 @@ Transform:
   m_GameObject: {fileID: 817554005}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 1.329, y: 1.0109047, z: -0.302}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 1.46, y: 1.0109047, z: -0.387}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 827208422}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -37255,8 +37255,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: -0.008777618
-      value: 0.1663208
+      time: -0.011405945
+      value: 0.21820068
       inSlope: 2
       outSlope: 2
       tangentMode: 0
@@ -37275,8 +37275,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 0
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 4
-  m_ThrowAngularVelocityScale: 3
+  m_ThrowVelocityScale: 6
+  m_ThrowAngularVelocityScale: 7
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
@@ -63617,9 +63617,9 @@ Transform:
   m_GameObject: {fileID: 1220585731}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.3709998, y: 0.58, z: 0.005}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -1.324, y: 0.58, z: 0.005}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1755246649}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -64579,8 +64579,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: -0.008777618
-      value: 0.1663208
+      time: -0.011405945
+      value: 0.21820068
       inSlope: 2
       outSlope: 2
       tangentMode: 0
@@ -64599,8 +64599,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 0
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 4
-  m_ThrowAngularVelocityScale: 3
+  m_ThrowVelocityScale: 6
+  m_ThrowAngularVelocityScale: 7
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
@@ -77518,8 +77518,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: -0.008777618
-      value: 0.1663208
+      time: -0.011405945
+      value: 0.21820068
       inSlope: 2
       outSlope: 2
       tangentMode: 0
@@ -77538,8 +77538,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 0
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 4
-  m_ThrowAngularVelocityScale: 3
+  m_ThrowVelocityScale: 6
+  m_ThrowAngularVelocityScale: 7
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
@@ -79824,8 +79824,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: -0.008777618
-      value: 0.1663208
+      time: -0.011405945
+      value: 0.21820068
       inSlope: 2
       outSlope: 2
       tangentMode: 0
@@ -79844,8 +79844,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 0
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 4
-  m_ThrowAngularVelocityScale: 3
+  m_ThrowVelocityScale: 6
+  m_ThrowAngularVelocityScale: 7
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
@@ -82932,8 +82932,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: -0.008777618
-      value: 0.1663208
+      time: -0.011405945
+      value: 0.21820068
       inSlope: 2
       outSlope: 2
       tangentMode: 0
@@ -82952,8 +82952,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 0
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 4
-  m_ThrowAngularVelocityScale: 3
+  m_ThrowVelocityScale: 6
+  m_ThrowAngularVelocityScale: 7
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
