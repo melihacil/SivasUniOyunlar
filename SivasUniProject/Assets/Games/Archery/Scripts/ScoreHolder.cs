@@ -26,7 +26,7 @@ public class ScoreHolder : MonoBehaviour
     }
     private void Update()
     {
-        scoreUI.text = "Your Score:" + GetScore();
+        scoreUI.text = "Puan:" + GetScore();
     }
 
 
