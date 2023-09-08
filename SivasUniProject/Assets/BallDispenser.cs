@@ -33,9 +33,12 @@ public class BallDispenser : MonoBehaviour
         while (true)
         {
             GameObject testBall = ObjectPooler.m_ObjectPooler.InstantiateObject();
-            testBall.transform.position = m_spawnPosition.position;
-            testBall.SetActive(true);
-            Debug.Log("Spawning");
+            if (testBall != null)
+            {
+                testBall.transform.position = m_spawnPosition.position;
+                testBall.SetActive(true);
+                Debug.Log("Spawning basketball" + testBall.transform.position);
+            }
             yield return new WaitForSeconds(1.5f);
         }
 
