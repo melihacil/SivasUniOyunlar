@@ -31,9 +31,16 @@ public class ObjectPooler : MonoBehaviour
 
     //Function for setting active and restarting position
 
-    public void InstantiateObject(Transform transform)
+    public GameObject InstantiateObject()
     {
-
+        for (int i = 0; i < m_pooledObjects.Count; i++)
+        {
+            if (!m_pooledObjects[i].activeInHierarchy)
+            {
+                return m_pooledObjects[i];
+            }
+        }
+        return null;
     }
 
 
