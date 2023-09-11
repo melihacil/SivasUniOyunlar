@@ -12,17 +12,19 @@ public class BallCount : MonoBehaviour
     [SerializeField] private Transform m_spawnPosition;
     private int m_BallCount = 0;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        //SpawnBasketball();
-        Invoke(nameof(SpawnBasketball), 0.3f);
-    }
+
 
     // Update is called once per frame
+    private bool m_Spawned = false;
+
     void Update()
     {
-        
+        if (m_BallCount < m_DesiredCount && !m_Spawned)
+        {
+            m_Spawned = true;
+            // Code for spawning balls
+            Invoke(nameof(SpawnBasketball), 0.6f);
+        }
     }
 
 
@@ -33,11 +35,11 @@ public class BallCount : MonoBehaviour
         {
             m_BallCount += 1;
 
-            if (m_BallCount < m_DesiredCount)
-            {
-                // Code for spawning balls
-                Invoke(nameof(SpawnBasketball), 0.3f);
-            }
+            //if (m_BallCount < m_DesiredCount)
+            //{
+            //    // Code for spawning balls
+            //    Invoke(nameof(SpawnBasketball), 0.3f);
+            //}
         }
     }
 
@@ -47,11 +49,11 @@ public class BallCount : MonoBehaviour
         if (other.gameObject.CompareTag("Basketball"))
         {
             m_BallCount -= 1;
-            if (m_BallCount < m_DesiredCount)
-            {
-                // Code for spawning balls
-                Invoke(nameof(SpawnBasketball), 0.3f);
-            }
+            //if (m_BallCount < m_DesiredCount)
+            //{
+            //    // Code for spawning balls
+            //    Invoke(nameof(SpawnBasketball), 0.3f);
+            //}
         }
     }
 
@@ -62,9 +64,10 @@ public class BallCount : MonoBehaviour
         GameObject testBall = ObjectPooler.m_ObjectPooler.InstantiateObject();
         if (testBall != null)
         {
+            m_Spawned = false;
             testBall.transform.position = m_spawnPosition.position;
             testBall.SetActive(true);
-            Debug.Log("Spawning basketball " + m_BallCount + " / " + m_DesiredCount);
+            Debug.Log("Spawning basketball " + (m_BallCount) + " / " + m_DesiredCount);
         }
     }
 
