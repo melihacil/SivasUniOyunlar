@@ -9,6 +9,7 @@ public class BallCount : MonoBehaviour
 
 
     [SerializeField] private int m_DesiredCount;
+    [SerializeField] private Transform m_spawnPosition;
 
     // Start is called before the first frame update
     void Start()
@@ -57,7 +58,13 @@ public class BallCount : MonoBehaviour
 
     private void SpawnBasketball()
     {
-
+        GameObject testBall = ObjectPooler.m_ObjectPooler.InstantiateObject();
+        if (testBall != null)
+        {
+            testBall.transform.position = m_spawnPosition.position;
+            testBall.SetActive(true);
+            Debug.Log("Spawning basketball" + testBall.transform.position);
+        }
     }
 
 }

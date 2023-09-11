@@ -8836,6 +8836,7 @@ GameObject:
   - component: {fileID: 274857199}
   - component: {fileID: 274857198}
   - component: {fileID: 274857204}
+  - component: {fileID: 274857205}
   m_Layer: 16
   m_Name: Ball_Deneme (4)
   m_TagString: Basketball
@@ -9230,6 +9231,18 @@ MonoBehaviour:
   _resetBall: {fileID: 6858057790039367337, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   _resetBall1: {fileID: 1609748558228030619, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   _reloadBall: {fileID: -8163460862585359035, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+--- !u!114 &274857205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274857196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f4767b1e813d6d41a699a6ea05d31fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &331039408
 GameObject:
   m_ObjectHideFlags: 0
@@ -22749,6 +22762,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5ef5e15ac4a3464c82843c1357674c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_DesiredCount: 0
+  m_spawnPosition: {fileID: 1690332701}
 --- !u!65 &593134974
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66134,7 +66149,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406759167}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0bf296fc962d7184ab14ad1841598d5f, type: 3}
   m_Name: 
