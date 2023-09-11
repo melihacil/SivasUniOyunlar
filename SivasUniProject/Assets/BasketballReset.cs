@@ -5,9 +5,11 @@ using UnityEngine;
 public class BasketballReset : MonoBehaviour
 {
     [SerializeField] LayerMask m_layerMask;
-    private void OnCollisionEnter(Collision collision)
+
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.layer == m_layerMask )
+        
+        if (other.gameObject.layer.Equals(19))
         {
             Debug.Log("Setting inactive");
 

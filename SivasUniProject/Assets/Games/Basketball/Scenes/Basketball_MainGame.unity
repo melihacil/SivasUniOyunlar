@@ -600,6 +600,59 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60433551}
   m_Mesh: {fileID: -3811328474767140994, guid: 8044db7ee66a57c41a1cf1899a27c99f, type: 3}
+--- !u!1 &66612308
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 66612309}
+  - component: {fileID: 66612310}
+  m_Layer: 19
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &66612309
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66612308}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -7.73, y: 5.76, z: 10.25}
+  m_LocalScale: {x: 30, y: 1, z: 50}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1223236030}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!65 &66612310
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66612308}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &87026424
 GameObject:
   m_ObjectHideFlags: 0
@@ -6746,7 +6799,6 @@ GameObject:
   - component: {fileID: 227374602}
   - component: {fileID: 227374601}
   - component: {fileID: 227374600}
-  - component: {fileID: 227374599}
   m_Layer: 16
   m_Name: Ball_Deneme (9)
   m_TagString: Basketball
@@ -6763,27 +6815,12 @@ Transform:
   m_GameObject: {fileID: 227374597}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.3661108, y: -2.0187893, z: -0.80199975}
+  m_LocalPosition: {x: 1.1090004, y: -2.0187893, z: -7.106}
   m_LocalScale: {x: 0.29999998, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1948682323}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &227374599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 227374597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c107fc61ccc70514ca8eac737a9c1c63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _resetBall: {fileID: 6858057790039367337, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  _resetBall1: {fileID: 1609748558228030619, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  _reloadBall: {fileID: -8163460862585359035, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!114 &227374600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7365,7 +7402,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 242739032}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 279c5b88e94ceb54d877427dc8c22bce, type: 3}
   m_Name: 
@@ -7386,7 +7423,6 @@ GameObject:
   - component: {fileID: 246635697}
   - component: {fileID: 246635696}
   - component: {fileID: 246635695}
-  - component: {fileID: 246635694}
   m_Layer: 16
   m_Name: Ball_Deneme (10)
   m_TagString: Basketball
@@ -7403,27 +7439,12 @@ Transform:
   m_GameObject: {fileID: 246635692}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.3191118, y: -1.9487894, z: -1.0779998}
+  m_LocalPosition: {x: 1.1559994, y: -1.9487894, z: -7.3820004}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1948682323}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &246635694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 246635692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c107fc61ccc70514ca8eac737a9c1c63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _resetBall: {fileID: 6858057790039367337, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  _resetBall1: {fileID: 1609748558228030619, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  _reloadBall: {fileID: -8163460862585359035, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!114 &246635695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8425,7 +8446,6 @@ GameObject:
   - component: {fileID: 274276136}
   - component: {fileID: 274276135}
   - component: {fileID: 274276134}
-  - component: {fileID: 274276140}
   m_Layer: 16
   m_Name: Ball_Deneme (6)
   m_TagString: Basketball
@@ -8442,7 +8462,7 @@ Transform:
   m_GameObject: {fileID: 274276132}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.96011066, y: -2.2667894, z: -0.7699992}
+  m_LocalPosition: {x: 1.5150006, y: -2.2667894, z: -7.0739994}
   m_LocalScale: {x: 0.29999998, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8805,21 +8825,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 274276132}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &274276140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 274276132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c107fc61ccc70514ca8eac737a9c1c63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _resetBall: {fileID: 6858057790039367337, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  _resetBall1: {fileID: 1609748558228030619, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  _reloadBall: {fileID: -8163460862585359035, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &274857196
 GameObject:
   m_ObjectHideFlags: 0
@@ -9223,7 +9228,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 274857196}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c107fc61ccc70514ca8eac737a9c1c63, type: 3}
   m_Name: 
@@ -9243,6 +9248,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f4767b1e813d6d41a699a6ea05d31fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_layerMask:
+    serializedVersion: 2
+    m_Bits: 524288
 --- !u!1 &331039408
 GameObject:
   m_ObjectHideFlags: 0
@@ -22762,7 +22770,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5ef5e15ac4a3464c82843c1357674c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_DesiredCount: 0
+  m_DesiredCount: 5
   m_spawnPosition: {fileID: 1690332701}
 --- !u!65 &593134974
 BoxCollider:
@@ -22779,7 +22787,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -37463,7 +37471,6 @@ GameObject:
   - component: {fileID: 954573360}
   - component: {fileID: 954573359}
   - component: {fileID: 954573358}
-  - component: {fileID: 954573364}
   m_Layer: 16
   m_Name: Ball_Deneme (7)
   m_TagString: Basketball
@@ -37480,7 +37487,7 @@ Transform:
   m_GameObject: {fileID: 954573356}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9281111, y: -2.3117895, z: -1.1209991}
+  m_LocalPosition: {x: 1.5470002, y: -2.3117895, z: -7.4249997}
   m_LocalScale: {x: 0.29999998, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -37843,21 +37850,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954573356}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &954573364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 954573356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c107fc61ccc70514ca8eac737a9c1c63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _resetBall: {fileID: 6858057790039367337, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  _resetBall1: {fileID: 1609748558228030619, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  _reloadBall: {fileID: -8163460862585359035, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &956496966
 GameObject:
   m_ObjectHideFlags: 0
@@ -64135,6 +64127,42 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1220585731}
   m_Mesh: {fileID: -8803937527578110353, guid: 8044db7ee66a57c41a1cf1899a27c99f, type: 3}
+--- !u!1 &1223236029
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1223236030}
+  m_Layer: 0
+  m_Name: BasketballBlocks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1223236030
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223236029}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.8721094, y: 4.0674005, z: -5.842104}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 66612309}
+  - {fileID: 1886758709}
+  - {fileID: 1884384371}
+  - {fileID: 1879605090}
+  - {fileID: 1407451974}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1229115792
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64982,7 +65010,6 @@ GameObject:
   - component: {fileID: 1347532386}
   - component: {fileID: 1347532385}
   - component: {fileID: 1347532384}
-  - component: {fileID: 1347532383}
   m_Layer: 16
   m_Name: Ball_Deneme (12)
   m_TagString: Basketball
@@ -64999,27 +65026,12 @@ Transform:
   m_GameObject: {fileID: 1347532381}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.7861109, y: -1.9787894, z: -1.0879991}
+  m_LocalPosition: {x: 1.6890004, y: -1.9787894, z: -7.3919997}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1948682323}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1347532383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1347532381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c107fc61ccc70514ca8eac737a9c1c63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _resetBall: {fileID: 6858057790039367337, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  _resetBall1: {fileID: 1609748558228030619, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  _reloadBall: {fileID: -8163460862585359035, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!114 &1347532384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65475,7 +65487,6 @@ GameObject:
   - component: {fileID: 1365199500}
   - component: {fileID: 1365199499}
   - component: {fileID: 1365199498}
-  - component: {fileID: 1365199497}
   m_Layer: 16
   m_Name: Ball_Deneme (13)
   m_TagString: Basketball
@@ -65492,27 +65503,12 @@ Transform:
   m_GameObject: {fileID: 1365199495}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.702, y: -0.609, z: -0.824}
+  m_LocalPosition: {x: 3.4811113, y: -0.609, z: -7.1280003}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1948682323}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1365199497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1365199495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c107fc61ccc70514ca8eac737a9c1c63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _resetBall: {fileID: 6858057790039367337, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  _resetBall1: {fileID: 1609748558228030619, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  _reloadBall: {fileID: -8163460862585359035, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!114 &1365199498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66294,6 +66290,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_System: {fileID: 1406759172}
   m_DelayTime: 0
+--- !u!1 &1407451973
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1407451974}
+  - component: {fileID: 1407451975}
+  m_Layer: 19
+  m_Name: Cube (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1407451974
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407451973}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: -0.7071068, w: 0}
+  m_LocalPosition: {x: -3.63, y: -4.56, z: 7.77}
+  m_LocalScale: {x: 30, y: 1, z: 50}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1223236030}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: -180}
+--- !u!65 &1407451975
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407451973}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1419369724
 GameObject:
   m_ObjectHideFlags: 0
@@ -78331,7 +78380,6 @@ GameObject:
   - component: {fileID: 1470572360}
   - component: {fileID: 1470572359}
   - component: {fileID: 1470572358}
-  - component: {fileID: 1470572357}
   m_Layer: 16
   m_Name: Ball_Deneme (11)
   m_TagString: Basketball
@@ -78348,27 +78396,12 @@ Transform:
   m_GameObject: {fileID: 1470572355}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9321108, y: -1.9927895, z: -0.7649991}
+  m_LocalPosition: {x: 1.5430005, y: -1.9927895, z: -7.0689993}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1948682323}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1470572357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1470572355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c107fc61ccc70514ca8eac737a9c1c63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _resetBall: {fileID: 6858057790039367337, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  _resetBall1: {fileID: 1609748558228030619, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  _reloadBall: {fileID: -8163460862585359035, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!114 &1470572358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80716,7 +80749,7 @@ Transform:
   m_GameObject: {fileID: 1690332700}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.746, y: 0.43, z: 0.269}
+  m_LocalPosition: {x: -0.746, y: 0.278, z: 0.269}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -80812,7 +80845,6 @@ GameObject:
   - component: {fileID: 1701473085}
   - component: {fileID: 1701473084}
   - component: {fileID: 1701473083}
-  - component: {fileID: 1701473082}
   m_Layer: 16
   m_Name: Ball_Deneme (8)
   m_TagString: Basketball
@@ -80829,27 +80861,12 @@ Transform:
   m_GameObject: {fileID: 1701473080}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.081111, y: -2.1207895, z: -1.2899997}
+  m_LocalPosition: {x: 1.3940003, y: -2.1207895, z: -7.5940003}
   m_LocalScale: {x: 0.29999998, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1948682323}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1701473082
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1701473080}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c107fc61ccc70514ca8eac737a9c1c63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _resetBall: {fileID: 6858057790039367337, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  _resetBall1: {fileID: 1609748558228030619, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  _reloadBall: {fileID: -8163460862585359035, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!114 &1701473083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82091,11 +82108,170 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1853797170}
   m_Mesh: {fileID: 1856150034111365774, guid: 8044db7ee66a57c41a1cf1899a27c99f, type: 3}
+--- !u!1 &1879605089
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1879605090}
+  - component: {fileID: 1879605091}
+  m_Layer: 19
+  m_Name: Cube (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1879605090
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879605089}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.5, y: -0.5, z: -0.5, w: 0.5}
+  m_LocalPosition: {x: -3.63, y: 5.7599998, z: 12.16}
+  m_LocalScale: {x: 30, y: 1, z: 50}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1223236030}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: -90}
+--- !u!65 &1879605091
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879605089}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1880287553 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2a13b6d6f0b529b4294aab7122c54b78, type: 3}
   m_PrefabInstance: {fileID: 2118459689}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1884384370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1884384371}
+  - component: {fileID: 1884384372}
+  m_Layer: 19
+  m_Name: Cube (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1884384371
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884384370}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.5, y: -0.5, z: -0.5, w: 0.5}
+  m_LocalPosition: {x: -3.63, y: 5.7599998, z: 0.8}
+  m_LocalScale: {x: 30, y: 1, z: 50}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1223236030}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: -90}
+--- !u!65 &1884384372
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884384370}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1886758708
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1886758709}
+  - component: {fileID: 1886758710}
+  m_Layer: 19
+  m_Name: Cube (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1886758709
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886758708}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 8.04, y: 5.76, z: 10.25}
+  m_LocalScale: {x: 30, y: 1, z: 50}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1223236030}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!65 &1886758710
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886758708}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1887555852
 GameObject:
   m_ObjectHideFlags: 0
@@ -83936,7 +84112,6 @@ GameObject:
   - component: {fileID: 2130283661}
   - component: {fileID: 2130283660}
   - component: {fileID: 2130283659}
-  - component: {fileID: 2130283665}
   m_Layer: 16
   m_Name: Ball_Deneme (5)
   m_TagString: Basketball
@@ -83953,7 +84128,7 @@ Transform:
   m_GameObject: {fileID: 2130283657}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.2681112, y: -2.2367895, z: -1.1559999}
+  m_LocalPosition: {x: 1.207, y: -2.2367895, z: -7.46}
   m_LocalScale: {x: 0.29999998, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -84316,21 +84491,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2130283657}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &2130283665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2130283657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c107fc61ccc70514ca8eac737a9c1c63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _resetBall: {fileID: 6858057790039367337, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  _resetBall1: {fileID: 1609748558228030619, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  _reloadBall: {fileID: -8163460862585359035, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!4 &8040190717839094
 Transform:
   m_ObjectHideFlags: 0
@@ -103288,3 +103448,4 @@ SceneRoots:
   - {fileID: 182780963}
   - {fileID: 1948682323}
   - {fileID: 242739033}
+  - {fileID: 1223236030}

@@ -10,11 +10,13 @@ public class BallCount : MonoBehaviour
 
     [SerializeField] private int m_DesiredCount;
     [SerializeField] private Transform m_spawnPosition;
+    private int m_BallCount = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        //SpawnBasketball();
+        Invoke(nameof(SpawnBasketball), 0.3f);
     }
 
     // Update is called once per frame
@@ -23,7 +25,6 @@ public class BallCount : MonoBehaviour
         
     }
 
-    private int m_BallCount;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -35,7 +36,7 @@ public class BallCount : MonoBehaviour
             if (m_BallCount < m_DesiredCount)
             {
                 // Code for spawning balls
-                SpawnBasketball();
+                Invoke(nameof(SpawnBasketball), 0.3f);
             }
         }
     }
@@ -49,7 +50,7 @@ public class BallCount : MonoBehaviour
             if (m_BallCount < m_DesiredCount)
             {
                 // Code for spawning balls
-                SpawnBasketball();
+                Invoke(nameof(SpawnBasketball), 0.3f);
             }
         }
     }
@@ -63,7 +64,7 @@ public class BallCount : MonoBehaviour
         {
             testBall.transform.position = m_spawnPosition.position;
             testBall.SetActive(true);
-            Debug.Log("Spawning basketball" + testBall.transform.position);
+            Debug.Log("Spawning basketball " + m_BallCount + " / " + m_DesiredCount);
         }
     }
 
