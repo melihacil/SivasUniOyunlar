@@ -5891,7 +5891,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 2.845, y: -0.004, z: -0.164}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.134, y: 0.176}
+  m_AnchoredPosition: {x: -0.134, y: 0.282}
   m_SizeDelta: {x: 48.1, y: 29.2808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &153053306
@@ -5927,7 +5927,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Basket toplar\u0131n\u0131n yenilenmesi i\xE7in X veya A tu\u015Funa bas\u0131n\u0131z"
+  m_Text: "Basket toplar\u0131n\u0131 tutabilmek i\xE7in avu\xE7 i\xE7inizde bulunan
+    kavrama butonlar\u0131n\u0131 kullan\u0131n"
 --- !u!222 &153053307
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9095,8 +9096,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: -0.011405945
-      value: 0.21820068
+      time: -0.01563263
+      value: 0.36346436
       inSlope: 2
       outSlope: 2
       tangentMode: 0
@@ -9115,8 +9116,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 0
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 6
-  m_ThrowAngularVelocityScale: 7
+  m_ThrowVelocityScale: 7
+  m_ThrowAngularVelocityScale: 5
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
@@ -64603,7 +64604,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.158, y: -0.341}
+  m_AnchoredPosition: {x: -0.158, y: -0.292}
   m_SizeDelta: {x: 88.9406, y: 91.0981}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1237120186
@@ -64626,7 +64627,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 78486919cbc70914b9b3aaa8c54f9637, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7b5163c8ae01358469284190750b767b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
