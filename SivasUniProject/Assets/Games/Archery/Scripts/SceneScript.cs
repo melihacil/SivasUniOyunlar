@@ -15,4 +15,12 @@ public class SceneScript : MonoBehaviour
         Debug.Log("ANA MENÜYE DÖNÜLÜYOR");
         SceneManager.LoadScene(0);
     }
+
+    public void LoadScene(string LevelName)
+    {
+        Debug.Log("Loading Scene " + LevelName);
+        SceneManager.LoadScene(LevelName);
+    }
+
+
 }
