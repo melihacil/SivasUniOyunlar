@@ -8,7 +8,7 @@ public class SceneScript : MonoBehaviour
   public void RetryGame()
     {
         Debug.Log("OYUN TEKRARLANIYOR");
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Archery_LevelGame");
     }  
     public void MainMenu()
     {

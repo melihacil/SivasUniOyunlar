@@ -18,16 +18,22 @@ public class ObjectSpawner : MonoBehaviour
     private float spawnInterval; // Nesne oluþturma aralýðý (saniye)
 
     private float spawnTimer; // Nesne oluþturma zamanlayýcýsý
+    private bool m_Spawnable = true;
+
 
     private void Update()
     {
-        spawnTimer += Time.deltaTime;
 
-        // Belirli bir zaman aralýðýnda nesne oluþturma
-        if (spawnTimer >= spawnInterval)
+        if (m_Spawnable)
         {
-            SpawnObject();
-            spawnTimer = 0f;
+            spawnTimer += Time.deltaTime;
+
+            // Belirli bir zaman aralýðýnda nesne oluþturma
+            if (spawnTimer >= spawnInterval)
+            {
+                SpawnObject();
+                spawnTimer = 0f;
+            }
         }
     }
     private GameObject RandomTarget(float value)
@@ -67,6 +73,8 @@ public class ObjectSpawner : MonoBehaviour
     }
 
 
+
+
     private void SpawnObjectOld()
     {
 
@@ -80,5 +88,9 @@ public class ObjectSpawner : MonoBehaviour
         //Instantiate(RandomTarget(Random.Range(1, 4)), centerPoint.position + spawnPosition, Quaternion.identity);
     }
 
+    public void EndSpawner()
+    {
+        m_Spawnable = false;
+    }
 
 }

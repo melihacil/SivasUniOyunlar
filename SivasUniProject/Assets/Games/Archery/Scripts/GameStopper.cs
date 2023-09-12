@@ -21,9 +21,11 @@ public class GameStopper : MonoBehaviour, IPointerClickHandler
     [SerializeField] private Text UItext;
     [SerializeField] private Image m_UITransparent;
     [SerializeField] private GameObject m_scoreText;
+    [SerializeField] private ObjectSpawner m_Spawner;
     private void Start()
     {
         Being(duration);
+        m_Spawner = GameObject.FindGameObjectWithTag("Respawn").GetComponent<ObjectSpawner>();
     }
 
     private void Being(int second)
@@ -56,8 +58,8 @@ public class GameStopper : MonoBehaviour, IPointerClickHandler
             }            
         }
         OnEnd();
-        yield return new WaitForSeconds(2f);
-        SwitchScene();
+        yield return new WaitForSeconds(1.5f);
+        OpenCanvas();
         yield return null;
     }
 
@@ -68,12 +70,20 @@ public class GameStopper : MonoBehaviour, IPointerClickHandler
         m_UITransparent.enabled = false;
         m_scoreText.SetActive(false);
         m_UGUI.text = "Oyun Bitti!";
+        m_Spawner.EndSpawner();
         Debug.Log("Ending Function");
     }
 
 
-    private void SwitchScene()
+    [SerializeField]
+    private GameObject m_EndCanvas;
+
+    private void OpenCanvas()
     {
-        SceneManager.LoadScene("Archery_LevelScoreScene");
+        m_EndCanvas.SetActive(true);
+        //SceneManager.LoadScene("Archery_LevelScoreScene");
+
+        m_EndCanvas.GetComponentInChildren<FinalMenuYourScore>().ShowScoreOnCanvas();
+
     }
 }

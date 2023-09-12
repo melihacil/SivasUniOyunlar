@@ -9,25 +9,22 @@ public class FinalMenuYourScore : MonoBehaviour
 
     [SerializeField]
     private TextMeshProUGUI yourScore;
-    private GameObject scoreHolder;
     [SerializeField]
     private ScoreHolder scoreHolderComp;
     
    
     void Start()
     {
+        //scoreHolderComp = GameObject.FindGameObjectWithTag("ScoreHolderObj").GetComponent<ScoreHolder>();
+
+    }
+    public void ShowScoreOnCanvas()
+    {
         
-        scoreHolderComp = GameObject.FindGameObjectWithTag("ScoreHolderObj").GetComponent<ScoreHolder>();
         Debug.Log(scoreHolderComp.name);
         Debug.Log(scoreHolderComp.GetScore());
         yourScore.SetText($"Your Score:{scoreHolderComp.GetScore()}");
 
         Destroy(scoreHolderComp.gameObject);
-    }
-
-   
-    void Update()
-    {
-       
     }
 }

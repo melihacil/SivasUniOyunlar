@@ -210,7 +210,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &10512952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3671,6 +3671,8 @@ MonoBehaviour:
   UItext: {fileID: 2071048282}
   m_UITransparent: {fileID: 671570635}
   m_scoreText: {fileID: 1849971111}
+  m_Spawner: {fileID: 0}
+  m_EndCanvas: {fileID: 10512951}
 --- !u!1 &686847245
 GameObject:
   m_ObjectHideFlags: 0
@@ -4327,6 +4329,10 @@ PrefabInstance:
       propertyPath: yourScore
       value: 
       objectReference: {fileID: 789847101}
+    - target: {fileID: 4837102710346862287, guid: 0503aa40a8e965c4393a2497b7084e2d, type: 3}
+      propertyPath: scoreHolderComp
+      value: 
+      objectReference: {fileID: 1061163135}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5856,7 +5862,7 @@ GameObject:
   - component: {fileID: 1160493162}
   m_Layer: 0
   m_Name: RandomObjectGenerator
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13017,7 +13023,7 @@ MonoBehaviour:
       m_Name: Is Tracked
       m_Type: 1
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: 56a10368-799d-4259-8767-8c9f4fbda493
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -13113,7 +13119,7 @@ MonoBehaviour:
       m_Name: UI Scroll
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: 
+      m_Id: 8a79cec7-ec09-4034-bd8b-25599e88057f
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -14080,7 +14086,7 @@ MonoBehaviour:
       m_Name: Is Tracked
       m_Type: 1
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: b6f2e4ad-97d0-4e8a-87e9-a051789350df
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -14176,7 +14182,7 @@ MonoBehaviour:
       m_Name: UI Scroll
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: 
+      m_Id: 44bf8e14-ca1e-4344-8f37-c4b355ca3d95
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -15650,7 +15656,7 @@ MonoBehaviour:
       m_Name: Is Tracked
       m_Type: 1
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: edaa01cd-91fc-47a5-a37a-c485f280bf82
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -15746,7 +15752,7 @@ MonoBehaviour:
       m_Name: UI Scroll
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: 
+      m_Id: c445c023-d819-4097-a06c-c974998921f0
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []

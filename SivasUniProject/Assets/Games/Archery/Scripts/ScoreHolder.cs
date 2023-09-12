@@ -7,7 +7,7 @@ public class ScoreHolder : MonoBehaviour
 {
     
 
-    private int score;
+    private int score = 0;
     [SerializeField]
     private Text scoreUI;
     public int GetScore()
@@ -20,10 +20,10 @@ public class ScoreHolder : MonoBehaviour
     }
 
 
-    private void Start()
-    {
-       DontDestroyOnLoad(this);
-    }
+    //private void Start()
+    //{
+    //   DontDestroyOnLoad(this);
+    //}
     private void Update()
     {
         scoreUI.text = "Puan:" + GetScore();
