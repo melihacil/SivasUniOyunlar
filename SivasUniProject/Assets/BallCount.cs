@@ -5,9 +5,6 @@ using UnityEngine;
 public class BallCount : MonoBehaviour
 {
 
-
-
-
     [SerializeField] private int m_DesiredCount;
     [SerializeField] private Transform m_spawnPosition;
     private int m_BallCount = 0;
