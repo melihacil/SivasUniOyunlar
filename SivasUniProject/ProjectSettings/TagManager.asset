@@ -28,6 +28,7 @@ TagManager:
   - Basketball
   - target
   - Hand
+  - BallBarrier
   layers:
   - Default
   - TransparentFX

@@ -37,12 +37,18 @@ public class bowlingball : MonoBehaviour
     private List<Vector3> pinPositions;
     private List<Quaternion> pinRotations;
     private Vector3 ballPosition;
-
+    private Rigidbody m_rb;
+    private bool m_done = true;
     [SerializeField] private InputActionReference m_ResetPin, m_ResetBall;
    
     //[SerializeField] Text Total;
 
     int k = 0;
+
+    private void Awake()
+    {
+        m_rb = GetComponent<Rigidbody>();
+    }
 
     void Start()
     {
@@ -62,7 +68,7 @@ public class bowlingball : MonoBehaviour
             pinRotations.Add(pin.transform.rotation);
         }
 
-        ballPosition = GameObject.FindGameObjectWithTag("BasketBall").transform.position;
+        ballPosition = GameObject.FindGameObjectWithTag("Basketball").transform.position;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -75,16 +81,24 @@ public class bowlingball : MonoBehaviour
 
     }
 
-         void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
+    {
+        switch (other.gameObject.tag)
         {
-
-        if (other.gameObject.tag == "checkVoice")
-        {
-            m_MyAudioSource.enabled = false;
-            isAudioPlayed = false;
+            case "checkVoice":
+                m_MyAudioSource.enabled = false;
+                isAudioPlayed = false;
+                break;
+            case "BallBarrier":
+                if (m_done)
+                {
+                    Invoke(nameof(DisableBasketball), 4f);
+                    m_done = false;
+                }
+                break;
         }
 
-        }
+    }
 
     void Update()
     {
@@ -140,6 +154,15 @@ public class bowlingball : MonoBehaviour
         {
             Debug.Log("oyunu baslatiniz");
         }
+    }
+
+
+    private void DisableBasketball()
+    {
+        Debug.Log("Setting inactive");
+        m_rb.angularVelocity = Vector3.zero;
+        m_done = true;
+        this.gameObject.SetActive(false);
     }
     public void ResetPins()
     {

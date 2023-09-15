@@ -7,6 +7,7 @@ public class BallCount : MonoBehaviour
 
     [SerializeField] private int m_DesiredCount;
     [SerializeField] private Transform m_spawnPosition;
+    [SerializeField] private float m_SpawnTime = 0.6f;
     private int m_BallCount = 0;
 
 
@@ -14,13 +15,14 @@ public class BallCount : MonoBehaviour
     // Update is called once per frame
     private bool m_Spawned = false;
 
+
     void Update()
     {
         if (m_BallCount < m_DesiredCount && !m_Spawned)
         {
             m_Spawned = true;
             // Code for spawning balls
-            Invoke(nameof(SpawnBasketball), 0.6f);
+            Invoke(nameof(SpawnBasketball), m_SpawnTime);
         }
     }
 
