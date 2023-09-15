@@ -62,7 +62,7 @@ public class bowlingball : MonoBehaviour
             pinRotations.Add(pin.transform.rotation);
         }
 
-        ballPosition = GameObject.FindGameObjectWithTag("Ball").transform.position;
+        ballPosition = GameObject.FindGameObjectWithTag("BasketBall").transform.position;
     }
 
     private void OnCollisionEnter(Collision collision)
