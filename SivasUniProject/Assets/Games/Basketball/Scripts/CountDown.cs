@@ -9,8 +9,8 @@ public class CountDown : MonoBehaviour
     [SerializeField] private Text timerText;
     [SerializeField] private GameObject m_EndCanvas;
     UIManager uýManager;
+    [SerializeField] private FinalMenuYourScore m_Score;
 
-  
 
     public float currentTime; 
     public float duration; //bizim belirleyeceðimiz süre
@@ -56,6 +56,7 @@ public class CountDown : MonoBehaviour
             //confetti.SetActive(true);
             TimeEndText.SetActive(true);
             m_EndCanvas.SetActive(true);
+            m_Score.ShowScoreOnCanvasBasketball();
         }
 
     }

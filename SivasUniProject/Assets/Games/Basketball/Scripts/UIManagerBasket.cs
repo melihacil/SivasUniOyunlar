@@ -24,5 +24,11 @@ public class UIManagerBasket : MonoBehaviour
         scoreText.text = "Puan: " + score;
     }
 
+
+    [ContextMenu("ScoreTEST")]
+    public void AddScoreOne()
+    {
+        IncreaseScore();
+    }
    
 }

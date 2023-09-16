@@ -647,6 +647,21 @@ MonoBehaviour:
     m_Scale: 1
     m_AtlasIndex: 0
     m_ClassDefinitionType: 0
+  - m_Index: 27
+    m_Metrics:
+      m_Width: 45.171875
+      m_Height: 63.984375
+      m_HorizontalBearingX: 2.6875
+      m_HorizontalBearingY: 63.984375
+      m_HorizontalAdvance: 51.640625
+    m_GlyphRect:
+      m_X: 235
+      m_Y: 259
+      m_Width: 46
+      m_Height: 64
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
   m_CharacterTable:
   - m_ElementType: 1
     m_Unicode: 8230
@@ -779,6 +794,10 @@ MonoBehaviour:
   - m_ElementType: 1
     m_Unicode: 54
     m_GlyphIndex: 26
+    m_Scale: 1
+  - m_ElementType: 1
+    m_Unicode: 55
+    m_GlyphIndex: 27
     m_Scale: 1
   m_AtlasTextures:
   - {fileID: 28204114720316640}
@@ -914,6 +933,10 @@ MonoBehaviour:
     m_Y: 249
     m_Width: 64
     m_Height: 85
+  - m_X: 225
+    m_Y: 249
+    m_Width: 65
+    m_Height: 83
   m_FreeGlyphRects:
   - m_X: 76
     m_Y: 29
@@ -1016,12 +1039,16 @@ MonoBehaviour:
     m_Width: 55
     m_Height: 700
   - m_X: 225
-    m_Y: 254
+    m_Y: 332
     m_Width: 798
+    m_Height: 691
+  - m_X: 290
+    m_Y: 254
+    m_Width: 733
     m_Height: 769
-  - m_X: 225
+  - m_X: 290
     m_Y: 249
-    m_Width: 104
+    m_Width: 39
     m_Height: 774
   m_fontInfo:
     Name: Roboto

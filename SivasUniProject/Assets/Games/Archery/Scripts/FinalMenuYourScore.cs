@@ -11,7 +11,9 @@ public class FinalMenuYourScore : MonoBehaviour
     private TextMeshProUGUI yourScore;
     [SerializeField]
     private ScoreHolder scoreHolderComp;
-    
+
+    [SerializeField]
+    private UIManagerBasket m_BasketballManager;
    
     void Start()
     {
@@ -23,8 +25,12 @@ public class FinalMenuYourScore : MonoBehaviour
         
         Debug.Log(scoreHolderComp.name);
         Debug.Log(scoreHolderComp.GetScore());
-        yourScore.SetText($"Your Score:{scoreHolderComp.GetScore()}");
+        yourScore.SetText($"Skorunuz: {scoreHolderComp.GetScore()}");
 
         Destroy(scoreHolderComp.gameObject);
+    }
+    public void ShowScoreOnCanvasBasketball()
+    {
+        yourScore.SetText($"Skorunuz: {m_BasketballManager.score}");
     }
 }

@@ -34,8 +34,7 @@ public class bowlingball : MonoBehaviour
     int sira2 = 0;
     int max = 6;
     static int j=0;
-    private List<Vector3> pinPositions;
-    private List<Quaternion> pinRotations;
+
     private Vector3 ballPosition;
     private Rigidbody m_rb;
     private bool m_done = true;
@@ -43,7 +42,8 @@ public class bowlingball : MonoBehaviour
    
     //[SerializeField] Text Total;
 
-    int k = 0;
+    readonly  int k = 0;
+
 
     private void Awake()
     {
@@ -58,47 +58,11 @@ public class bowlingball : MonoBehaviour
         m_MyAudioSource = GetComponent<AudioSource>();
         audioClip = m_MyAudioSource.clip;
 
-        var pins = GameObject.FindGameObjectsWithTag("Pin");
-        pinPositions = new List<Vector3>();
-        pinRotations = new List<Quaternion>();
 
-        foreach (var pin in pins)
-        {
-            pinPositions.Add(pin.transform.position);
-            pinRotations.Add(pin.transform.rotation);
-        }
 
         ballPosition = GameObject.FindGameObjectWithTag("Basketball").transform.position;
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "zemin")
-        {
-            m_MyAudioSource.Play();
-            isAudioPlayed = true;
-        }
-
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        switch (other.gameObject.tag)
-        {
-            case "checkVoice":
-                m_MyAudioSource.enabled = false;
-                isAudioPlayed = false;
-                break;
-            case "BallBarrier":
-                if (m_done)
-                {
-                    Invoke(nameof(DisableBasketball), 4f);
-                    m_done = false;
-                }
-                break;
-        }
-
-    }
 
     void Update()
     {
@@ -131,17 +95,19 @@ public class bowlingball : MonoBehaviour
                 toplamText.text = "Toplam score:" + sonuc;
             }
 
-            if (m_ResetBall.action.IsPressed())
-            {
-                ResetBall();
-                Debug.Log("Reset Ball");
-            }
+            // Redundant
+            //if (m_ResetBall.action.IsPressed())
+            //{
+            //    //ResetBall();
+            //    Debug.Log("Reset Ball");
+            //}
 
-            if (m_ResetPin.action.IsPressed())
-            {
-                ResetPins();
-                Debug.Log("Reset Pins");
-            }
+            // Moved to the pin manager
+            //if (m_ResetPin.action.IsPressed())
+            //{
+            //    //ResetPins();
+            //    Debug.Log("Reset Pins");
+            //}
 
             // Debug.Log(toplam[0]);
 
@@ -157,6 +123,34 @@ public class bowlingball : MonoBehaviour
     }
 
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "zemin")
+        {
+            m_MyAudioSource.Play();
+            isAudioPlayed = true;
+        }
+
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        switch (other.gameObject.tag)
+        {
+            case "checkVoice":
+                m_MyAudioSource.enabled = false;
+                isAudioPlayed = false;
+                break;
+            case "BallBarrier":
+                if (m_done)
+                {
+                    Invoke(nameof(DisableBasketball), 4f);
+                    m_done = false;
+                }
+                break;
+        }
+
+    }
     private void DisableBasketball()
     {
         Debug.Log("Setting inactive");
@@ -164,87 +158,31 @@ public class bowlingball : MonoBehaviour
         m_done = true;
         this.gameObject.SetActive(false);
     }
-    public void ResetPins()
-    {
-        if (VRButton.on)
-        {
-            var pins = GameObject.FindGameObjectsWithTag("Pin");
-
-            for (int i = 0; i < pins.Length; i++)
-            {
-                var pinPhysics = pins[i].GetComponent<Rigidbody>();
-                pinPhysics.velocity = Vector3.zero;
-                pinPhysics.position = pinPositions[i];
-                pinPhysics.rotation = pinRotations[i];
-                pinPhysics.velocity = Vector3.zero;
-                pinPhysics.angularVelocity = Vector3.zero;
-            }
-
-            var ball = GameObject.FindGameObjectWithTag("Ball");
-            ball.transform.position = ballPosition;
-            ball.GetComponent<Rigidbody>().velocity = Vector3.zero;
-            ball.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
-
-            /*if (k < score.Length)
-            {
-                score[k] = counter;
-                k++;
-            }*/
-            if (startingTime > 0)
-            {
-                toplam[j] = counter;
-                if (j < 30)
-                {
-                    j++;
-
-                }
-                else
-                {
-                    Debug.Log("maks atýþ sýnýrý");
-                }
-
-            }
-            pin1.count1 = 0;
-            pin2.count2 = 0;
-            pin3.count3 = 0;
-            pin4.count4 = 0;
-            pin5.count5 = 0;
-            pin6.count6 = 0;
-            pin6.count6 = 0;
-            pin7.count7 = 0;
-            pin8.count8 = 0;
-            pin9.count9 = 0;
-            pin10.count10 = 0;
-            scoreText.text = "Score:" + counter;
-
-            // Score hesaplamasýný güncelle
-            //UpdateScore();
-        }
-    }
-
-    public void ResetBall()
-    {
-        if (VRButton.on)
-        {
-            var ball = GameObject.FindGameObjectWithTag("Ball");
-            ball.transform.position = ballPosition;
-            ball.GetComponent<Rigidbody>().velocity = Vector3.zero;
-            ball.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
-            scoreText.text = "Score:" + counter;
-            /* if (k < score.Length)
-             {
-                 score[k] = counter;
-                 k++;
-             }*/
+    
+    //Redundant
+    //public void ResetBall()
+    //{
+    //    if (VRButton.on)
+    //    {
+    //        var ball = GameObject.FindGameObjectWithTag("Ball");
+    //        ball.transform.position = ballPosition;
+    //        ball.GetComponent<Rigidbody>().velocity = Vector3.zero;
+    //        ball.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+    //        scoreText.text = "Score:" + counter;
+    //        /* if (k < score.Length)
+    //         {
+    //             score[k] = counter;
+    //             k++;
+    //         }*/
 
 
 
-            // ResetPins(); // Topu atarken ayný zamanda pinleri de sýfýrla
+    //        // ResetPins(); // Topu atarken ayný zamanda pinleri de sýfýrla
 
-            // Score hesaplamasýný güncelle
-            //UpdateScore();
-        }
-    }
+    //        // Score hesaplamasýný güncelle
+    //        //UpdateScore();
+    //    }
+    //}
 
     private void UpdateScore()
     {
