@@ -7,7 +7,7 @@ public class CountDown : MonoBehaviour
 {
     [SerializeField] private Image timerImg;
     [SerializeField] private Text timerText;
- 
+    [SerializeField] private GameObject m_EndCanvas;
     UIManager uýManager;
 
   
@@ -20,13 +20,20 @@ public class CountDown : MonoBehaviour
    
 
     [SerializeField] GameObject TimeEndText;
-    void Start()
+
+    private void Awake()
     {
         currentTime = duration;
         timerText.text = currentTime.ToString();
-        StartCoroutine(UpdateTime());
-       
 
+    }
+
+    void Start()
+    {
+        TimeEndText.SetActive(false);
+        m_EndCanvas.SetActive(false);
+        confetti.SetActive(false);
+        StartCoroutine(UpdateTime());
     }
 
     IEnumerator UpdateTime()
@@ -48,13 +55,8 @@ public class CountDown : MonoBehaviour
         {
             //confetti.SetActive(true);
             TimeEndText.SetActive(true);
-            
+            m_EndCanvas.SetActive(true);
         }
-        else
-        {
-            confetti.SetActive(false);
-            TimeEndText.SetActive(false);
-            
-        }
+
     }
 }
