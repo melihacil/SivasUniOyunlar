@@ -5928,7 +5928,7 @@ Transform:
   m_GameObject: {fileID: 182780962}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.14801951, z: -0, w: 0.98898447}
-  m_LocalPosition: {x: -4.243041, y: 3.416256, z: -0.063}
+  m_LocalPosition: {x: -4.269, y: 3.416256, z: -0.253}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -87864,8 +87864,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerImg: {fileID: 2125662034}
   timerText: {fileID: 863046614}
+  m_EndCanvas: {fileID: 1025023851}
   currentTime: 0
-  duration: 60
+  duration: 10
   confetti: {fileID: 87323328}
   TimeEndText: {fileID: 1157932067}
 --- !u!114 &2125662037
@@ -102458,6 +102459,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DesiredCount: 5
   m_spawnPosition: {fileID: 5023004029460613693}
+  m_SpawnTime: 0.6
 --- !u!4 &6025579008090984695
 Transform:
   m_ObjectHideFlags: 0
