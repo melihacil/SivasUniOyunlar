@@ -911,7 +911,7 @@ MonoBehaviour:
   m_IsGlobal: 1
   priority: 0
   blendDistance: 0
-  weight: 1
+  weight: 0.519
   sharedProfile: {fileID: 11400000, guid: 5e7459c2cbf1bb74386ec616abf1f2cf, type: 2}
 --- !u!1001 &309155768
 PrefabInstance:
@@ -2200,7 +2200,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &501970866
 Transform:
   m_ObjectHideFlags: 0
@@ -7958,6 +7958,7 @@ GameObject:
   - component: {fileID: 2229756796101031182}
   - component: {fileID: 5711492123980504665}
   - component: {fileID: 6700496350171758169}
+  - component: {fileID: 6700496350171758170}
   m_Layer: 0
   m_Name: Cylinder.002
   m_TagString: Untagged
@@ -8933,7 +8934,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 4874126678125670354, guid: abb0272f9bbff874cbb0a65abecaed2e, type: 3}
+  - {fileID: 2100000, guid: 6b016da17b43aa84182946e96f88b06b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8955,6 +8956,23 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6700496350171758170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330547730511709620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 0.515
+  sharedProfile: {fileID: 11400000, guid: 5e7459c2cbf1bb74386ec616abf1f2cf, type: 2}
 --- !u!23 &6800663369384767796
 MeshRenderer:
   m_ObjectHideFlags: 0
