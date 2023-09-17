@@ -53,11 +53,13 @@ public class bowlingball : MonoBehaviour
 
     void Start()
     {
+        pins = GameObject.FindGameObjectsWithTag("Pin");
         audioClip = m_MyAudioSource.clip; 
         //ballPosition = GameObject.FindGameObjectWithTag("Basketball").transform.position;
+
     }
 
-
+    GameObject[] pins;
     void Update()
     {
         scoreText.text = "Score:" + counter;
@@ -88,8 +90,11 @@ public class bowlingball : MonoBehaviour
                 }
                 toplamText.text = "Toplam score:" + sonuc;
             }
-            counter = pin1.count1 + pin2.count2 + pin3.count3 + pin4.count4 + pin5.count5 + pin6.count6 + pin7.count7 + pin8.count8 + pin9.count9 + pin10.count10;
-
+            //counter = pin1.count1 + pin2.count2 + pin3.count3 + pin4.count4 + pin5.count5 + pin6.count6 + pin7.count7 + pin8.count8 + pin9.count9 + pin10.count10;
+            foreach (GameObject pin in pins) 
+            {
+                counter = pin.GetComponent<BowlingPins>().Count;
+            }
         }
         
         else
