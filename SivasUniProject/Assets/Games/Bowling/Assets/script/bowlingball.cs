@@ -48,19 +48,13 @@ public class bowlingball : MonoBehaviour
     private void Awake()
     {
         m_rb = GetComponent<Rigidbody>();
+        m_MyAudioSource = GetComponent<AudioSource>();
     }
 
     void Start()
     {
-        GetComponent<VRButton>();
-        GetComponent<VRButton_tekrar>();
-       
-        m_MyAudioSource = GetComponent<AudioSource>();
-        audioClip = m_MyAudioSource.clip;
-
-
-
-        ballPosition = GameObject.FindGameObjectWithTag("Basketball").transform.position;
+        audioClip = m_MyAudioSource.clip; 
+        //ballPosition = GameObject.FindGameObjectWithTag("Basketball").transform.position;
     }
 
 
@@ -94,24 +88,6 @@ public class bowlingball : MonoBehaviour
                 }
                 toplamText.text = "Toplam score:" + sonuc;
             }
-
-            // Redundant
-            //if (m_ResetBall.action.IsPressed())
-            //{
-            //    //ResetBall();
-            //    Debug.Log("Reset Ball");
-            //}
-
-            // Moved to the pin manager
-            //if (m_ResetPin.action.IsPressed())
-            //{
-            //    //ResetPins();
-            //    Debug.Log("Reset Pins");
-            //}
-
-            // Debug.Log(toplam[0]);
-
-
             counter = pin1.count1 + pin2.count2 + pin3.count3 + pin4.count4 + pin5.count5 + pin6.count6 + pin7.count7 + pin8.count8 + pin9.count9 + pin10.count10;
 
         }
@@ -141,24 +117,43 @@ public class bowlingball : MonoBehaviour
                 m_MyAudioSource.enabled = false;
                 isAudioPlayed = false;
                 break;
+            // If the ball touched a trigger barrier than it will bi disabled for the pooler
             case "BallBarrier":
                 if (m_done)
                 {
-                    Invoke(nameof(DisableBasketball), 4f);
+                    // Making the ball disabled after a time has passed
+                    Invoke(nameof(DisableBowlingBall), 4f);
+                    //Done parameter for the system to only work once
                     m_done = false;
                 }
                 break;
         }
 
     }
-    private void DisableBasketball()
+
+    // Game obj Disable function
+    private void DisableBowlingBall()
     {
         Debug.Log("Setting inactive");
+        // Zeroing the physics to ensure no problem after pooled
         m_rb.angularVelocity = Vector3.zero;
         m_done = true;
         this.gameObject.SetActive(false);
     }
     
+
+    private void UpdateScore()
+    {
+        if (startingTime <= 0 && !isAudioPlayed)
+        {
+            for (int a = 0; a < i; a++)
+            {
+                toplam[0] += score[a];
+            }
+           // Total.text = toplam[0].ToString();
+            isAudioPlayed = true;
+        }
+    }
     //Redundant
     //public void ResetBall()
     //{
@@ -184,16 +179,9 @@ public class bowlingball : MonoBehaviour
     //    }
     //}
 
-    private void UpdateScore()
-    {
-        if (startingTime <= 0 && !isAudioPlayed)
-        {
-            for (int a = 0; a < i; a++)
-            {
-                toplam[0] += score[a];
-            }
-           // Total.text = toplam[0].ToString();
-            isAudioPlayed = true;
-        }
-    }
+
+
+
+
+
 }

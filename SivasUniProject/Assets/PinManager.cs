@@ -30,8 +30,7 @@ public class PinManager : MonoBehaviour
 
     public void ResetPins()
     {
-        if (VRButton.on)
-        {
+
             var pins = GameObject.FindGameObjectsWithTag("Pin");
 
             for (int i = 0; i < pins.Length; i++)
@@ -42,6 +41,9 @@ public class PinManager : MonoBehaviour
                 pinPhysics.rotation = pinRotations[i];
                 pinPhysics.velocity = Vector3.zero;
                 pinPhysics.angularVelocity = Vector3.zero;
+
+                //Count was used to check if the pin is hit and a score gained
+                pins[i].GetComponent<BowlingPins>().Count = 0;
             }
 
 
@@ -66,22 +68,25 @@ public class PinManager : MonoBehaviour
             //    }
 
             //}
-            pin1.count1 = 0;
-            pin2.count2 = 0;
-            pin3.count3 = 0;
-            pin4.count4 = 0;
-            pin5.count5 = 0;
-            pin6.count6 = 0;
-            pin6.count6 = 0;
-            pin7.count7 = 0;
-            pin8.count8 = 0;
-            pin9.count9 = 0;
-            pin10.count10 = 0;
+
+
+            // Against the programmer ethics 
+            // Should be done through one pin script like the final version
+            //pin1.count1 = 0;
+            //pin2.count2 = 0;
+            //pin3.count3 = 0;
+            //pin4.count4 = 0;
+            //pin5.count5 = 0;
+            //pin6.count6 = 0;
+            //pin6.count6 = 0;
+            //pin7.count7 = 0;
+            //pin8.count8 = 0;
+            //pin9.count9 = 0;
+            //pin10.count10 = 0;
             //scoreText.text = "Score:" + counter;
 
             // Score hesaplamasýný güncelle
             //UpdateScore();
-        }
     }
 
 }
