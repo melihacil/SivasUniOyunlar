@@ -6,6 +6,7 @@ public class BowlingPins : MonoBehaviour
 {
     private int m_Count = 0;
 
+    [SerializeField]
     public int Count
     {
         get { return m_Count; }
@@ -27,13 +28,5 @@ public class BowlingPins : MonoBehaviour
             m_MyAudioSource.Play();
             isAudioPlayed = true;
         }
-    }
-    void Update()
-    {
-        if (Input.GetKeyUp(KeyCode.R))
-        {
-            m_Count = 0;
-        }
-
     }
 }

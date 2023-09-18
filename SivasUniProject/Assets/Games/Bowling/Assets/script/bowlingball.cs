@@ -12,27 +12,22 @@ public class bowlingball : MonoBehaviour
    
 
     AudioSource m_MyAudioSource;
-    bool isAudioPlayed = false;
+
     private AudioClip audioClip;
     public GameObject button2;
 
     int[] score = new int[3];//3 tur olsun 
-    int i;
-    Drop dropScript;
 
-    float currentTime = 0.0f;
-    public float startingTime = 50.0f;
+    //Drop dropScript;
 
-    int[] toplam = new int[31];
+    //float currentTime = 0.0f;
 
-    int counter1 = 0;
-    public static int counter = 0;
-    int sira1 = 0;
-    int sira2 = 0;
-    int max = 6;
-    static int j=0;
+   
+    //int sira1 = 0;
+    //int sira2 = 0;
 
-    private Vector3 ballPosition;
+    //
+
     private Rigidbody m_rb;
     private bool m_done = true;
     [SerializeField] private InputActionReference m_ResetPin, m_ResetBall;
@@ -50,13 +45,11 @@ public class bowlingball : MonoBehaviour
 
     void Start()
     {
-        pins = GameObject.FindGameObjectsWithTag("Pin");
         audioClip = m_MyAudioSource.clip; 
         //ballPosition = GameObject.FindGameObjectWithTag("Basketball").transform.position;
 
     }
 
-    GameObject[] pins;
 
 
 
@@ -65,7 +58,7 @@ public class bowlingball : MonoBehaviour
         if (collision.gameObject.tag == "zemin")
         {
             m_MyAudioSource.Play();
-            isAudioPlayed = true;
+
         }
 
     }
@@ -76,7 +69,7 @@ public class bowlingball : MonoBehaviour
         {
             case "checkVoice":
                 m_MyAudioSource.enabled = false;
-                isAudioPlayed = false;
+
                 break;
             // If the ball touched a trigger barrier than it will bi disabled for the pooler
             case "BallBarrier":
@@ -103,18 +96,7 @@ public class bowlingball : MonoBehaviour
     }
     
 
-    private void UpdateScore()
-    {
-        if (startingTime <= 0 && !isAudioPlayed)
-        {
-            for (int a = 0; a < i; a++)
-            {
-                toplam[0] += score[a];
-            }
-           // Total.text = toplam[0].ToString();
-            isAudioPlayed = true;
-        }
-    }
+
     //Redundant
     //public void ResetBall()
     //{
