@@ -43,6 +43,7 @@ public class BowlingUIManager : MonoBehaviour
                 startingTime -= 1 * Time.deltaTime;
                 m_Timer.text = "" + startingTime.ToString("0.##");
             }
+            // Endgame, after the end of the countdown this block works
             else
             {
                 foreach (GameObject pin in pins)
