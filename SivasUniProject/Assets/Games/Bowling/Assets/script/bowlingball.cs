@@ -10,10 +10,7 @@ using UnityEngine.InputSystem.Interactions;
 public class bowlingball : MonoBehaviour
 {
    
-    [SerializeField] Text scoreText;
-    [SerializeField] Text toplamText;
-   // [SerializeField] Text atisSiniri;
-    [SerializeField] Text Timea;
+
     AudioSource m_MyAudioSource;
     bool isAudioPlayed = false;
     private AudioClip audioClip;
@@ -60,48 +57,7 @@ public class bowlingball : MonoBehaviour
     }
 
     GameObject[] pins;
-    void Update()
-    {
-        scoreText.text = "Score:" + counter;
-        if (VRButton.on)
-        {
-            if (VRButton_tekrar.on2) {
-                startingTime = 50.5f;
-                toplamText.text = "Toplam score";
-                for (int x = 0; x < 31; x++)
-                {
-                    toplam[x] = 0;
-                }
-            }
-             
-            if (startingTime > 0)
-            {
-                startingTime -= 1 * Time.deltaTime;
-                Timea.text = "" + startingTime.ToString("0.##"); 
-            }
-            else
-            {
-                int sonuc = 0;
-                startingTime = 0;
-                Timea.text = "Süreniz bitti";
-                for (int i = 0; i <= j; i++)
-                {
-                    sonuc = sonuc + toplam[i];
-                }
-                toplamText.text = "Toplam score:" + sonuc;
-            }
-            //counter = pin1.count1 + pin2.count2 + pin3.count3 + pin4.count4 + pin5.count5 + pin6.count6 + pin7.count7 + pin8.count8 + pin9.count9 + pin10.count10;
-            foreach (GameObject pin in pins) 
-            {
-                counter = pin.GetComponent<BowlingPins>().Count;
-            }
-        }
-        
-        else
-        {
-            Debug.Log("oyunu baslatiniz");
-        }
-    }
+
 
 
     private void OnCollisionEnter(Collision collision)
