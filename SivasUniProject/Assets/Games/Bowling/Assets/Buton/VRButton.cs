@@ -25,8 +25,10 @@ public class VRButton : MonoBehaviour
     void Start()
     {
         on = false;
+        m_ButtonMesh.transform.localPosition = new Vector3(0f, 0.065f, 0f);
     }
-    [ContextMenu("TestTriggerEnter")]
+
+
     public void OnTriggerEnter(Collider other)
     {
         if(other.tag =="Button" && !_deadTimeActive)
@@ -50,7 +52,7 @@ public class VRButton : MonoBehaviour
             onReleased?.Invoke();
             Debug.Log("Tuþ serbest kaldý");
             StartCoroutine(WaitForDeadTime());
-            
+            m_ButtonMesh.transform.localPosition = new Vector3(0f, 0.065f, 0f);
             //if (m_Hand =  other.gameObject)
             //{
 
