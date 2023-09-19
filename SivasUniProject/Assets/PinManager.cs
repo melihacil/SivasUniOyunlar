@@ -11,6 +11,7 @@ public class PinManager : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("Pin manager Starting");
         var pins = GameObject.FindGameObjectsWithTag("Pin");
         pinPositions = new List<Vector3>();
         pinRotations = new List<Quaternion>();
@@ -20,6 +21,7 @@ public class PinManager : MonoBehaviour
             pinPositions.Add(pin.transform.position);
             pinRotations.Add(pin.transform.rotation);
         }
+        ResetPins();
     }
 
     // Update is called once per frame
@@ -28,6 +30,7 @@ public class PinManager : MonoBehaviour
         
     }
 
+    [ContextMenu("Test Pin Reset")]
     public void ResetPins()
     {
 

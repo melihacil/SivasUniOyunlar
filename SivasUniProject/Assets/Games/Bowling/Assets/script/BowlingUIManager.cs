@@ -11,6 +11,7 @@ public class BowlingUIManager : MonoBehaviour
     // [SerializeField] Text atisSiniri;
     [SerializeField] private Text m_Timer;
     [SerializeField] private float m_DefaultTime;
+    [SerializeField] private GameObject m_StartGameIndicator;
     private int score = 0;
     public float startingTime = 50.0f;
     private int m_counter = 0;
@@ -41,7 +42,7 @@ public class BowlingUIManager : MonoBehaviour
             if (startingTime > 0)
             {
                 startingTime -= 1 * Time.deltaTime;
-                m_Timer.text = "" + startingTime.ToString("0.##");
+                m_Timer.text = "" + startingTime.ToString("0");
             }
             // Endgame, after the end of the countdown this block works
             else
@@ -75,6 +76,7 @@ public class BowlingUIManager : MonoBehaviour
     {
         m_StartGame = true;
         startingTime = m_DefaultTime;
+        m_StartGameIndicator.SetActive(false);
     }
 
     [ContextMenu("Test Reset")]

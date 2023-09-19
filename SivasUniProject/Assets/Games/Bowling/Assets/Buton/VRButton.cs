@@ -7,7 +7,7 @@ public class VRButton : MonoBehaviour
 {
     
     //Butona dokunulduktan sonra içeride biraz beklemsini saðlayan özellik
-    public float deadTime = 1f;
+    public float deadTime = 0.4f;
     //Bool deðeri dead time süresince butonun kilitli kalmasýný saðlýyor.
     private bool _deadTimeActive = false;
 
@@ -28,35 +28,30 @@ public class VRButton : MonoBehaviour
         m_ButtonMesh.transform.localPosition = new Vector3(0f, 0.065f, 0f);
     }
 
-
-    public void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if(other.tag =="Button" && !_deadTimeActive)
+
+        Debug.Log(other.tag + " name " + other.name);
+        if(other.tag == "Hand")
         {
 
             onPressed?.Invoke();
             Debug.Log("Tuþa bastýn");
             on = true;
             m_Hand = other.gameObject;
+            m_ButtonMesh.transform.localPosition = new Vector3(0f, 0.03f, 0f);
         }
-        m_ButtonMesh.transform.localPosition = new Vector3(0f,0.03f,0f);
-
-
     }
 
     
-   public void OnTriggerExit(Collider other)
+   private void OnTriggerExit(Collider other)
     {
-        if(other.tag=="Button" && !_deadTimeActive)
+        if(other.tag=="Hand") //&& !_deadTimeActive)
         {
             onReleased?.Invoke();
             Debug.Log("Tuþ serbest kaldý");
             StartCoroutine(WaitForDeadTime());
             m_ButtonMesh.transform.localPosition = new Vector3(0f, 0.065f, 0f);
-            //if (m_Hand =  other.gameObject)
-            //{
-
-            //}
         }
        
     }
