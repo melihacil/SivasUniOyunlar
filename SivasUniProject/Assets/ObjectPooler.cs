@@ -6,7 +6,7 @@ public class ObjectPooler : MonoBehaviour
 {
     [SerializeField] public static ObjectPooler m_ObjectPooler;
     [SerializeField] private List<GameObject> m_pooledObjects;
-    [SerializeField] private GameObject m_objectToPool;
+    [SerializeField] private List<GameObject> m_objectsToPool = new List<GameObject>();
     [SerializeField] public int m_maxObjects;
     // Start is called before the first frame update
 
@@ -20,10 +20,11 @@ public class ObjectPooler : MonoBehaviour
     {
         m_pooledObjects = new List<GameObject>();
         GameObject temp;
-
+        int index;
         for (int i = 0; i < m_maxObjects; i++)
         {
-            temp = Instantiate(m_objectToPool);
+            index = (int)Random.Range(0f, (float)m_objectsToPool.Count);
+            temp = Instantiate(m_objectsToPool[index]);
             temp.SetActive(false);
             m_pooledObjects.Add(temp);
         }

@@ -77,6 +77,7 @@ public class BowlingUIManager : MonoBehaviour
         m_StartGame = true;
         startingTime = m_DefaultTime;
         m_StartGameIndicator.SetActive(false);
+        PinManager.instance.ResetPins();
     }
 
     [ContextMenu("Test Reset")]
@@ -88,6 +89,7 @@ public class BowlingUIManager : MonoBehaviour
         {
             toplam[x] = 0;
         }
+        PinManager.instance.ResetPins();
     }
 
     public void ReturnToTheMain()
@@ -108,6 +110,8 @@ public class BowlingUIManager : MonoBehaviour
         }
     }
 
+
+    // This will be used to increase score text
     public void IncreaseScore()
     {
         m_ScoreText.text = "Skor: " + score;

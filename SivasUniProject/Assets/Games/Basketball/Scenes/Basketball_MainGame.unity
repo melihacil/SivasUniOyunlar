@@ -102061,7 +102061,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_pooledObjects: []
-  m_objectToPool: {fileID: 274857196}
+  m_objectsToPool:
+  - {fileID: 274857196}
   m_maxObjects: 20
 --- !u!33 &5423980324977145723
 MeshFilter:

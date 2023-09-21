@@ -9,6 +9,12 @@ public class PinManager : MonoBehaviour
     private List<Vector3> pinPositions;
     private List<Quaternion> pinRotations;
 
+    public static PinManager instance;
+
+    private void Awake()
+    {
+        instance = this;
+    }
     void Start()
     {
         Debug.Log("Pin manager Starting");
