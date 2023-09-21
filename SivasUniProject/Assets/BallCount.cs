@@ -8,6 +8,7 @@ public class BallCount : MonoBehaviour
     [SerializeField] private int m_DesiredCount;
     [SerializeField] private Transform m_spawnPosition;
     [SerializeField] private float m_SpawnTime = 0.6f;
+    [SerializeField] private List<Material> materials = new List<Material>();
     private int m_BallCount = 0;
 
 
@@ -60,11 +61,15 @@ public class BallCount : MonoBehaviour
 
     private void SpawnBasketball()
     {
+
+        int index = (int) Random.Range(0f, (float)materials.Count);
+        
         GameObject testBall = ObjectPooler.m_ObjectPooler.InstantiateObject();
         if (testBall != null)
         {
             m_Spawned = false;
             testBall.transform.position = m_spawnPosition.position;
+            testBall.GetComponent<MeshRenderer>().material = materials[index];
             testBall.SetActive(true);
             Debug.Log("Spawning basketball " + (m_BallCount) + " / " + m_DesiredCount);
         }
