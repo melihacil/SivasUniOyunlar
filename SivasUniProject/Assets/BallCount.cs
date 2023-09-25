@@ -10,8 +10,6 @@ public class BallCount : MonoBehaviour
     [SerializeField] private float m_SpawnTime = 0.6f;
     private int m_BallCount = 0;
 
-
-
     // Update is called once per frame
     private bool m_Spawned = false;
 
