@@ -17,7 +17,7 @@ public class GameManagerGolf : MonoBehaviour
 
     public TextMeshProUGUI holeText;
     public TextMeshProUGUI hitNumberTest;
-    [SerializeField] private GameObject endCanvas;
+    //[SerializeField] private GameObject endCanvas;
     [SerializeField] private Transform headTransform;
     [SerializeField] private float spawnDistance = 2f;
     [SerializeField] private GameObject leftXrRay;
@@ -50,7 +50,7 @@ public class GameManagerGolf : MonoBehaviour
             Debug.Log("sona varildi");
             Ball.GetComponent<GolfBall>().DestroyWithParticleEffect();
             Ball.GetComponent<GolfBall>().PlayWinSound();
-            Invoke("ActivateEndingCanvas", 3f);
+            //Invoke("ActivateEndingCanvas", 3f);
 
         }
         else
@@ -100,17 +100,17 @@ public class GameManagerGolf : MonoBehaviour
         }
     }
 
-    public void ActivateEndingCanvas()
-    {
-        endCanvas.SetActive(true);
-        endCanvas.transform.position = headTransform.position + new Vector3(headTransform.forward.x, 0, headTransform.forward.z).normalized * spawnDistance;
+    //public void ActivateEndingCanvas()
+    //{
+    //    endCanvas.SetActive(true);
+    //    endCanvas.transform.position = headTransform.position + new Vector3(headTransform.forward.x, 0, headTransform.forward.z).normalized * spawnDistance;
 
-        endCanvas.transform.LookAt(new Vector3(headTransform.position.x, endCanvas.transform.position.y, headTransform.position.z));
-        endCanvas.transform.forward *= -1;
-        //leftXrRay.SetActive(true);
-       // rightXrRay.SetActive(true);
+    //    endCanvas.transform.LookAt(new Vector3(headTransform.position.x, endCanvas.transform.position.y, headTransform.position.z));
+    //    endCanvas.transform.forward *= -1;
+    //    //leftXrRay.SetActive(true);
+    //   // rightXrRay.SetActive(true);
         
-    }
+    //}
 
     public void SwitchGolfSticks()
     {
@@ -131,7 +131,7 @@ public class GameManagerGolf : MonoBehaviour
 
     public void ReturnTheMenu()
     {
-        SceneManager.LoadScene("Golf_Menu");
+        SceneManager.LoadScene(0);
     }
 
     public void RestartGame()
