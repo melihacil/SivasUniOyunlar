@@ -12,6 +12,7 @@ public class BowlingPins : MonoBehaviour
         get { return m_Count; }
         set { m_Count = value; }
     }
+    private bool m_IsConnected = false;
 
     AudioSource m_MyAudioSource;
     bool isAudioPlayed = false;
@@ -25,6 +26,11 @@ public class BowlingPins : MonoBehaviour
         {
 
             m_Count = 1;
+            if (!m_IsConnected)
+            {
+                m_IsConnected = true;
+                BowlingUIManager.instance.IncreaseScore();
+            }
             m_MyAudioSource.Play();
             isAudioPlayed = true;
         }
