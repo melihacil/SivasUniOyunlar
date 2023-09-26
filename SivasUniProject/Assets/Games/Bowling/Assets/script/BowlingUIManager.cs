@@ -52,9 +52,6 @@ public class BowlingUIManager : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log("Counter" + m_counter);
-       
-
         if (m_StartGame)
         {
 
@@ -84,7 +81,8 @@ public class BowlingUIManager : MonoBehaviour
                 }
                 sonuc += m_counter;
                 m_toplamText.text = "Toplam skor:" + sonuc;
-                Debug.Log(m_counter + ", sonuc " + sonuc);
+                m_ScoreText.text = "Skor:" + sonuc;
+                m_counter = 0;
             }
             //counter = pin1.count1 + pin2.count2 + pin3.count3 + pin4.count4 + pin5.count5 + pin6.count6 + pin7.count7 + pin8.count8 + pin9.count9 + pin10.count10;
             
@@ -108,8 +106,9 @@ public class BowlingUIManager : MonoBehaviour
     [ContextMenu("Test Reset")]
     public void ResetGame()
     {
+        m_toplamText.text = "Toplam skor:";
+        m_ScoreText.text = "Skor: 0";
         startingTime = 50.5f;
-        m_toplamText.text = "Toplam skor";
         for (int x = 0; x < 31; x++)
         {
             toplam[x] = 0;
