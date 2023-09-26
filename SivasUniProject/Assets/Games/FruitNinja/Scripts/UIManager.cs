@@ -43,6 +43,7 @@ public class UIManager : MonoBehaviour
     //public GameObject StartSurvivorModeButton;
     public GameObject MainMenuButton;
     public GameObject WeaponButton;
+    public GameObject ResetButton;
     [SerializeField]
     SphereCollider WeaponCollider;
     private void Start()
@@ -79,6 +80,7 @@ public class UIManager : MonoBehaviour
         StartArcadeModeButton.SetActive(false);
         MainMenuButton.SetActive(false);
         WeaponButton.SetActive(false);
+        ResetButton.SetActive(true);
         GameplayPanel.alpha = 1;
         FinishPanel.alpha = 0;
         score = 0;
@@ -101,7 +103,7 @@ public class UIManager : MonoBehaviour
         FinishPanel.alpha = 1;
         FinishScore.text = score.ToString();
 
-        Invoke(nameof(ActivateUI), 1.5f);
+        Invoke(nameof(ActivateUI), 1f);
 
         canCount = false;
         timeText.text = "0 : 00";
@@ -124,6 +126,7 @@ public class UIManager : MonoBehaviour
         StartArcadeModeButton.SetActive(true);
         MainMenuButton.SetActive(true);
         WeaponButton.SetActive(true);
+        ResetButton.SetActive(false);
     }
 
     public void StartMainMenu()
@@ -164,6 +167,9 @@ public class UIManager : MonoBehaviour
                 Finish();
                 WeaponCollider.enabled = false;
                 Invoke(nameof(ChangeWeapon), 0.4f);
+                break;
+            case "FinishGame":
+                Finish();
                 break;
             default:
                 Debug.Log("Please Check your Button's name!");
