@@ -4571,6 +4571,7 @@ MonoBehaviour:
   StartArcadeModeButton: {fileID: 7482846012267340597}
   MainMenuButton: {fileID: 7482846010959860609}
   WeaponButton: {fileID: 1158300127}
+  ResetButton: {fileID: 1882849290}
   WeaponCollider: {fileID: 0}
 --- !u!4 &1263143415
 Transform:
@@ -7465,12 +7466,12 @@ GameObject:
   - component: {fileID: 1882849291}
   - component: {fileID: 1882849292}
   m_Layer: 14
-  m_Name: MainMenu (1)
+  m_Name: FinishGame
   m_TagString: button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1882849291
 Transform:
   m_ObjectHideFlags: 0

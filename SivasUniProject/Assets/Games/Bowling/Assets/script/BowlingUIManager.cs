@@ -27,6 +27,7 @@ public class BowlingUIManager : MonoBehaviour
     }
     GameObject[] pins;
 
+    int sonuc = 0;
 
     void Start()
     {
@@ -34,7 +35,7 @@ public class BowlingUIManager : MonoBehaviour
     }
     private void Update()
     {
-        m_ScoreText.text = "Score:"; // + counter;
+        m_ScoreText.text = "Skor:" + sonuc;  // + counter;
 
         if (m_StartGame)
         {
@@ -42,7 +43,13 @@ public class BowlingUIManager : MonoBehaviour
             if (startingTime > 0)
             {
                 startingTime -= 1 * Time.deltaTime;
-                m_Timer.text = "" + startingTime.ToString("0");
+                m_Timer.text = "Süre:" + startingTime.ToString("0");
+                for (int i = 0; i <= m_RoundLength; i++)
+                {
+                    sonuc += toplam[i];
+                    toplam[i] = 0;
+                }
+                sonuc += m_counter;
             }
             // Endgame, after the end of the countdown this block works
             else
@@ -52,15 +59,9 @@ public class BowlingUIManager : MonoBehaviour
                     m_counter += pin.GetComponent<BowlingPins>().Count;
                 }
                 m_StartGame = false;
-                int sonuc = 0;
+                
                 startingTime = 0;
                 m_Timer.text = "Süreniz bitti";
-                for (int i = 0; i <= m_RoundLength; i++)
-                {
-                    sonuc+= toplam[i];
-                    toplam[i] = 0;
-                }
-                sonuc += m_counter;
                 m_toplamText.text = "Toplam skor:" + sonuc;
             }
             //counter = pin1.count1 + pin2.count2 + pin3.count3 + pin4.count4 + pin5.count5 + pin6.count6 + pin7.count7 + pin8.count8 + pin9.count9 + pin10.count10;
