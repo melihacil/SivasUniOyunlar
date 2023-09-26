@@ -101,9 +101,7 @@ public class UIManager : MonoBehaviour
         FinishPanel.alpha = 1;
         FinishScore.text = score.ToString();
 
-        StartArcadeModeButton.SetActive(true);
-        MainMenuButton.SetActive(true);
-        WeaponButton.SetActive(true);
+        Invoke(nameof(ActivateUI), 1.5f);
 
         canCount = false;
         timeText.text = "0 : 00";
@@ -120,6 +118,13 @@ public class UIManager : MonoBehaviour
             scoreText.text = "0";
     }
     */
+
+    private void ActivateUI()
+    {
+        StartArcadeModeButton.SetActive(true);
+        MainMenuButton.SetActive(true);
+        WeaponButton.SetActive(true);
+    }
 
     public void StartMainMenu()
     {
