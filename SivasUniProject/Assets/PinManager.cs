@@ -52,7 +52,7 @@ public class PinManager : MonoBehaviour
                 pinPhysics.angularVelocity = Vector3.zero;
 
                 //Count was used to check if the pin is hit and a score gained
-                pins[i].GetComponent<BowlingPins>().Count = 0;
+                pins[i].GetComponent<BowlingPins>().ResetPin();
             }
 
 
