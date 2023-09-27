@@ -40,62 +40,62 @@ public class PinManager : MonoBehaviour
     public void ResetPins()
     {
 
-            var pins = GameObject.FindGameObjectsWithTag("Pin");
+        var pins = GameObject.FindGameObjectsWithTag("Pin");
 
-            for (int i = 0; i < pins.Length; i++)
-            {
-                var pinPhysics = pins[i].GetComponent<Rigidbody>();
-                pinPhysics.velocity = Vector3.zero;
-                pinPhysics.position = pinPositions[i];
-                pinPhysics.rotation = pinRotations[i];
-                pinPhysics.velocity = Vector3.zero;
-                pinPhysics.angularVelocity = Vector3.zero;
+        for (int i = 0; i < pins.Length; i++)
+        {
+            var pinPhysics = pins[i].GetComponent<Rigidbody>();
+            pinPhysics.velocity = Vector3.zero;
+            pinPhysics.position = pinPositions[i];
+            pinPhysics.rotation = pinRotations[i];
+            pinPhysics.velocity = Vector3.zero;
+            pinPhysics.angularVelocity = Vector3.zero;
 
-                //Count was used to check if the pin is hit and a score gained
-                pins[i].GetComponent<BowlingPins>().ResetPin();
-            }
-
-
-            /*if (k < score.Length)
-            {
-                score[k] = counter;
-                k++;
-            }*/
+            //Count was used to check if the pin is hit and a score gained
+            pins[i].GetComponent<BowlingPins>().ResetPin();
+        }
 
 
-            //if (startingTime > 0)
-            //{
-            //    toplam[j] = counter;
-            //    if (j < 30)
-            //    {
-            //        j++;
-
-            //    }
-            //    else
-            //    {
-            //        Debug.Log("maks atýþ sýnýrý");
-            //    }
-
-            //}
+        /*if (k < score.Length)
+        {
+            score[k] = counter;
+            k++;
+        }*/
 
 
-            // Against the programmer ethics 
-            // Should be done through one pin script like the final version
-            //pin1.count1 = 0;
-            //pin2.count2 = 0;
-            //pin3.count3 = 0;
-            //pin4.count4 = 0;
-            //pin5.count5 = 0;
-            //pin6.count6 = 0;
-            //pin6.count6 = 0;
-            //pin7.count7 = 0;
-            //pin8.count8 = 0;
-            //pin9.count9 = 0;
-            //pin10.count10 = 0;
-            //scoreText.text = "Score:" + counter;
+        //if (startingTime > 0)
+        //{
+        //    toplam[j] = counter;
+        //    if (j < 30)
+        //    {
+        //        j++;
 
-            // Score hesaplamasýný güncelle
-            //UpdateScore();
+        //    }
+        //    else
+        //    {
+        //        Debug.Log("maks atýþ sýnýrý");
+        //    }
+
+        //}
+
+
+        // Against the programmer ethics 
+        // Should be done through one pin script like the final version
+        //pin1.count1 = 0;
+        //pin2.count2 = 0;
+        //pin3.count3 = 0;
+        //pin4.count4 = 0;
+        //pin5.count5 = 0;
+        //pin6.count6 = 0;
+        //pin6.count6 = 0;
+        //pin7.count7 = 0;
+        //pin8.count8 = 0;
+        //pin9.count9 = 0;
+        //pin10.count10 = 0;
+        //scoreText.text = "Score:" + counter;
+
+        // Score hesaplamasýný güncelle
+        //UpdateScore();
     }
 
 }

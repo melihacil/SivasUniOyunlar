@@ -41,7 +41,4 @@ public class BowlingPins : MonoBehaviour
         m_IsConnected =false;
         m_Count = 0;
     }
-
-
-
 }
