@@ -70,21 +70,21 @@ public class GameController : MonoBehaviour
     public void Slice(GameObject _Fruit, Weapon weapon, Material _FruitMaterial)
     {
         //Material fruitMat;
-        switch (_Fruit.GetComponent<Fruit>().particleTyp)
-        {
-            case particleType.Red:
+        //switch (_Fruit.GetComponent<Fruit>().particleTyp)
+        //{
+        //    case particleType.Red:
 
-                break;
-            case particleType.Yellow:
+        //        break;
+        //    case particleType.Yellow:
 
-                break;
-            case particleType.Orange:
+        //        break;
+        //    case particleType.Orange:
 
-                break;
-            default:
-                sliceMaterial = m_defaultSliceMat;
-                break;
-        }
+        //        break;
+        //    default:
+        //        sliceMaterial = m_defaultSliceMat;
+        //        break;
+        //}
 
         SlicedHull slicedObject;
 
