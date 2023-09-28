@@ -7,6 +7,8 @@ public class GameController : MonoBehaviour
 {
     //Singleton pattern
     public static GameController instance;
+    [SerializeField] private bool m_UseFruitMaterial = true;
+
     private void Awake()
     {
         if (instance == null)
@@ -26,6 +28,7 @@ public class GameController : MonoBehaviour
 
     //sliced new mesh material
     public Material sliceMaterial;
+    [SerializeField] private Material m_defaultSliceMat;
     public TextureRegion textureRegion;
 
     //3,2,1, GO!
@@ -58,11 +61,38 @@ public class GameController : MonoBehaviour
         uIManager.SelectButton(parentName);
     }
 
-    //Check you slice a fruit or not , and slice it!
-    public void Slice(GameObject _Fruit, Weapon weapon)
-    {
-        SlicedHull slicedObject = Sliceed(_Fruit, weapon.slicePanel, sliceMaterial);
 
+    [SerializeField] private List<Material> materials = new List<Material>();
+
+
+
+    //Check you slice a fruit or not , and slice it!
+    public void Slice(GameObject _Fruit, Weapon weapon, Material _FruitMaterial)
+    {
+        //Material fruitMat;
+        switch (_Fruit.GetComponent<Fruit>().particleTyp)
+        {
+            case particleType.Red:
+
+                break;
+            case particleType.Yellow:
+
+                break;
+            case particleType.Orange:
+
+                break;
+            default:
+                sliceMaterial = m_defaultSliceMat;
+                break;
+        }
+
+        SlicedHull slicedObject;
+
+        if (m_UseFruitMaterial)
+           slicedObject = Sliceed(_Fruit, weapon.slicePanel, _FruitMaterial);
+        else
+            slicedObject = Sliceed(_Fruit, weapon.slicePanel, sliceMaterial);
+        
         if (slicedObject != null)
         {
             if (_Fruit.CompareTag("fruit"))
