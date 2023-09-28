@@ -212,8 +212,8 @@ public class Pooler : MonoBehaviour
     // reset all objects and cancel spawn functions
     public void ResetPool()
     {
-        CancelInvoke("SpawnFruit");
-        CancelInvoke("SpawnSpecialFruits");
+        CancelInvoke(nameof(SpawnFruit)); //nameof(SpawnFruit)
+        CancelInvoke(nameof(SpawnSpecialFruits));
         foreach (GameObject fruitGameObj in UsedFruit.ToArray())
         {
             Fruit fruit = fruitGameObj.GetComponent<Fruit>();

@@ -698,13 +698,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b39897a3cbf32c4fa74a74a1e3c892d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_UseFruitMaterial: 1
   sliceMaterial: {fileID: 2100000, guid: 76a6a145cc729d943a65644daaeafa26, type: 2}
+  m_defaultSliceMat: {fileID: 2100000, guid: 76a6a145cc729d943a65644daaeafa26, type: 2}
   CountdownElements:
   - 3
   - 2
   - 1
   - GO!
   CountdownText: {fileID: 375714545}
+  materials: []
 --- !u!4 &186004111
 Transform:
   m_ObjectHideFlags: 0
