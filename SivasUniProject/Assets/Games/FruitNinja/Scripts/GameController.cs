@@ -70,28 +70,39 @@ public class GameController : MonoBehaviour
     public void Slice(GameObject _Fruit, Weapon weapon, Material _FruitMaterial)
     {
         //Material fruitMat;
-        //switch (_Fruit.GetComponent<Fruit>().particleTyp)
-        //{
-        //    case particleType.Red:
-
-        //        break;
-        //    case particleType.Yellow:
-
-        //        break;
-        //    case particleType.Orange:
-
-        //        break;
-        //    default:
-        //        sliceMaterial = m_defaultSliceMat;
-        //        break;
-        //}
+        switch (_Fruit.GetComponent<Fruit>().particleTyp)
+        {
+            case particleType.Red:
+                //Debug.Log("Cut red");
+                sliceMaterial = materials[0];
+                break;
+            case particleType.Yellow:
+                //Debug.Log("Cut yellow");
+                sliceMaterial = materials[1];
+                break;
+            case particleType.Orange:
+                //Debug.Log("Cut orange");
+                sliceMaterial = materials[2];
+                break;
+            case particleType.Ice:
+                sliceMaterial = materials[3];
+                break;
+            default:
+                sliceMaterial = m_defaultSliceMat;
+                break;
+        }
 
         SlicedHull slicedObject;
 
-        if (m_UseFruitMaterial)
-           slicedObject = Sliceed(_Fruit, weapon.slicePanel, _FruitMaterial);
-        else
-            slicedObject = Sliceed(_Fruit, weapon.slicePanel, sliceMaterial);
+        slicedObject = Sliceed(_Fruit, weapon.slicePanel, sliceMaterial);
+
+        //if (m_UseFruitMaterial)
+        //{
+        //    sliceMaterial = _FruitMaterial;
+        //    slicedObject = Sliceed(_Fruit, weapon.slicePanel, _FruitMaterial);
+        //}
+        //else
+        //    slicedObject = Sliceed(_Fruit, weapon.slicePanel, m_defaultSliceMat);
         
         if (slicedObject != null)
         {
@@ -126,7 +137,7 @@ public class GameController : MonoBehaviour
                 StartCoroutine(Countdown(_Fruit));
             }
             pooler.GetParticle(_Fruit.GetComponent<Fruit>().particleTyp, _Fruit.transform.position, _Fruit.transform.rotation);
-            GameObject upperPart = slicedObject.CreateUpperHull(_Fruit);
+            GameObject upperPart = slicedObject.CreateUpperHull(_Fruit);          
             GameObject lowPart = slicedObject.CreateLowerHull(_Fruit);
             AddComponents(upperPart);
             AddComponents(lowPart);
@@ -152,8 +163,8 @@ public class GameController : MonoBehaviour
     {
 
         objPart.AddComponent<BoxCollider>();
-        objPart.GetComponent<MeshRenderer>().materials[1] = sliceMaterial;
-
+        //objPart.GetComponent<MeshRenderer>().materials[1] = sliceMaterial;
+        objPart.GetComponent<MeshRenderer>().SetMaterials(new List<Material>() { objPart.GetComponent<MeshRenderer>().materials[0], sliceMaterial });
         objPart.AddComponent<Rigidbody>().interpolation = RigidbodyInterpolation.Interpolate;
         objPart.GetComponent<Rigidbody>().AddExplosionForce(350, objPart.transform.position, 30);
         Destroy(objPart, 8f);

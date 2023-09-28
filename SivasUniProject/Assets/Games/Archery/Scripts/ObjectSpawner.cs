@@ -26,6 +26,8 @@ public class ObjectSpawner : MonoBehaviour
     [SerializeField] Vector2 m_zAxis;
 
     [SerializeField] private LayerMask m_ScoreLayer;
+    [SerializeField] private int m_LoopLimit = 9;
+    [SerializeField] private float m_SpawnSphereRadius = 1.5f;
     private void Update()
     {
 
@@ -60,17 +62,13 @@ public class ObjectSpawner : MonoBehaviour
     // From a circle to a cone shaped area
     private void SpawnObject()
     {
-
-
-      
-
         // Nesneyi oluþturma
 
         //LayerMask mask = LayerMask.GetMask("Default");
 
         //mask.value = 0;
-        
-        for (;;) {
+        // Dangerous code 
+        for (int i = 0; i < m_LoopLimit ; i++) {
             // Rastgele bir nokta seçme
             Vector2 randomPoint = Random.insideUnitCircle.normalized;
             // This will give you a circle
@@ -78,7 +76,7 @@ public class ObjectSpawner : MonoBehaviour
 
             Vector3 clampedSpawnPosition = new Vector3(Random.Range(m_xAxis.x, m_xAxis.y), 0.2f, Random.Range(m_zAxis.x, m_zAxis.y));
 
-            Collider[] results = Physics.OverlapSphere(clampedSpawnPosition, 2f, m_ScoreLayer.value);
+            Collider[] results = Physics.OverlapSphere(clampedSpawnPosition, m_SpawnSphereRadius, m_ScoreLayer.value);
             if (results.Length == 0)
             {
                 Instantiate(RandomTarget(Random.Range(1, 4)), clampedSpawnPosition, Quaternion.identity);
