@@ -39,11 +39,11 @@ public class Fruit : MonoBehaviour
             {
                 if ( (weapon.m_WeaponType == WepType.Katana && weapon.SwordVelocity > 3f ) || particleTyp == particleType.Explosion)
                 {
-                    gameController.Slice(gameObject, weapon);
+                    gameController.Slice(gameObject, weapon, GetComponent<MeshRenderer>().material);
                 }
                 else if (weapon.m_WeaponType ==WepType.LightSaber)
                 {
-                    gameController.Slice(gameObject, weapon);
+                    gameController.Slice(gameObject, weapon, GetComponent<MeshRenderer>().material);
                 }
             }
             else

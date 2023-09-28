@@ -35,4 +35,10 @@ public class BowlingPins : MonoBehaviour
             isAudioPlayed = true;
         }
     }
+
+    public void ResetPin()
+    {
+        m_IsConnected =false;
+        m_Count = 0;
+    }
 }
