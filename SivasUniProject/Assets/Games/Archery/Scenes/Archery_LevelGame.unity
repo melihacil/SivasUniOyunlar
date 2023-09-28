@@ -477,6 +477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   yourScore: {fileID: 0}
   scoreHolderComp: {fileID: 0}
+  m_BasketballManager: {fileID: 0}
 --- !u!114 &19131588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5889,6 +5890,11 @@ MonoBehaviour:
   m_SpawnAngleRedundant: 0
   m_xAxis: {x: -11.5, y: 10.5}
   m_zAxis: {x: -5, y: 10.5}
+  m_ScoreLayer:
+    serializedVersion: 2
+    m_Bits: 8192
+  m_LoopLimit: 9
+  m_SpawnSphereRadius: 1.5
 --- !u!4 &1160493163
 Transform:
   m_ObjectHideFlags: 0
@@ -7495,6 +7501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   yourScore: {fileID: 0}
   scoreHolderComp: {fileID: 0}
+  m_BasketballManager: {fileID: 0}
 --- !u!114 &1600803660
 MonoBehaviour:
   m_ObjectHideFlags: 0

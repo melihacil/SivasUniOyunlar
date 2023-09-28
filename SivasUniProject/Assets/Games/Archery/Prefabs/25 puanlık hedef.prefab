@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7693809561084072721}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Sketchfab_model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 4346222538054137844}
   - component: {fileID: 1976188773944614955}
   - component: {fileID: 246632990417148971}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: explosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4951,7 +4951,7 @@ GameObject:
   - component: {fileID: 4606370004167063133}
   - component: {fileID: 782269294606208}
   - component: {fileID: 2969291147770598975}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Object_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5057,7 +5057,7 @@ GameObject:
   - component: {fileID: 7474324216010633789}
   - component: {fileID: 7148290430256316480}
   - component: {fileID: 179803163211635877}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Object_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5160,7 +5160,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9152014910967601089}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Meshes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5192,7 +5192,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 928844353967181110}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Target_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5231,7 +5231,7 @@ GameObject:
   - component: {fileID: 3303329726525140673}
   - component: {fileID: 8965826597973889180}
   - component: {fileID: 78849199270975043}
-  m_Layer: 5
+  m_Layer: 13
   m_Name: ArcheryPointCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5364,7 +5364,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7241384384713777137}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5396,7 +5396,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3453396745197127586}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: GLTF_SceneRootNode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5430,7 +5430,7 @@ GameObject:
   - component: {fileID: 8217469480322698898}
   - component: {fileID: 4826889535521684080}
   - component: {fileID: 7285810287580204639}
-  m_Layer: 5
+  m_Layer: 13
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5565,7 +5565,7 @@ GameObject:
   - component: {fileID: 5853630593999002378}
   - component: {fileID: 5627411165762370022}
   - component: {fileID: 6113587504666696433}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Object_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5672,7 +5672,7 @@ GameObject:
   - component: {fileID: 1456836798747506528}
   - component: {fileID: 6965198182390216843}
   - component: {fileID: 221618312}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: "25 puanl\u0131k hedef"
   m_TagString: 25Puan
   m_Icon: {fileID: 0}

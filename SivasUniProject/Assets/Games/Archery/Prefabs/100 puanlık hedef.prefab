@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2433681685637495058}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7661839200329670977}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: GLTF_SceneRootNode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 2965675918739677705}
   - component: {fileID: 1226227232915347313}
   - component: {fileID: 1081019460547645051}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: explosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4982,7 +4982,7 @@ GameObject:
   - component: {fileID: 4312689290820292083}
   - component: {fileID: 805896455101872401}
   - component: {fileID: 3229068984072326462}
-  m_Layer: 5
+  m_Layer: 13
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5118,7 +5118,7 @@ GameObject:
   - component: {fileID: 2996926393595802008}
   - component: {fileID: 4731512954434509217}
   - component: {fileID: 690174379}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: "100 puanl\u0131k hedef"
   m_TagString: 100Puan
   m_Icon: {fileID: 0}
@@ -5300,7 +5300,7 @@ GameObject:
   - component: {fileID: 1478581595270839785}
   - component: {fileID: 837714068301291269}
   - component: {fileID: 1256345226869210130}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Object_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5403,7 +5403,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3421991528586589682}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Sketchfab_model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5438,7 +5438,7 @@ GameObject:
   - component: {fileID: 8815129135828652222}
   - component: {fileID: 5024463961555947875}
   - component: {fileID: 7822109009031409884}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Object_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5544,7 +5544,7 @@ GameObject:
   - component: {fileID: 2450695301645653214}
   - component: {fileID: 2777428389125400227}
   - component: {fileID: 5171951120492247622}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Object_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5647,7 +5647,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4231907212297662754}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Meshes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5679,7 +5679,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5285914411153779669}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Target_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5718,7 +5718,7 @@ GameObject:
   - component: {fileID: 7206982169561066912}
   - component: {fileID: 3872694574878921725}
   - component: {fileID: 5245479803491505442}
-  m_Layer: 5
+  m_Layer: 13
   m_Name: PointCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
