@@ -29,12 +29,14 @@ public class GameController : MonoBehaviour
     //sliced new mesh material
     public Material sliceMaterial;
     [SerializeField] private Material m_defaultSliceMat;
+    [SerializeField] private List<Material> materials = new List<Material>();
     public TextureRegion textureRegion;
 
     //3,2,1, GO!
     public List<string> CountdownElements;
     public TextMeshPro CountdownText;
     SoundManager soundManager;
+
     private void Start()
     {
         pooler = Pooler.instance;
@@ -42,18 +44,21 @@ public class GameController : MonoBehaviour
         CountdownText.gameObject.SetActive(false);
         soundManager = SoundManager.instance;
     }
-    //for write in scene 3-2-1-Go! 
+    // UI sistemini kullanarak kalan süreyi geriye say
     IEnumerator Countdown(GameObject _Fruit)
     {
   
         string parentName =  _Fruit.transform.parent.name;
         //Debug.Log(parentName + " parent fruit name");
+        // Arcade mod şeklinde oluşturulan bir mevye tag'i
         if (parentName == "Arcade")
         {
             CountdownText.gameObject.SetActive(true);
+            // Süreyi bekle
             for (int i = 0; i < CountdownElements.Count; i++)
             {
                 CountdownText.text = CountdownElements[i];
+                // 1 saniye sonra yeniden çalış
                 yield return new WaitForSeconds(1f);
             }
             CountdownText.gameObject.SetActive(false);
@@ -62,7 +67,7 @@ public class GameController : MonoBehaviour
     }
 
 
-    [SerializeField] private List<Material> materials = new List<Material>();
+
 
 
 
@@ -70,8 +75,10 @@ public class GameController : MonoBehaviour
     public void Slice(GameObject _Fruit, Weapon weapon, Material _FruitMaterial)
     {
         //Material fruitMat;
+        //Meyvelerin uygun materyallere göre değiştirilme bloğu
         switch (_Fruit.GetComponent<Fruit>().particleTyp)
         {
+            // Uygun tipte değişim uygulaması
             case particleType.Red:
                 //Debug.Log("Cut red");
                 sliceMaterial = materials[0];
@@ -96,39 +103,39 @@ public class GameController : MonoBehaviour
 
         slicedObject = Sliceed(_Fruit, weapon.slicePanel, sliceMaterial);
 
-        //if (m_UseFruitMaterial)
-        //{
-        //    sliceMaterial = _FruitMaterial;
-        //    slicedObject = Sliceed(_Fruit, weapon.slicePanel, _FruitMaterial);
-        //}
-        //else
-        //    slicedObject = Sliceed(_Fruit, weapon.slicePanel, m_defaultSliceMat);
-        
         if (slicedObject != null)
         {
+            // Skor meyvesi ise
             if (_Fruit.CompareTag("fruit"))
             {
                 _Fruit.SetActive(false);
                 Fruit fruit = _Fruit.GetComponent<Fruit>();
                 pooler.ReycleFruit(fruit);
+                // Bomba tipi meyve -- skor azalt
                 if (fruit.particleTyp == particleType.Explosion)
                 {
                     soundManager.BombSound();
+                    // Haptic feedback
                     weapon.Vibrate(0.5f);
                 }
+                // Dondurucu güç veren meyve -- oyunu yavaşlat
                 else if (fruit.particleTyp == particleType.Ice)
                 {
                     soundManager.FrozenSound();
                     uIManager.IncreaseScore(4);
+                    // Haptic feedback
                     weapon.Vibrate(0.2f);
                 }
+                // Normal tip meyve -- skor arttır
                 else
                 {
                     soundManager.SplashFruit();
                     uIManager.IncreaseScore(1);
+                    // Haptic feedback
                     weapon.Vibrate(0.1f);
                 }
             }
+            // Eğer buton tipi bir meyve ise
             else if (_Fruit.CompareTag("button"))
             {
                 weapon.Vibrate(0.1f);

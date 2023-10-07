@@ -44,13 +44,14 @@ public class Weapon : MonoBehaviour
     // manually calculate  velocity
     public void Update()
     {
+        // Aletin son pozisyonu ve şimdiki pozisyonu karşılaştırılarak hızı bulunmakta
         direct = transform.position - lastdirectionRef;
         lastdirectionRef = transform.position;
         SwordVelocity = direct.magnitude / Time.deltaTime;
 
         direct = direct.normalized;
 
-
+        // Kılıç tipine göre kesebilme booleanı değişmekte
         switch (m_WeaponType)
         {
             case WepType.Katana:

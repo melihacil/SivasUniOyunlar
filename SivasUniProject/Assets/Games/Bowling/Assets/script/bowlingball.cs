@@ -63,7 +63,8 @@ public class bowlingball : MonoBehaviour
 
     }
 
-    void OnTriggerEnter(Collider other)
+
+    private void OnTriggerEnter(Collider other)
     {
         switch (other.gameObject.tag)
         {
@@ -81,6 +82,9 @@ public class bowlingball : MonoBehaviour
                     m_done = false;
                 }
                 break;
+            default:
+                Debug.Log("Unknown tag!");
+                break;
         }
 
     }
@@ -94,8 +98,15 @@ public class bowlingball : MonoBehaviour
         m_done = true;
         this.gameObject.SetActive(false);
     }
-    
 
+    private void DisableBasketball()
+    {
+        Debug.Log("Setting inactive");
+        // Zeroing the physics to ensure no problem after pooled
+        m_rb.angularVelocity = Vector3.zero;
+        m_done = true;
+        this.gameObject.SetActive(false);
+    }
 
     //Redundant
     //public void ResetBall()

@@ -32,20 +32,24 @@ public class Fruit : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        // Kılıç kontrolü
         if (other.transform.CompareTag("Player"))
         {
             Weapon weapon = other.transform.GetComponentInParent<Weapon>();
             if (weapon.canSlice)
             {
+                // Eğer kılıç yeterince hıza sahipse 
                 if ( (weapon.m_WeaponType == WepType.Katana && weapon.SwordVelocity > 3f ) || particleTyp == particleType.Explosion)
                 {
                     gameController.Slice(gameObject, weapon, GetComponent<MeshRenderer>().material);
                 }
+                // Sonradan eklenecek olan ışın kılıcı
                 else if (weapon.m_WeaponType ==WepType.LightSaber)
                 {
                     gameController.Slice(gameObject, weapon, GetComponent<MeshRenderer>().material);
                 }
             }
+            // Eğer kılıç kesemez durumda yani ön kısmında değilse meyveyi başka yöne doğru fırlat
             else
             {
                 fruitRigidbody.interpolation = RigidbodyInterpolation.Extrapolate;
